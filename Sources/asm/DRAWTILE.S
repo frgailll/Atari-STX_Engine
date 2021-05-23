@@ -95,7 +95,66 @@ drawmap8:       lea         blt_BaseAddr,A1             ;pointe sur l'adresse de
 ;           /               D3=nombre de ligne              /
 ;           /-----------------------------------------------/
 
-drawmap16:      rts
+drawmap16:      lea         blt_BaseAddr,A1             ;pointe sur l'adresse de base du blitter
+                lea         blt_SrcXinc(A1),A3          ;pointe sur l'adresse de base du blitter + blt_SrcXinc
+                move.l      #$00000008,(A3)+            ;pas d'incrementation horizontal (blt_SrcXinc) & incrementation pour passer à la ligne suivante (blt_SrcYinc)
+                move.l      D5,(A3)+                    ;adresse du tile à dessiner (blt_SrcAddr)
+                move.b      #0,blt_Skew(A1)             ;valeur de rotation, 8 ou 0
+                move.w      #$FFFF,(A3)+                ;valeur masque 1 (blt_EndMask1)
+                move.l      #$FFFFFFFF,(A3)+            ;valeur masque 2 (blt_EndMask2) & valeur masque 3 (blt_EndMask3)
+                move.l      #$000000A0,(A3)+            ;pas d'incrementation horizontal (blt_DstXinc) & incrementation pour passer à la ligne suivante (blt_DstYinc)
+                move.w      #$0203,blt_Hop(A1)          ;source seul sans mémoire demi-teinte & opération logique Source seul
+                
+ ;               affichage tile plan 1
+
+                move.l      D4,(A3)+                ;adresse de destination à l'écran (blt_DstAddr)
+                move.w      #1,(A3)+                ;lecture de 4 mots en horizontal car 4 plan (blt_Xcount)
+                move.w      D3,(A3)+                ;nombre de lignes à traiter (blt_Ycount)
+                move.b      #128,blt_LineNum(A1)    ;start le blitter en mode partage de bus
+.drt16_blrest10 bset.b      #7,blt_LineNum(A1)      ;redemarre le blitter
+                nop
+                bne         .drt16_blrest10
+
+;               affichage tile plan 2
+
+                addq.l      #2,D5                   ;passe au plan suivant
+                addq.l      #2,D4                   ;passe au plan suivant
+                move.l      D5,blt_SrcAddr(A1)      ;adresse du tile à dessiner
+                move.w      D3,-(A3)                ;nombre de lignes à traiter (blt_Ycount)
+                move.w      #1,-(A3)                ;lecture de 4 mots en horizontal car 4 plan (blt_Xcount)
+                move.l      D4,-(A3)                ;adresse de destination à l'écran (blt_DstAddr)
+                move.b      #128,blt_LineNum(A1)    ;start le blitter en mode partage de bus
+.drt16_blrest11 bset.b      #7,blt_LineNum(A1)      ;redemarre le blitter
+                nop
+                bne         .drt16_blrest11
+
+;               affichage tile plan 3
+
+                addq.l      #2,D5                   ;passe au plan suivant
+                addq.l      #2,D4                   ;passe au plan suivant
+                move.l      D5,blt_SrcAddr(A1)      ;adresse du tile à dessiner
+                move.l      D4,(A3)+                ;adresse de destination à l'écran (blt_DstAddr)
+                move.w      #1,(A3)+                ;lecture de 4 mots en horizontal car 4 plan (blt_Xcount)
+                move.w      D3,(A3)+                ;nombre de lignes à traiter (blt_Ycount)
+                move.b      #128,blt_LineNum(A1)    ;start le blitter en mode partage de bus
+.drt16_blrest12 bset.b      #7,blt_LineNum(A1)      ;redemarre le blitter
+                nop
+                bne         .drt16_blrest12
+                
+;               affichage tile plan 4
+
+                addq.l      #2,D5                   ;passe au plan suivant
+                addq.l      #2,D4                   ;passe au plan suivant
+                move.l      D5,blt_SrcAddr(A1)      ;adresse du tile à dessiner
+                move.w      D3,-(A3)                ;nombre de lignes à traiter (blt_Ycount)
+                move.w      #1,-(A3)                ;lecture de 4 mots en horizontal car 4 plan (blt_Xcount)
+                move.l      D4,-(A3)                ;adresse de destination à l'écran (blt_DstAddr)
+                move.b      #128,blt_LineNum(A1)    ;start le blitter en mode partage de bus
+.drt16_blrest13 bset.b      #7,blt_LineNum(A1)      ;redemarre le blitter
+                nop
+                bne         .drt16_blrest13
+
+                rts
                 
                 
                 
