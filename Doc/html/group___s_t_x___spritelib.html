@@ -1,0 +1,811 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Atari STX_Engine: Gestion des sprites</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="atari logo.ico"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Atari STX_Engine
+   &#160;<span id="projectnumber">V0.2</span>
+   </div>
+   <div id="projectbrief">Bibliothéque de fonction pour le moteur graphique des jeux</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Gestion des sprites</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:ga417784d30de6b18c318ea1e9ecf94033"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_t_x___spritelib.html#ga417784d30de6b18c318ea1e9ecf94033">STX_loadspriteset</a> (char *Path)</td></tr>
+<tr class="memdesc:ga417784d30de6b18c318ea1e9ecf94033"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de charger en mémoire les motifs des sprites et mask crées avec le logiciel SPRITEVC.PRG.  <a href="group___s_t_x___spritelib.html#ga417784d30de6b18c318ea1e9ecf94033">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga417784d30de6b18c318ea1e9ecf94033"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga413fd2602e1ce1f62d0ad1bbcd5184e7"><td class="memItemLeft" align="right" valign="top"><a id="ga413fd2602e1ce1f62d0ad1bbcd5184e7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_t_x___spritelib.html#ga413fd2602e1ce1f62d0ad1bbcd5184e7">STX_clearallsprites</a> (void)</td></tr>
+<tr class="memdesc:ga413fd2602e1ce1f62d0ad1bbcd5184e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de detruires tous les sprites, les structures de données sont remises à zéro. <br /></td></tr>
+<tr class="separator:ga413fd2602e1ce1f62d0ad1bbcd5184e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad4db0cf8b8058a83989d8be7b42a5daf"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_t_x___spritelib.html#gad4db0cf8b8058a83989d8be7b42a5daf">STX_createsprite</a> (unsigned short motif, short posx, short posy, <a class="el" href="type_8h.html#a97a80ca1602ebf2303258971a2c938e2">bool</a> enable)</td></tr>
+<tr class="memdesc:gad4db0cf8b8058a83989d8be7b42a5daf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de definir les attributs à donner aux sprites, fixer le motif utiliser, definir sa position et sa vitesse de déplacement.  <a href="group___s_t_x___spritelib.html#gad4db0cf8b8058a83989d8be7b42a5daf">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gad4db0cf8b8058a83989d8be7b42a5daf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2b4ae670ef0b5e1d099cefa099919522"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_t_x___spritelib.html#ga2b4ae670ef0b5e1d099cefa099919522">STX_showsprite</a> (unsigned short spriteid)</td></tr>
+<tr class="memdesc:ga2b4ae670ef0b5e1d099cefa099919522"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche le sprite dont l'id est spécifié  <a href="group___s_t_x___spritelib.html#ga2b4ae670ef0b5e1d099cefa099919522">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga2b4ae670ef0b5e1d099cefa099919522"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad214b8849c54f9195161a22592f66f15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_t_x___spritelib.html#gad214b8849c54f9195161a22592f66f15">STX_showallsprites</a> (void)</td></tr>
+<tr class="memdesc:gad214b8849c54f9195161a22592f66f15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche tous les sprites crées et actifs.  <a href="group___s_t_x___spritelib.html#gad214b8849c54f9195161a22592f66f15">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gad214b8849c54f9195161a22592f66f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga10b09c134925799b982ad54a4f8f53c7"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_t_x___spritelib.html#ga10b09c134925799b982ad54a4f8f53c7">STX_changespritemotif</a> (unsigned short spriteid, unsigned short motif)</td></tr>
+<tr class="memdesc:ga10b09c134925799b982ad54a4f8f53c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">change le motif d'un sprite à afficher  <a href="group___s_t_x___spritelib.html#ga10b09c134925799b982ad54a4f8f53c7">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga10b09c134925799b982ad54a4f8f53c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga24caa5c63ea19e50b5a49bc19eca937b"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_t_x___spritelib.html#ga24caa5c63ea19e50b5a49bc19eca937b">STX_enablesprite</a> (unsigned short spriteid)</td></tr>
+<tr class="memdesc:ga24caa5c63ea19e50b5a49bc19eca937b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valide l'affichage du sprite dont l'id est spécifié  <a href="group___s_t_x___spritelib.html#ga24caa5c63ea19e50b5a49bc19eca937b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga24caa5c63ea19e50b5a49bc19eca937b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0b5b36684b95ec27d83e6e1c0e7bf2c8"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_t_x___spritelib.html#ga0b5b36684b95ec27d83e6e1c0e7bf2c8">STX_disablesprite</a> (unsigned short spriteid)</td></tr>
+<tr class="memdesc:ga0b5b36684b95ec27d83e6e1c0e7bf2c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dévalide l'affichage du sprite dont l'id est spicifié  <a href="group___s_t_x___spritelib.html#ga0b5b36684b95ec27d83e6e1c0e7bf2c8">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga0b5b36684b95ec27d83e6e1c0e7bf2c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaacab6b6306c53abb6f809ba10b8b3d2f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="type_8h.html#a97a80ca1602ebf2303258971a2c938e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_t_x___spritelib.html#gaacab6b6306c53abb6f809ba10b8b3d2f">STX_getspriteenabled</a> (unsigned short spriteid)</td></tr>
+<tr class="memdesc:gaacab6b6306c53abb6f809ba10b8b3d2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de savoir si le sprite dont l'id est spécifié est Enable ou Disable.  <a href="group___s_t_x___spritelib.html#gaacab6b6306c53abb6f809ba10b8b3d2f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gaacab6b6306c53abb6f809ba10b8b3d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga75a6b9d01748e4649ac942cd0e1bfb84"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_t_x___spritelib.html#ga75a6b9d01748e4649ac942cd0e1bfb84">STX_getspriteposition</a> (unsigned short spriteid, short *posx, short *posy)</td></tr>
+<tr class="memdesc:ga75a6b9d01748e4649ac942cd0e1bfb84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de récupérer la position X et Y d'un sprite.  <a href="group___s_t_x___spritelib.html#ga75a6b9d01748e4649ac942cd0e1bfb84">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga75a6b9d01748e4649ac942cd0e1bfb84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabfa52e2ddaf1a6029ad0a525abf744a8"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_t_x___spritelib.html#gabfa52e2ddaf1a6029ad0a525abf744a8">STX_setspriteposition</a> (unsigned short spriteid, short posx, short posy)</td></tr>
+<tr class="memdesc:gabfa52e2ddaf1a6029ad0a525abf744a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de fixer la position X et Y d'un sprite.  <a href="group___s_t_x___spritelib.html#gabfa52e2ddaf1a6029ad0a525abf744a8">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gabfa52e2ddaf1a6029ad0a525abf744a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacdb6084baa9a37f34138600cac5048af"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_t_x___spritelib.html#gacdb6084baa9a37f34138600cac5048af">STX_movespriteex</a> (unsigned short spriteid, long int xincr, long int yincr)</td></tr>
+<tr class="memdesc:gacdb6084baa9a37f34138600cac5048af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de definir le deplacement du sprite en X et Y avec des valeurs à virgules.  <a href="group___s_t_x___spritelib.html#gacdb6084baa9a37f34138600cac5048af">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gacdb6084baa9a37f34138600cac5048af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafae474ccd50a61fb6d57f1d3d0d33764"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_t_x___spritelib.html#gafae474ccd50a61fb6d57f1d3d0d33764">STX_movesprite</a> (unsigned short spriteid, short xincr, short yincr)</td></tr>
+<tr class="memdesc:gafae474ccd50a61fb6d57f1d3d0d33764"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de definir le deplacement du sprite en X et Y.  <a href="group___s_t_x___spritelib.html#gafae474ccd50a61fb6d57f1d3d0d33764">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gafae474ccd50a61fb6d57f1d3d0d33764"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad2db7285c6110257a537c0388c325027"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_t_x___spritelib.html#gad2db7285c6110257a537c0388c325027">STX_clearsprite</a> (unsigned short spriteid)</td></tr>
+<tr class="memdesc:gad2db7285c6110257a537c0388c325027"><td class="mdescLeft">&#160;</td><td class="mdescRight">Efface un sprite avec tous ces attributs.  <a href="group___s_t_x___spritelib.html#gad2db7285c6110257a537c0388c325027">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gad2db7285c6110257a537c0388c325027"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0fa1da6167b8d6035d72ff0f7e45b9aa"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_t_x___spritelib.html#ga0fa1da6167b8d6035d72ff0f7e45b9aa">STX_setanimation</a> (unsigned short spriteid, unsigned short *motiflist, unsigned char vitesse, <a class="el" href="type_8h.html#a97a80ca1602ebf2303258971a2c938e2">bool</a> animloop)</td></tr>
+<tr class="memdesc:ga0fa1da6167b8d6035d72ff0f7e45b9aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defini l'animation d'un sprite par rapport à une liste de motifs contenus dans un tableau. La dernière valeur du tableau doit être 0xFFFF pour marquer la fin de l'animation.  <a href="group___s_t_x___spritelib.html#ga0fa1da6167b8d6035d72ff0f7e45b9aa">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga0fa1da6167b8d6035d72ff0f7e45b9aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae75f8c2c02debe44df2d05a0e53b71b6"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_t_x___spritelib.html#gae75f8c2c02debe44df2d05a0e53b71b6">STX_animationenable</a> (unsigned short spriteid, <a class="el" href="type_8h.html#a97a80ca1602ebf2303258971a2c938e2">bool</a> enable)</td></tr>
+<tr class="memdesc:gae75f8c2c02debe44df2d05a0e53b71b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defini l'animation d'un sprite par rapport à une liste de motifs contenus dans un tableau.  <a href="group___s_t_x___spritelib.html#gae75f8c2c02debe44df2d05a0e53b71b6">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gae75f8c2c02debe44df2d05a0e53b71b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac6fff8af56e0f69036eb484eb8634176"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_t_x___spritelib.html#gac6fff8af56e0f69036eb484eb8634176">STX_setboundingboxe</a> (unsigned char spriteid, unsigned char posx, unsigned char posy, unsigned char width, unsigned char height)</td></tr>
+<tr class="memdesc:gac6fff8af56e0f69036eb484eb8634176"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fixe les coordonnées de la boundingboxe dans un sprite pour les detections de collisions.  <a href="group___s_t_x___spritelib.html#gac6fff8af56e0f69036eb484eb8634176">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gac6fff8af56e0f69036eb484eb8634176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab436cb323e4cc111359d5843310c307f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="type_8h.html#a97a80ca1602ebf2303258971a2c938e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_t_x___spritelib.html#gab436cb323e4cc111359d5843310c307f">STX_spritescollision</a> (unsigned short spriteid1, unsigned short spriteid2)</td></tr>
+<tr class="memdesc:gab436cb323e4cc111359d5843310c307f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fixe les coordonnées de la boundingboxe dans un sprite pour les detections de collisions.  <a href="group___s_t_x___spritelib.html#gab436cb323e4cc111359d5843310c307f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gab436cb323e4cc111359d5843310c307f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga756ddb1b916a4068a1e049956326072c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="type_8h.html#a97a80ca1602ebf2303258971a2c938e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_t_x___spritelib.html#ga756ddb1b916a4068a1e049956326072c">STX_spriteclipped</a> (unsigned short spriteid1)</td></tr>
+<tr class="memdesc:ga756ddb1b916a4068a1e049956326072c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indique si le sprite est hors de la zone d'affichage clipping.  <a href="group___s_t_x___spritelib.html#ga756ddb1b916a4068a1e049956326072c">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga756ddb1b916a4068a1e049956326072c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="gae75f8c2c02debe44df2d05a0e53b71b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae75f8c2c02debe44df2d05a0e53b71b6">&#9670;&nbsp;</a></span>STX_animationenable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short STX_animationenable </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>spriteid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="type_8h.html#a97a80ca1602ebf2303258971a2c938e2">bool</a>&#160;</td>
+          <td class="paramname"><em>enable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defini l'animation d'un sprite par rapport à une liste de motifs contenus dans un tableau. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">spriteid</td><td>: id du sprite concerné </td></tr>
+    <tr><td class="paramname">enable</td><td>: active l'animation si true, sinon stop l'animation </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 si pas d'erreur, -1 en cas d'erreur ou de sprite non créé au préalable </dd></dl>
+
+</div>
+</div>
+<a id="ga10b09c134925799b982ad54a4f8f53c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga10b09c134925799b982ad54a4f8f53c7">&#9670;&nbsp;</a></span>STX_changespritemotif()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short STX_changespritemotif </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>spriteid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>motif</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>change le motif d'un sprite à afficher </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">spriteid</td><td>: id du sprite à afficher </td></tr>
+    <tr><td class="paramname">motif</td><td>: Numero du motif dans le fichier .SPT chargé avec la fonction loadsprites </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 si pas d'erreur, -1 erreur ou de sprite non créé au préalable </dd></dl>
+
+</div>
+</div>
+<a id="gad2db7285c6110257a537c0388c325027"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad2db7285c6110257a537c0388c325027">&#9670;&nbsp;</a></span>STX_clearsprite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short STX_clearsprite </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>spriteid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Efface un sprite avec tous ces attributs. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">spriteid</td><td>: id du sprite concerné </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 si pas d'erreur, -1 en cas d'erreur ou de sprite non créé au préalable </dd></dl>
+
+</div>
+</div>
+<a id="gad4db0cf8b8058a83989d8be7b42a5daf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad4db0cf8b8058a83989d8be7b42a5daf">&#9670;&nbsp;</a></span>STX_createsprite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short STX_createsprite </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>motif</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>posx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>posy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="type_8h.html#a97a80ca1602ebf2303258971a2c938e2">bool</a>&#160;</td>
+          <td class="paramname"><em>enable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Permet de definir les attributs à donner aux sprites, fixer le motif utiliser, definir sa position et sa vitesse de déplacement. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">motif</td><td>: Numero du motif dans le fichier .SPT chargé avec la fonction loadsprites </td></tr>
+    <tr><td class="paramname">posx</td><td>: positon X de départ du sprite à l'écran </td></tr>
+    <tr><td class="paramname">posy</td><td>: position Y de depart du sprite à l'écran </td></tr>
+    <tr><td class="paramname">enable</td><td>: si true, rends actif le sprite aprés sa création sinon false le désactive </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>l'id du sprite crée ou -1 si plus de place en mémoire </dd></dl>
+
+</div>
+</div>
+<a id="ga0b5b36684b95ec27d83e6e1c0e7bf2c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0b5b36684b95ec27d83e6e1c0e7bf2c8">&#9670;&nbsp;</a></span>STX_disablesprite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short STX_disablesprite </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>spriteid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dévalide l'affichage du sprite dont l'id est spicifié </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">spriteid</td><td>: id du sprite concerné </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 si pas d'erreur, -1 en cas d'erreur ou de sprite non créé au préalable </dd></dl>
+
+</div>
+</div>
+<a id="ga24caa5c63ea19e50b5a49bc19eca937b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga24caa5c63ea19e50b5a49bc19eca937b">&#9670;&nbsp;</a></span>STX_enablesprite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short STX_enablesprite </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>spriteid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Valide l'affichage du sprite dont l'id est spécifié </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">spriteid</td><td>: id du sprite à afficher </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 si pas d'erreur, -1 en cas d'erreur ou de sprite non créé au préalable </dd></dl>
+
+</div>
+</div>
+<a id="gaacab6b6306c53abb6f809ba10b8b3d2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaacab6b6306c53abb6f809ba10b8b3d2f">&#9670;&nbsp;</a></span>STX_getspriteenabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="type_8h.html#a97a80ca1602ebf2303258971a2c938e2">bool</a> STX_getspriteenabled </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>spriteid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Permet de savoir si le sprite dont l'id est spécifié est Enable ou Disable. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">spriteid</td><td>: id du sprite concerné </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>true si sprite Enable, sinon false </dd></dl>
+
+</div>
+</div>
+<a id="ga75a6b9d01748e4649ac942cd0e1bfb84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga75a6b9d01748e4649ac942cd0e1bfb84">&#9670;&nbsp;</a></span>STX_getspriteposition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short STX_getspriteposition </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>spriteid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short *&#160;</td>
+          <td class="paramname"><em>posx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short *&#160;</td>
+          <td class="paramname"><em>posy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Permet de récupérer la position X et Y d'un sprite. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">spriteid</td><td>: id du sprite concerné </td></tr>
+    <tr><td class="paramname">posx</td><td>: adresse de la variable qui recevra la position X du sprite </td></tr>
+    <tr><td class="paramname">posy</td><td>: adresse de la variable qui recevra la position Y du sprite </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 si pas d'erreur, -1 en cas d'erreur ou de sprite non créé au préalable </dd></dl>
+
+</div>
+</div>
+<a id="ga417784d30de6b18c318ea1e9ecf94033"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga417784d30de6b18c318ea1e9ecf94033">&#9670;&nbsp;</a></span>STX_loadspriteset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short STX_loadspriteset </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>Path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Permet de charger en mémoire les motifs des sprites et mask crées avec le logiciel SPRITEVC.PRG. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>0 si les données ont bien été chargées en memoire, sinon retourne une valeur négative </dd></dl>
+
+</div>
+</div>
+<a id="gafae474ccd50a61fb6d57f1d3d0d33764"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafae474ccd50a61fb6d57f1d3d0d33764">&#9670;&nbsp;</a></span>STX_movesprite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short STX_movesprite </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>spriteid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>xincr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>yincr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Permet de definir le deplacement du sprite en X et Y. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">spriteid</td><td>: id du sprite concerné </td></tr>
+    <tr><td class="paramname">xincr</td><td>: Valeur du deplacement en X </td></tr>
+    <tr><td class="paramname">yincr</td><td>: Valeur du deplacement en Y </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 si pas d'erreur, -1 en cas d'erreur, 1 si sprite disable, 3 si clipping </dd></dl>
+
+</div>
+</div>
+<a id="gacdb6084baa9a37f34138600cac5048af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacdb6084baa9a37f34138600cac5048af">&#9670;&nbsp;</a></span>STX_movespriteex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short STX_movespriteex </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>spriteid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long int&#160;</td>
+          <td class="paramname"><em>xincr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long int&#160;</td>
+          <td class="paramname"><em>yincr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Permet de definir le deplacement du sprite en X et Y avec des valeurs à virgules. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">spriteid</td><td>: id du sprite concerné </td></tr>
+    <tr><td class="paramname">xincr</td><td>: Valeur du deplacement en X, 16 bits poids fort = unité, 16 bits poids faible = aprés la virgule </td></tr>
+    <tr><td class="paramname">yincr</td><td>: Valeur du deplacement en Y, 16 bits poids fort = unité, 16 bits poids faible = aprés la virgule </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 si pas d'erreur, -1 en cas d'erreur, 1 si sprite disable, 3 si clipping</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Pour effectuer un déplacement vers la droite en X de 1,25 pixel il faudra écrire 0x00010019 pour xincr </dd>
+<dd>
+Pour effectuer un déplacement vers la gauche en X de 1,25 pixel il faudra écrire 0xFFFFFFE7 pour xincr </dd></dl>
+
+</div>
+</div>
+<a id="ga0fa1da6167b8d6035d72ff0f7e45b9aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0fa1da6167b8d6035d72ff0f7e45b9aa">&#9670;&nbsp;</a></span>STX_setanimation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short STX_setanimation </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>spriteid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short *&#160;</td>
+          <td class="paramname"><em>motiflist</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>vitesse</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="type_8h.html#a97a80ca1602ebf2303258971a2c938e2">bool</a>&#160;</td>
+          <td class="paramname"><em>animloop</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defini l'animation d'un sprite par rapport à une liste de motifs contenus dans un tableau. La dernière valeur du tableau doit être 0xFFFF pour marquer la fin de l'animation. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">spriteid</td><td>: id du sprite concerné </td></tr>
+    <tr><td class="paramname">motiflist</td><td>: pointeur sur un tableau contenant les numéros de motifs à afficher successivement, la derniére valeur du tableau doit être 0xFFFF </td></tr>
+    <tr><td class="paramname">vitesse</td><td>: vitesse d'affichage, corresponds au nombre de tour de la boucle infini pour changment de motif </td></tr>
+    <tr><td class="paramname">animloop</td><td>: si true, l'animation sera affichée en boucle, si false, l'animation sera effectuée une seul fois </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 si pas d'erreur, -1 en cas d'erreur ou de sprite non créé au préalable </dd></dl>
+
+</div>
+</div>
+<a id="gac6fff8af56e0f69036eb484eb8634176"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac6fff8af56e0f69036eb484eb8634176">&#9670;&nbsp;</a></span>STX_setboundingboxe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short STX_setboundingboxe </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>spriteid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>posx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>posy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fixe les coordonnées de la boundingboxe dans un sprite pour les detections de collisions. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">spriteid</td><td>: id du sprite concerné </td></tr>
+    <tr><td class="paramname">posx</td><td>: position x de la bounding boxe dans le sprite (default 0) </td></tr>
+    <tr><td class="paramname">posy</td><td>: position y de la bounding boxe dans le sprite (default 0) </td></tr>
+    <tr><td class="paramname">width</td><td>: largeur de la bounding box dans le sprite (default 15) </td></tr>
+    <tr><td class="paramname">height</td><td>: hauteur de la bounding box dans le sprite (default 15) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 si pas d'erreur, -1 en cas d'erreur ou de sprite non créé au préalable </dd></dl>
+
+</div>
+</div>
+<a id="gabfa52e2ddaf1a6029ad0a525abf744a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabfa52e2ddaf1a6029ad0a525abf744a8">&#9670;&nbsp;</a></span>STX_setspriteposition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short STX_setspriteposition </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>spriteid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>posx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>posy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Permet de fixer la position X et Y d'un sprite. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">spriteid</td><td>: id du sprite concerné </td></tr>
+    <tr><td class="paramname">posx</td><td>: Valeur de la position X du sprite </td></tr>
+    <tr><td class="paramname">posy</td><td>: Valeur de la position Y du sprite </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 si pas d'erreur, -1 en cas d'erreur ou de sprite non créé au préalable </dd></dl>
+
+</div>
+</div>
+<a id="gad214b8849c54f9195161a22592f66f15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad214b8849c54f9195161a22592f66f15">&#9670;&nbsp;</a></span>STX_showallsprites()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void STX_showallsprites </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche tous les sprites crées et actifs. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Le nombre de sprites affichés, si erreur retourne -1 </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>si une animation existe pour un sprite celle-ci sera jouée, les coordonnées seront calculées </dd></dl>
+
+</div>
+</div>
+<a id="ga2b4ae670ef0b5e1d099cefa099919522"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2b4ae670ef0b5e1d099cefa099919522">&#9670;&nbsp;</a></span>STX_showsprite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short STX_showsprite </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>spriteid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche le sprite dont l'id est spécifié </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">spriteid</td><td>: id du sprite à afficher </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 si pas d'erreur, -1 erreur ou de sprite non créé au préalable, 1 sprite desable, 3 clipping </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>si une animation existe pour le sprite celle-ci sera jouée, les coordonnées seront calculées </dd></dl>
+
+</div>
+</div>
+<a id="ga756ddb1b916a4068a1e049956326072c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga756ddb1b916a4068a1e049956326072c">&#9670;&nbsp;</a></span>STX_spriteclipped()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="type_8h.html#a97a80ca1602ebf2303258971a2c938e2">bool</a> STX_spriteclipped </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>spriteid1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indique si le sprite est hors de la zone d'affichage clipping. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">spriteid1</td><td>: id du premier sprite concerné </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>true clipping, sinon false </dd></dl>
+
+</div>
+</div>
+<a id="gab436cb323e4cc111359d5843310c307f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab436cb323e4cc111359d5843310c307f">&#9670;&nbsp;</a></span>STX_spritescollision()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="type_8h.html#a97a80ca1602ebf2303258971a2c938e2">bool</a> STX_spritescollision </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>spriteid1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>spriteid2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fixe les coordonnées de la boundingboxe dans un sprite pour les detections de collisions. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">spriteid1</td><td>: id du premier sprite concerné </td></tr>
+    <tr><td class="paramname">spriteid2</td><td>: id du second sprite concerné </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>true si collision, false sinon </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.16
+</small></address>
+</body>
+</html>

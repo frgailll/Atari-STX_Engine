@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Atari STX_Engine:  Fichier source de src/StGfxEngine.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="atari logo.ico"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Atari STX_Engine
+   &#160;<span id="projectnumber">V1.0</span>
+   </div>
+   <div id="projectbrief">Bibliothéque de fonctions pour le moteur graphique des jeux</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_53411faf9a1f8ea0f45d840513ae40fc.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">StGfxEngine.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_st_gfx_engine_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifndef _STGFXENGINEH_</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define _STGFXENGINEH_</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="type_8h.html">src\type.h</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="spritelib_8h.html">src\spritelib.h</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="imagelib_8h.html">src\imagelib.h</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="tileslib_8h.html">src\tileslib.h</a>&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="soundlib_8h.html">src\soundlib.h</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="controllib_8h.html">src\controllib.h</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="eventlib_8h.html">src\eventlib.h</a>&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="charsetlib_8h.html">src\charsetlib.h</a>&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">short</span> <a class="code" href="group___s_t_x___engine.html#ga75b570f309841cd28150e4100c27d4ac">STX_initstxengine</a>(<a class="code" href="group___s_t_x___engine.html#ga1d6bc884c8ec2ffe0491ad5b3b242eb0">STX_freqverticale</a> freqv, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> nbsprites);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">short</span> <a class="code" href="group___s_t_x___engine.html#ga46248f3dbb3c1b812c155336af0a852d">STX_uninitstxengine</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keywordtype">short</span> <a class="code" href="group___s_t_x___engine.html#ga0a43eeccc356f05c0a740beb4cd8ae68">STX_setscreenclipping</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> xmin, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> xmax, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> ymin, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> ymax);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___s_t_x___engine.html#ga77c9dd2acd7ab5b174ba00c99efba78a">STX_clearlogscreen</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="group___s_t_x___engine.html#ga21e4b55df188ab33b4983450b753fbd9">STX_swapscreen</a>(<span class="keywordtype">bool</span> ViewCycle);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordtype">long</span> <span class="keywordtype">int</span> *<a class="code" href="group___s_t_x___engine.html#ga8489578ffdd07c5f5e5fbe62805f5a5f">STX_getworkscreen</a>();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___s_t_x___engine.html#ga6765337fa366ca098fc869e95b5023b1">STX_changecolor</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> colornum, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> colorvalue);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keywordtype">char</span> *<a class="code" href="group___s_t_x___engine.html#ga6bcd59ed55b2e4764fc1bd8ada128b25">STX_version</a>();</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keywordtype">char</span> *<a class="code" href="group___s_t_x___engine.html#ga502b7e1d69cb5b5b470666f58a1d0a5e">STX_gettosversion</a>();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> <a class="code" href="group___s_t_x___engine.html#ga3adde14ca57f3f322ae22b257371b2e6">STX_randomize</a>();</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___s_t_x___engine.html#ga5bff371d43a4ce70675bf1a5e90c9879">STX_waitvbl</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="agroup___s_t_x___engine_html_ga77c9dd2acd7ab5b174ba00c99efba78a"><div class="ttname"><a href="group___s_t_x___engine.html#ga77c9dd2acd7ab5b174ba00c99efba78a">STX_clearlogscreen</a></div><div class="ttdeci">void STX_clearlogscreen(void)</div><div class="ttdoc">Efface l'écran logique de son contenu.</div></div>
+<div class="ttc" id="aspritelib_8h_html"><div class="ttname"><a href="spritelib_8h.html">spritelib.h</a></div></div>
+<div class="ttc" id="agroup___s_t_x___engine_html_ga8489578ffdd07c5f5e5fbe62805f5a5f"><div class="ttname"><a href="group___s_t_x___engine.html#ga8489578ffdd07c5f5e5fbe62805f5a5f">STX_getworkscreen</a></div><div class="ttdeci">long int * STX_getworkscreen()</div><div class="ttdoc">Retourne l'adresse de l'écran logique actuelle mémorisé dans la stgfx. Cette adresse sera modifié apr...</div></div>
+<div class="ttc" id="agroup___s_t_x___engine_html_ga5bff371d43a4ce70675bf1a5e90c9879"><div class="ttname"><a href="group___s_t_x___engine.html#ga5bff371d43a4ce70675bf1a5e90c9879">STX_waitvbl</a></div><div class="ttdeci">void STX_waitvbl(void)</div><div class="ttdoc">Attends le retour de la VBL, puis continue.</div></div>
+<div class="ttc" id="agroup___s_t_x___engine_html_ga3adde14ca57f3f322ae22b257371b2e6"><div class="ttname"><a href="group___s_t_x___engine.html#ga3adde14ca57f3f322ae22b257371b2e6">STX_randomize</a></div><div class="ttdeci">unsigned long int STX_randomize()</div><div class="ttdoc">Retourne une valeur pseudo-aléatoire sur 24 bits.</div></div>
+<div class="ttc" id="atype_8h_html"><div class="ttname"><a href="type_8h.html">type.h</a></div></div>
+<div class="ttc" id="agroup___s_t_x___engine_html_ga6765337fa366ca098fc869e95b5023b1"><div class="ttname"><a href="group___s_t_x___engine.html#ga6765337fa366ca098fc869e95b5023b1">STX_changecolor</a></div><div class="ttdeci">void STX_changecolor(unsigned short colornum, unsigned short colorvalue)</div><div class="ttdoc">Modifie une couleur affiché à l'écran.</div></div>
+<div class="ttc" id="aimagelib_8h_html"><div class="ttname"><a href="imagelib_8h.html">imagelib.h</a></div></div>
+<div class="ttc" id="atileslib_8h_html"><div class="ttname"><a href="tileslib_8h.html">tileslib.h</a></div></div>
+<div class="ttc" id="agroup___s_t_x___engine_html_ga46248f3dbb3c1b812c155336af0a852d"><div class="ttname"><a href="group___s_t_x___engine.html#ga46248f3dbb3c1b812c155336af0a852d">STX_uninitstxengine</a></div><div class="ttdeci">short STX_uninitstxengine(void)</div><div class="ttdoc">Permet la désinitialisation les bibliothéques composant la STGFXengine en rendant le systéme dans l'é...</div></div>
+<div class="ttc" id="agroup___s_t_x___engine_html_ga75b570f309841cd28150e4100c27d4ac"><div class="ttname"><a href="group___s_t_x___engine.html#ga75b570f309841cd28150e4100c27d4ac">STX_initstxengine</a></div><div class="ttdeci">short STX_initstxengine(STX_freqverticale freqv, unsigned short nbsprites)</div><div class="ttdoc">Permet l'initialisation les bibliothéques composant la STGFXengine, reservation mémoire,...</div></div>
+<div class="ttc" id="agroup___s_t_x___engine_html_ga1d6bc884c8ec2ffe0491ad5b3b242eb0"><div class="ttname"><a href="group___s_t_x___engine.html#ga1d6bc884c8ec2ffe0491ad5b3b242eb0">STX_freqverticale</a></div><div class="ttdeci">STX_freqverticale</div><div class="ttdoc">Enumeration des valeurs possibles pour definir la fréquence verticale de l'affichage (nombre d'images...</div><div class="ttdef"><b>Definition:</b> type.h:60</div></div>
+<div class="ttc" id="agroup___s_t_x___engine_html_ga0a43eeccc356f05c0a740beb4cd8ae68"><div class="ttname"><a href="group___s_t_x___engine.html#ga0a43eeccc356f05c0a740beb4cd8ae68">STX_setscreenclipping</a></div><div class="ttdeci">short STX_setscreenclipping(unsigned short xmin, unsigned short xmax, unsigned short ymin, unsigned short ymax)</div><div class="ttdoc">Permet de fixer les valeurs de clipping de l'écran.</div></div>
+<div class="ttc" id="agroup___s_t_x___engine_html_ga6bcd59ed55b2e4764fc1bd8ada128b25"><div class="ttname"><a href="group___s_t_x___engine.html#ga6bcd59ed55b2e4764fc1bd8ada128b25">STX_version</a></div><div class="ttdeci">char * STX_version()</div><div class="ttdoc">Retourne un pointeur de caractére sur le numéro de version de la STGFX Engine.</div></div>
+<div class="ttc" id="asoundlib_8h_html"><div class="ttname"><a href="soundlib_8h.html">soundlib.h</a></div></div>
+<div class="ttc" id="agroup___s_t_x___engine_html_ga21e4b55df188ab33b4983450b753fbd9"><div class="ttname"><a href="group___s_t_x___engine.html#ga21e4b55df188ab33b4983450b753fbd9">STX_swapscreen</a></div><div class="ttdeci">unsigned char STX_swapscreen(bool ViewCycle)</div><div class="ttdoc">assure l'effacement des sprites et leur réaffichage suivant les swap d'écrans pilotés par la routine ...</div></div>
+<div class="ttc" id="acontrollib_8h_html"><div class="ttname"><a href="controllib_8h.html">controllib.h</a></div></div>
+<div class="ttc" id="aeventlib_8h_html"><div class="ttname"><a href="eventlib_8h.html">eventlib.h</a></div></div>
+<div class="ttc" id="acharsetlib_8h_html"><div class="ttname"><a href="charsetlib_8h.html">charsetlib.h</a></div></div>
+<div class="ttc" id="agroup___s_t_x___engine_html_ga502b7e1d69cb5b5b470666f58a1d0a5e"><div class="ttname"><a href="group___s_t_x___engine.html#ga502b7e1d69cb5b5b470666f58a1d0a5e">STX_gettosversion</a></div><div class="ttdeci">char * STX_gettosversion()</div><div class="ttdoc">Retourne un pointeur de caractére sur la version du TOS.</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.16
+</small></address>
+</body>
+</html>

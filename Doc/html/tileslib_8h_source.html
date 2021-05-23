@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Atari STX_Engine:  Fichier source de src/tileslib.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="atari logo.ico"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Atari STX_Engine
+   &#160;<span id="projectnumber">V1.0</span>
+   </div>
+   <div id="projectbrief">Bibliothéque de fonctions pour le moteur graphique des jeux</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_53411faf9a1f8ea0f45d840513ae40fc.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">tileslib.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="tileslib_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#ifndef _TILESLIBH_</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define _TILESLIBH_</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="type_8h.html">src\type.h</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keywordtype">short</span> <a class="code" href="group___tileslib.html#ga5b67614054cb53dd914bbcc9a6e7c3c9">STX_loadtilesmap</a>(<span class="keywordtype">char</span> *Pathtilemap, <span class="keywordtype">char</span> *Pathtileset);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">short</span> <a class="code" href="group___tileslib.html#gaf405b62949d37f1c171fd5f77dff2693">STX_savetilesmap</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> *saveadresse);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keywordtype">short</span> <a class="code" href="group___tileslib.html#ga74c625c1ea53acaf2280589e6d4c44ce">STX_restoretilesmap</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> *saveadresse);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___tileslib.html#ga826c3a2fd3a51dd9dcdca10de7439447">STX_gettilesmapsize</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> *MapWidth, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> *MapHeight);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___tileslib.html#gaaf04a4de7b367640499db488a65ce1f8">STX_releasetilesmap</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keywordtype">short</span> <a class="code" href="group___tileslib.html#gac04f6911f5de0d5e8d7016972d2974fd">STX_gettilepositionfromsprite</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> spriteid, <span class="keywordtype">short</span> xanchoroffset,<span class="keywordtype">short</span> yanchoroffset, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> *tilex, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> *tiley);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keywordtype">short</span> <a class="code" href="group___tileslib.html#ga1fcc13729fafa5a91c205290028957d2">STX_getscreenpositionfromtile</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> tilex, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> tiley,<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> *posx, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> *posy);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="group___tileslib.html#ga70bea6c604846f628ae51bb0d03601c9">STX_gettilevalue</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> tilex, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> tiley);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="group___tileslib.html#ga293ac2ff5330d92fa9d5f526abfa1f61">STX_gettileid</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> tilex, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> tiley);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="group___tileslib.html#gac4ddc40883756c5c442a85552ec85cb3">STX_gettilevaluefromtileid</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> tileid);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="group___tileslib.html#ga11ada3f1c992a427f04b318421eee140">STX_gettileprop1</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> tilevalue);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___tileslib.html#gaede9592a8ce93785508f3911c40aab4f">STX_settileprop1</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> tilevalue, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> property);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="group___tileslib.html#gaf28c75c6ac412e63a6be8dd3fe2cf774">STX_gettileprop2</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> tilevalue);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___tileslib.html#ga417adb0eed347bd3577515f72d3b62cc">STX_settileprop2</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> tilevalue, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> property);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="group___tileslib.html#gaf903526abcb0342bf71c0572635caabe">STX_gettileprop3</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> tilevalue);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___tileslib.html#gaf3c07be05eb5b1ce9a0405288ef7feea">STX_settileprop3</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> tilevalue, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> property);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___tileslib.html#ga40fffad7c2c4fc79ffc84f4c6da63f91">STX_settilesmaparea</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> posx, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> posy, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> tileW, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> tileH);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___tileslib.html#ga0aa62925780a1a87b64a01d306282af3">STX_drawtilesmap</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> tileX, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> tileY);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___tileslib.html#ga7ff5c64dba9171e14d6986da341609a0">STX_changetilevalue</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> tileX, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> tileY, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> newvalue);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___tileslib.html#gaaf76186ef6991541d1d54332bedf0d25">STX_redrawtile</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> tileX, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> tileY);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="agroup___tileslib_html_gaf903526abcb0342bf71c0572635caabe"><div class="ttname"><a href="group___tileslib.html#gaf903526abcb0342bf71c0572635caabe">STX_gettileprop3</a></div><div class="ttdeci">unsigned char STX_gettileprop3(unsigned short tilevalue)</div><div class="ttdoc">Recupére la propriété numero 3 d'un tile par rapport à sa valeur.</div></div>
+<div class="ttc" id="agroup___tileslib_html_gaf405b62949d37f1c171fd5f77dff2693"><div class="ttname"><a href="group___tileslib.html#gaf405b62949d37f1c171fd5f77dff2693">STX_savetilesmap</a></div><div class="ttdeci">short STX_savetilesmap(unsigned long int *saveadresse)</div><div class="ttdoc">Sauvegarde en mémoire la tilesmap en cours.</div></div>
+<div class="ttc" id="agroup___tileslib_html_gac04f6911f5de0d5e8d7016972d2974fd"><div class="ttname"><a href="group___tileslib.html#gac04f6911f5de0d5e8d7016972d2974fd">STX_gettilepositionfromsprite</a></div><div class="ttdeci">short STX_gettilepositionfromsprite(unsigned short spriteid, short xanchoroffset, short yanchoroffset, unsigned short *tilex, unsigned short *tiley)</div><div class="ttdoc">Fourni les coordonnées X et Y en tile d'un sprite sur la map.</div></div>
+<div class="ttc" id="agroup___tileslib_html_ga1fcc13729fafa5a91c205290028957d2"><div class="ttname"><a href="group___tileslib.html#ga1fcc13729fafa5a91c205290028957d2">STX_getscreenpositionfromtile</a></div><div class="ttdeci">short STX_getscreenpositionfromtile(unsigned short tilex, unsigned short tiley, unsigned short *posx, unsigned short *posy)</div><div class="ttdoc">Fourni les coordonnées X et Y en pixel (position écran) d'un tile situé dans la zone visible de la ma...</div></div>
+<div class="ttc" id="agroup___tileslib_html_ga11ada3f1c992a427f04b318421eee140"><div class="ttname"><a href="group___tileslib.html#ga11ada3f1c992a427f04b318421eee140">STX_gettileprop1</a></div><div class="ttdeci">unsigned char STX_gettileprop1(unsigned short tilevalue)</div><div class="ttdoc">Recupére la propriété numéro 1 d'un tile par rapport à sa valeur.</div></div>
+<div class="ttc" id="agroup___tileslib_html_gac4ddc40883756c5c442a85552ec85cb3"><div class="ttname"><a href="group___tileslib.html#gac4ddc40883756c5c442a85552ec85cb3">STX_gettilevaluefromtileid</a></div><div class="ttdeci">unsigned short STX_gettilevaluefromtileid(unsigned short tileid)</div><div class="ttdoc">fourni la valeur d'un tile par rapport à un id</div></div>
+<div class="ttc" id="agroup___tileslib_html_ga70bea6c604846f628ae51bb0d03601c9"><div class="ttname"><a href="group___tileslib.html#ga70bea6c604846f628ae51bb0d03601c9">STX_gettilevalue</a></div><div class="ttdeci">unsigned short STX_gettilevalue(unsigned short tilex, unsigned short tiley)</div><div class="ttdoc">fourni la valeur d'un tile par rapport à ces coordonnées dans la map</div></div>
+<div class="ttc" id="agroup___tileslib_html_ga74c625c1ea53acaf2280589e6d4c44ce"><div class="ttname"><a href="group___tileslib.html#ga74c625c1ea53acaf2280589e6d4c44ce">STX_restoretilesmap</a></div><div class="ttdeci">short STX_restoretilesmap(unsigned long int *saveadresse)</div><div class="ttdoc">Restore la tilesmap qui à été sauvegardée.</div></div>
+<div class="ttc" id="agroup___tileslib_html_ga40fffad7c2c4fc79ffc84f4c6da63f91"><div class="ttname"><a href="group___tileslib.html#ga40fffad7c2c4fc79ffc84f4c6da63f91">STX_settilesmaparea</a></div><div class="ttdeci">int STX_settilesmaparea(unsigned short posx, unsigned short posy, unsigned char tileW, unsigned char tileH)</div><div class="ttdoc">Defini taille affichable de le tilesmap ainsi que sa position de départ à l'écran.</div></div>
+<div class="ttc" id="agroup___tileslib_html_gaf3c07be05eb5b1ce9a0405288ef7feea"><div class="ttname"><a href="group___tileslib.html#gaf3c07be05eb5b1ce9a0405288ef7feea">STX_settileprop3</a></div><div class="ttdeci">void STX_settileprop3(unsigned short tilevalue, unsigned char property)</div><div class="ttdoc">permet de modifier la propriété 3 associée à la valeur d'un tile</div></div>
+<div class="ttc" id="agroup___tileslib_html_gaf28c75c6ac412e63a6be8dd3fe2cf774"><div class="ttname"><a href="group___tileslib.html#gaf28c75c6ac412e63a6be8dd3fe2cf774">STX_gettileprop2</a></div><div class="ttdeci">unsigned char STX_gettileprop2(unsigned short tilevalue)</div><div class="ttdoc">Recupére la propriété numéro 2 d'un tile par rapport à sa valeur.</div></div>
+<div class="ttc" id="atype_8h_html"><div class="ttname"><a href="type_8h.html">type.h</a></div></div>
+<div class="ttc" id="agroup___tileslib_html_ga5b67614054cb53dd914bbcc9a6e7c3c9"><div class="ttname"><a href="group___tileslib.html#ga5b67614054cb53dd914bbcc9a6e7c3c9">STX_loadtilesmap</a></div><div class="ttdeci">short STX_loadtilesmap(char *Pathtilemap, char *Pathtileset)</div><div class="ttdoc">Charge en memoire un fichier de definition d'une tilesmap au format TLM et le fichier des tileset au ...</div></div>
+<div class="ttc" id="agroup___tileslib_html_gaaf04a4de7b367640499db488a65ce1f8"><div class="ttname"><a href="group___tileslib.html#gaaf04a4de7b367640499db488a65ce1f8">STX_releasetilesmap</a></div><div class="ttdeci">void STX_releasetilesmap(void)</div><div class="ttdoc">Libération des resources utilisées par la tilesmap.</div></div>
+<div class="ttc" id="agroup___tileslib_html_gaede9592a8ce93785508f3911c40aab4f"><div class="ttname"><a href="group___tileslib.html#gaede9592a8ce93785508f3911c40aab4f">STX_settileprop1</a></div><div class="ttdeci">void STX_settileprop1(unsigned short tilevalue, unsigned char property)</div><div class="ttdoc">permet de modifier la propriété 1 associée à la valeur d'un tile</div></div>
+<div class="ttc" id="agroup___tileslib_html_ga826c3a2fd3a51dd9dcdca10de7439447"><div class="ttname"><a href="group___tileslib.html#ga826c3a2fd3a51dd9dcdca10de7439447">STX_gettilesmapsize</a></div><div class="ttdeci">void STX_gettilesmapsize(unsigned short *MapWidth, unsigned short *MapHeight)</div><div class="ttdoc">Fourni les dimensions en tiles de la map.</div></div>
+<div class="ttc" id="agroup___tileslib_html_ga7ff5c64dba9171e14d6986da341609a0"><div class="ttname"><a href="group___tileslib.html#ga7ff5c64dba9171e14d6986da341609a0">STX_changetilevalue</a></div><div class="ttdeci">int STX_changetilevalue(unsigned short tileX, unsigned short tileY, unsigned short newvalue)</div><div class="ttdoc">Modifie la valeur du tile au coordonnée X et Y dans la tilesmap.</div></div>
+<div class="ttc" id="agroup___tileslib_html_ga417adb0eed347bd3577515f72d3b62cc"><div class="ttname"><a href="group___tileslib.html#ga417adb0eed347bd3577515f72d3b62cc">STX_settileprop2</a></div><div class="ttdeci">void STX_settileprop2(unsigned short tilevalue, unsigned char property)</div><div class="ttdoc">permet de modifier la propriété 2 associée à la valeur d'un tile</div></div>
+<div class="ttc" id="agroup___tileslib_html_gaaf76186ef6991541d1d54332bedf0d25"><div class="ttname"><a href="group___tileslib.html#gaaf76186ef6991541d1d54332bedf0d25">STX_redrawtile</a></div><div class="ttdeci">int STX_redrawtile(unsigned short tileX, unsigned short tileY)</div><div class="ttdoc">Redessine un tile au coordonnée X et Y dans la tilesmap.</div></div>
+<div class="ttc" id="agroup___tileslib_html_ga293ac2ff5330d92fa9d5f526abfa1f61"><div class="ttname"><a href="group___tileslib.html#ga293ac2ff5330d92fa9d5f526abfa1f61">STX_gettileid</a></div><div class="ttdeci">unsigned short STX_gettileid(unsigned short tilex, unsigned short tiley)</div><div class="ttdoc">fourni la valeur et l'id d'un tile par rapport à ces coordonnées dans la map</div></div>
+<div class="ttc" id="agroup___tileslib_html_ga0aa62925780a1a87b64a01d306282af3"><div class="ttname"><a href="group___tileslib.html#ga0aa62925780a1a87b64a01d306282af3">STX_drawtilesmap</a></div><div class="ttdeci">void STX_drawtilesmap(unsigned short tileX, unsigned short tileY)</div><div class="ttdoc">Dessine la map à partir du tile en position X et Y.</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.16
+</small></address>
+</body>
+</html>

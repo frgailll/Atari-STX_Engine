@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Atari STX_Engine:  Fichier source de src/imagelib.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="atari logo.ico"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Atari STX_Engine
+   &#160;<span id="projectnumber">V1.0</span>
+   </div>
+   <div id="projectbrief">Bibliothéque de fonctions pour le moteur graphique des jeux</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_53411faf9a1f8ea0f45d840513ae40fc.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">imagelib.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="imagelib_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#ifndef _IMAGELIBH_</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define _IMAGELIBH_</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="group___imagelib.html#gaf9980575c8e1dd014484ddc13e7579c8">   23</a></span>&#160;<span class="preprocessor">#define     STX_PICTURESIZE     32000                   </span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">int STX_loadpicture(STX_picturetype type,char *path,long int *memory);</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___imagelib.html#ga4a328fb741dc51170aff6d1a4a6fd380">STX_blitloadedpicture</a>(<span class="keywordtype">long</span> <span class="keywordtype">int</span> *srcaddr, <span class="keywordtype">long</span> <span class="keywordtype">int</span> *destaddr, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> src_x, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> src_y, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> src_width,<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> src_height, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> dest_x,<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> dest_y);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___imagelib.html#ga875a1f83192296add6691eeb70992521">STX_displayspriteset</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> motifid, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> posx, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> posy, <a class="code" href="group___imagelib.html#gaac5fc11bffa7b371e0eb076666a68632">STX_displaymode</a> mode);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="agroup___imagelib_html_ga4a328fb741dc51170aff6d1a4a6fd380"><div class="ttname"><a href="group___imagelib.html#ga4a328fb741dc51170aff6d1a4a6fd380">STX_blitloadedpicture</a></div><div class="ttdeci">void STX_blitloadedpicture(long int *srcaddr, long int *destaddr, unsigned short src_x, unsigned short src_y, unsigned short src_width, unsigned short src_height, unsigned short dest_x, unsigned short dest_y)</div><div class="ttdoc">copie l'image ou une partie de l'image de la memoire source à une position dans une memoire destinati...</div></div>
+<div class="ttc" id="agroup___imagelib_html_ga875a1f83192296add6691eeb70992521"><div class="ttname"><a href="group___imagelib.html#ga875a1f83192296add6691eeb70992521">STX_displayspriteset</a></div><div class="ttdeci">void STX_displayspriteset(unsigned short motifid, unsigned short posx, unsigned short posy, STX_displaymode mode)</div><div class="ttdoc">affiche un motif de spriteset en tant qu'image, pas de mémorisation de l'arriére plan</div></div>
+<div class="ttc" id="agroup___imagelib_html_gaac5fc11bffa7b371e0eb076666a68632"><div class="ttname"><a href="group___imagelib.html#gaac5fc11bffa7b371e0eb076666a68632">STX_displaymode</a></div><div class="ttdeci">STX_displaymode</div><div class="ttdoc">Enumeration des mode d'affichage des spriteset en tant que image.</div><div class="ttdef"><b>Definition:</b> type.h:100</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.16
+</small></address>
+</body>
+</html>

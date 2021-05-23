@@ -1,0 +1,507 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Atari STX_Engine: Control des effets audio et de la lecture d&#39;echantillons DMA</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="atari logo.ico"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Atari STX_Engine
+   &#160;<span id="projectnumber">V1.0</span>
+   </div>
+   <div id="projectbrief">Bibliothéque de fonctions pour le moteur graphique des jeux</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#enum-members">Énumérations</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Control des effets audio et de la lecture d'echantillons DMA</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Énumérations</h2></td></tr>
+<tr class="memitem:ga68d9143df34801515c6ed7ae2dbcd64f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___soundlib.html#ga68d9143df34801515c6ed7ae2dbcd64f">STX_sndtimerdiv</a> { <br />
+&#160;&#160;<a class="el" href="group___soundlib.html#gga68d9143df34801515c6ed7ae2dbcd64fafd673dd0902bd9851e1e24da847c3594">DIV4</a> =(unsigned short)0x0001, 
+<a class="el" href="group___soundlib.html#gga68d9143df34801515c6ed7ae2dbcd64fab9a179a230a8d26fbc9232998da83638">DIV10</a> =(unsigned short)0x0002, 
+<a class="el" href="group___soundlib.html#gga68d9143df34801515c6ed7ae2dbcd64fa892fd83911da21980b01397a7f9ebe01">DIV16</a> =(unsigned short)0x0003, 
+<a class="el" href="group___soundlib.html#gga68d9143df34801515c6ed7ae2dbcd64fa3f8646a1d4d0e1fb789113ed82c90031">DIV50</a> =(unsigned short)0x0004, 
+<br />
+&#160;&#160;<a class="el" href="group___soundlib.html#gga68d9143df34801515c6ed7ae2dbcd64fabae69f433c0382aefc926500c9045df6">DIV64</a> =(unsigned short)0x0005, 
+<a class="el" href="group___soundlib.html#gga68d9143df34801515c6ed7ae2dbcd64fa8c0473f3ab5e20800b6d9eb1f26473c9">DIV100</a> =(unsigned short)0x0006, 
+<a class="el" href="group___soundlib.html#gga68d9143df34801515c6ed7ae2dbcd64fade8af20968976f08e818e0a88210f6d7">DIV200</a> =(unsigned short)0x0007
+<br />
+ }</td></tr>
+<tr class="memdesc:ga68d9143df34801515c6ed7ae2dbcd64f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration des valeurs possibles pour definir la valeur du diviseur de fréquence du timer D du MFP.  <a href="group___soundlib.html#ga68d9143df34801515c6ed7ae2dbcd64f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga68d9143df34801515c6ed7ae2dbcd64f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:ga8b28ee0485f125ffe582c29f0ef1ca2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___soundlib.html#ga8b28ee0485f125ffe582c29f0ef1ca2f">STX_setsoundtimer</a> (<a class="el" href="group___soundlib.html#ga68d9143df34801515c6ed7ae2dbcd64f">STX_sndtimerdiv</a> div, unsigned char compteur)</td></tr>
+<tr class="memdesc:ga8b28ee0485f125ffe582c29f0ef1ca2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de fixer la base de temps du timer en charge des effets audios en interruption.  <a href="group___soundlib.html#ga8b28ee0485f125ffe582c29f0ef1ca2f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga8b28ee0485f125ffe582c29f0ef1ca2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1ab101969328e6d44c45be3ec7635f74"><td class="memItemLeft" align="right" valign="top">long int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___soundlib.html#ga1ab101969328e6d44c45be3ec7635f74">STX_loadsoundeffect</a> (char *Path)</td></tr>
+<tr class="memdesc:ga1ab101969328e6d44c45be3ec7635f74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de charger en mémoire un fichier d'effet audio avec l'extension .AEF.  <a href="group___soundlib.html#ga1ab101969328e6d44c45be3ec7635f74">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga1ab101969328e6d44c45be3ec7635f74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga385eab3a6403d682ed562b073913c2ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___soundlib.html#ga385eab3a6403d682ed562b073913c2ef">STX_unloadsoundeffect</a> (long int *memory)</td></tr>
+<tr class="memdesc:ga385eab3a6403d682ed562b073913c2ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de décharger de la mémoire un fichier d'effet audio .AEF.  <a href="group___soundlib.html#ga385eab3a6403d682ed562b073913c2ef">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga385eab3a6403d682ed562b073913c2ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaefdca341a10c24b8ba47add8432adcd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___soundlib.html#gaefdca341a10c24b8ba47add8432adcd5">STX_playsound1</a> (long int *memory, <a class="el" href="group___s_t_x___engine.html#ga97a80ca1602ebf2303258971a2c938e2">bool</a> boucle)</td></tr>
+<tr class="memdesc:gaefdca341a10c24b8ba47add8432adcd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de jouer un effet audio chargé en mémoire sur le player 1.  <a href="group___soundlib.html#gaefdca341a10c24b8ba47add8432adcd5">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gaefdca341a10c24b8ba47add8432adcd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae508b850220fbdb57fe1602d1df9751b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___soundlib.html#gae508b850220fbdb57fe1602d1df9751b">STX_playsound2</a> (long int *memory, <a class="el" href="group___s_t_x___engine.html#ga97a80ca1602ebf2303258971a2c938e2">bool</a> boucle)</td></tr>
+<tr class="memdesc:gae508b850220fbdb57fe1602d1df9751b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de jouer un effet audio chargé en mémoire sur le player 2.  <a href="group___soundlib.html#gae508b850220fbdb57fe1602d1df9751b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gae508b850220fbdb57fe1602d1df9751b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2fb85c027dcdf7bfdef210303c455852"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___soundlib.html#ga2fb85c027dcdf7bfdef210303c455852">STX_playsound3</a> (long int *memory, <a class="el" href="group___s_t_x___engine.html#ga97a80ca1602ebf2303258971a2c938e2">bool</a> boucle)</td></tr>
+<tr class="memdesc:ga2fb85c027dcdf7bfdef210303c455852"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de jouer un effet audio chargé en mémoire sur le player 3.  <a href="group___soundlib.html#ga2fb85c027dcdf7bfdef210303c455852">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga2fb85c027dcdf7bfdef210303c455852"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab5d10ab84fb2f3244b19cfe02b14a849"><td class="memItemLeft" align="right" valign="top"><a id="gab5d10ab84fb2f3244b19cfe02b14a849"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___soundlib.html#gab5d10ab84fb2f3244b19cfe02b14a849">STX_Stopsound1</a> (void)</td></tr>
+<tr class="memdesc:gab5d10ab84fb2f3244b19cfe02b14a849"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop le player 1. <br /></td></tr>
+<tr class="separator:gab5d10ab84fb2f3244b19cfe02b14a849"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaafa4fadd306c0a0de015c2a68f2f3bc"><td class="memItemLeft" align="right" valign="top"><a id="gaaafa4fadd306c0a0de015c2a68f2f3bc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___soundlib.html#gaaafa4fadd306c0a0de015c2a68f2f3bc">STX_Stopsound2</a> (void)</td></tr>
+<tr class="memdesc:gaaafa4fadd306c0a0de015c2a68f2f3bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop le player 2. <br /></td></tr>
+<tr class="separator:gaaafa4fadd306c0a0de015c2a68f2f3bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0160336c7c66c565f4c2c6b335d0ac3f"><td class="memItemLeft" align="right" valign="top"><a id="ga0160336c7c66c565f4c2c6b335d0ac3f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___soundlib.html#ga0160336c7c66c565f4c2c6b335d0ac3f">STX_Stopsound3</a> (void)</td></tr>
+<tr class="memdesc:ga0160336c7c66c565f4c2c6b335d0ac3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop le player 3. <br /></td></tr>
+<tr class="separator:ga0160336c7c66c565f4c2c6b335d0ac3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5b28a09f03741b3b07e80fc08b0217ed"><td class="memItemLeft" align="right" valign="top"><a id="ga5b28a09f03741b3b07e80fc08b0217ed"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___soundlib.html#ga5b28a09f03741b3b07e80fc08b0217ed">STX_mutesound</a> ()</td></tr>
+<tr class="memdesc:ga5b28a09f03741b3b07e80fc08b0217ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coupe tous les players audio en cours. <br /></td></tr>
+<tr class="separator:ga5b28a09f03741b3b07e80fc08b0217ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga814a137034d7948551cdb19addfeced8"><td class="memItemLeft" align="right" valign="top">long int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___soundlib.html#ga814a137034d7948551cdb19addfeced8">STX_loaddmasample</a> (char *Path)</td></tr>
+<tr class="memdesc:ga814a137034d7948551cdb19addfeced8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de charger en mémoire un fichier d'echantillons .ADS pour la lecture DMA.  <a href="group___soundlib.html#ga814a137034d7948551cdb19addfeced8">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga814a137034d7948551cdb19addfeced8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0915469118ea6292d7063c4acf6ed147"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___soundlib.html#ga0915469118ea6292d7063c4acf6ed147">STX_unloaddmasample</a> (long int *memory)</td></tr>
+<tr class="memdesc:ga0915469118ea6292d7063c4acf6ed147"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de décharger de la mémoire un fichier .ADS d'echantillons DMA.  <a href="group___soundlib.html#ga0915469118ea6292d7063c4acf6ed147">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga0915469118ea6292d7063c4acf6ed147"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5e7655acbf74ff4114d70dd930c96ee3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___soundlib.html#ga5e7655acbf74ff4114d70dd930c96ee3">STX_playdmasample</a> (long int *memory, <a class="el" href="group___s_t_x___engine.html#ga97a80ca1602ebf2303258971a2c938e2">bool</a> boucle)</td></tr>
+<tr class="memdesc:ga5e7655acbf74ff4114d70dd930c96ee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de jouer un fichier .ADS d'echantillons DMA.  <a href="group___soundlib.html#ga5e7655acbf74ff4114d70dd930c96ee3">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga5e7655acbf74ff4114d70dd930c96ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6f3d3ab245806ae70fed83eba4b99910"><td class="memItemLeft" align="right" valign="top"><a id="ga6f3d3ab245806ae70fed83eba4b99910"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___soundlib.html#ga6f3d3ab245806ae70fed83eba4b99910">STX_stopdmasample</a> ()</td></tr>
+<tr class="memdesc:ga6f3d3ab245806ae70fed83eba4b99910"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop un fichier .ADS d'echantillons DMA en cours. <br /></td></tr>
+<tr class="separator:ga6f3d3ab245806ae70fed83eba4b99910"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf81fe1eee7129ed28d2e9adcccf23586"><td class="memItemLeft" align="right" valign="top"><a id="gaf81fe1eee7129ed28d2e9adcccf23586"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___soundlib.html#gaf81fe1eee7129ed28d2e9adcccf23586">STX_setdmasampleinterrupt</a> ()</td></tr>
+<tr class="memdesc:gaf81fe1eee7129ed28d2e9adcccf23586"><td class="mdescLeft">&#160;</td><td class="mdescRight">Active l'appel de la fonction <a class="el" href="group___soundlib.html#ga0b14a3190ddca62a0f887d87ea74028e" title="Fonction appeleé à la fin de chaque lecture d&#39;echantillons DMA si STX_setdmasampleinterrupt() aà été ...">STX_dmasampleendframe()</a> en fin de lecture d'echantillons DMA. <br /></td></tr>
+<tr class="separator:gaf81fe1eee7129ed28d2e9adcccf23586"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaffedc9942872676ff2915a96a10a49c6"><td class="memItemLeft" align="right" valign="top"><a id="gaffedc9942872676ff2915a96a10a49c6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___soundlib.html#gaffedc9942872676ff2915a96a10a49c6">STX_removedmasampleinterrupt</a> ()</td></tr>
+<tr class="memdesc:gaffedc9942872676ff2915a96a10a49c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Désactive l'appel de la fonction <a class="el" href="group___soundlib.html#ga0b14a3190ddca62a0f887d87ea74028e" title="Fonction appeleé à la fin de chaque lecture d&#39;echantillons DMA si STX_setdmasampleinterrupt() aà été ...">STX_dmasampleendframe()</a> en fin de lecture d'echantillons DMA. <br /></td></tr>
+<tr class="separator:gaffedc9942872676ff2915a96a10a49c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0b14a3190ddca62a0f887d87ea74028e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___soundlib.html#ga0b14a3190ddca62a0f887d87ea74028e">STX_dmasampleendframe</a> ()</td></tr>
+<tr class="memdesc:ga0b14a3190ddca62a0f887d87ea74028e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction appeleé à la fin de chaque lecture d'echantillons DMA si <a class="el" href="group___soundlib.html#gaf81fe1eee7129ed28d2e9adcccf23586" title="Active l&#39;appel de la fonction STX_dmasampleendframe() en fin de lecture d&#39;echantillons DMA.">STX_setdmasampleinterrupt()</a> aà été appelée auparavent. .  <a href="group___soundlib.html#ga0b14a3190ddca62a0f887d87ea74028e">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga0b14a3190ddca62a0f887d87ea74028e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<h2 class="groupheader">Documentation du type de l'énumération</h2>
+<a id="ga68d9143df34801515c6ed7ae2dbcd64f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga68d9143df34801515c6ed7ae2dbcd64f">&#9670;&nbsp;</a></span>STX_sndtimerdiv</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___soundlib.html#ga68d9143df34801515c6ed7ae2dbcd64f">STX_sndtimerdiv</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enumeration des valeurs possibles pour definir la valeur du diviseur de fréquence du timer D du MFP. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="gga68d9143df34801515c6ed7ae2dbcd64fafd673dd0902bd9851e1e24da847c3594"></a>DIV4&#160;</td><td class="fielddoc"><p>fréquence timer D de 614400 Hz </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68d9143df34801515c6ed7ae2dbcd64fab9a179a230a8d26fbc9232998da83638"></a>DIV10&#160;</td><td class="fielddoc"><p>fréquence timer D de 245760 Hz </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68d9143df34801515c6ed7ae2dbcd64fa892fd83911da21980b01397a7f9ebe01"></a>DIV16&#160;</td><td class="fielddoc"><p>fréquence timer D de 153600 Hz </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68d9143df34801515c6ed7ae2dbcd64fa3f8646a1d4d0e1fb789113ed82c90031"></a>DIV50&#160;</td><td class="fielddoc"><p>fréquence timer D de 49152 Hz </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68d9143df34801515c6ed7ae2dbcd64fabae69f433c0382aefc926500c9045df6"></a>DIV64&#160;</td><td class="fielddoc"><p>fréquence timer D de 38400 Hz </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68d9143df34801515c6ed7ae2dbcd64fa8c0473f3ab5e20800b6d9eb1f26473c9"></a>DIV100&#160;</td><td class="fielddoc"><p>fréquence timer D de 24576 Hz </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68d9143df34801515c6ed7ae2dbcd64fade8af20968976f08e818e0a88210f6d7"></a>DIV200&#160;</td><td class="fielddoc"><p>fréquence timer D de 12288 Hz </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="ga0b14a3190ddca62a0f887d87ea74028e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0b14a3190ddca62a0f887d87ea74028e">&#9670;&nbsp;</a></span>STX_dmasampleendframe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void STX_dmasampleendframe </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction appeleé à la fin de chaque lecture d'echantillons DMA si <a class="el" href="group___soundlib.html#gaf81fe1eee7129ed28d2e9adcccf23586" title="Active l&#39;appel de la fonction STX_dmasampleendframe() en fin de lecture d&#39;echantillons DMA.">STX_setdmasampleinterrupt()</a> aà été appelée auparavent. . </p>
+<dl class="section note"><dt>Note</dt><dd>Cette fonction doit être impérativement implémementée dans le code C, dans le cas contraire une erreur de linkage interviendra. </dd></dl>
+
+</div>
+</div>
+<a id="ga814a137034d7948551cdb19addfeced8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga814a137034d7948551cdb19addfeced8">&#9670;&nbsp;</a></span>STX_loaddmasample()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long int* STX_loaddmasample </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>Path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Permet de charger en mémoire un fichier d'echantillons .ADS pour la lecture DMA. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Path</td><td>: Pointeur sur le chemin d'accés et le nom du fichier ADS </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Pointeur sur l'adresse de stockage du fichier en mémoire, sinon 0 en cas d'erreur </dd></dl>
+
+</div>
+</div>
+<a id="ga1ab101969328e6d44c45be3ec7635f74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1ab101969328e6d44c45be3ec7635f74">&#9670;&nbsp;</a></span>STX_loadsoundeffect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long int* STX_loadsoundeffect </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>Path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Permet de charger en mémoire un fichier d'effet audio avec l'extension .AEF. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Path</td><td>: Pointeur sur le chemin d'accés et le nom du fichier AEF </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Pointeur sur l'adresse de stockage du fichier en mémoire, sinon 0 en cas d'erreur </dd></dl>
+
+</div>
+</div>
+<a id="ga5e7655acbf74ff4114d70dd930c96ee3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5e7655acbf74ff4114d70dd930c96ee3">&#9670;&nbsp;</a></span>STX_playdmasample()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void STX_playdmasample </td>
+          <td>(</td>
+          <td class="paramtype">long int *&#160;</td>
+          <td class="paramname"><em>memory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___s_t_x___engine.html#ga97a80ca1602ebf2303258971a2c938e2">bool</a>&#160;</td>
+          <td class="paramname"><em>boucle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Permet de jouer un fichier .ADS d'echantillons DMA. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">memory</td><td>: Pointeur sur l'adresse de stockage du fichier en mémoire </td></tr>
+    <tr><td class="paramname">boucle</td><td>: si true, joue les echantillons en boucle </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gaefdca341a10c24b8ba47add8432adcd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaefdca341a10c24b8ba47add8432adcd5">&#9670;&nbsp;</a></span>STX_playsound1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void STX_playsound1 </td>
+          <td>(</td>
+          <td class="paramtype">long int *&#160;</td>
+          <td class="paramname"><em>memory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___s_t_x___engine.html#ga97a80ca1602ebf2303258971a2c938e2">bool</a>&#160;</td>
+          <td class="paramname"><em>boucle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Permet de jouer un effet audio chargé en mémoire sur le player 1. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">memory</td><td>: Pointeur sur l'adresse de stockage du fichier en mémoire </td></tr>
+    <tr><td class="paramname">boucle</td><td>: si true, joue l'effet audio en boucle </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gae508b850220fbdb57fe1602d1df9751b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae508b850220fbdb57fe1602d1df9751b">&#9670;&nbsp;</a></span>STX_playsound2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void STX_playsound2 </td>
+          <td>(</td>
+          <td class="paramtype">long int *&#160;</td>
+          <td class="paramname"><em>memory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___s_t_x___engine.html#ga97a80ca1602ebf2303258971a2c938e2">bool</a>&#160;</td>
+          <td class="paramname"><em>boucle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Permet de jouer un effet audio chargé en mémoire sur le player 2. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">memory</td><td>: Pointeur sur l'adresse de stockage du fichier en mémoire </td></tr>
+    <tr><td class="paramname">boucle</td><td>: si true, joue l'effet audio en boucle </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga2fb85c027dcdf7bfdef210303c455852"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2fb85c027dcdf7bfdef210303c455852">&#9670;&nbsp;</a></span>STX_playsound3()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void STX_playsound3 </td>
+          <td>(</td>
+          <td class="paramtype">long int *&#160;</td>
+          <td class="paramname"><em>memory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___s_t_x___engine.html#ga97a80ca1602ebf2303258971a2c938e2">bool</a>&#160;</td>
+          <td class="paramname"><em>boucle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Permet de jouer un effet audio chargé en mémoire sur le player 3. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">memory</td><td>: Pointeur sur l'adresse de stockage du fichier en mémoire </td></tr>
+    <tr><td class="paramname">boucle</td><td>: si true, joue l'effet audio en boucle </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga8b28ee0485f125ffe582c29f0ef1ca2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8b28ee0485f125ffe582c29f0ef1ca2f">&#9670;&nbsp;</a></span>STX_setsoundtimer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void STX_setsoundtimer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___soundlib.html#ga68d9143df34801515c6ed7ae2dbcd64f">STX_sndtimerdiv</a>&#160;</td>
+          <td class="paramname"><em>div</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>compteur</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Permet de fixer la base de temps du timer en charge des effets audios en interruption. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">div</td><td>: valeur correspondant au diviseur interne du timer </td></tr>
+    <tr><td class="paramname">compteur</td><td>: valeur de compteur du timer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>Voir également</dt><dd><a class="el" href="group___soundlib.html#ga68d9143df34801515c6ed7ae2dbcd64f" title="Enumeration des valeurs possibles pour definir la valeur du diviseur de fréquence du timer D du MFP.">STX_sndtimerdiv</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga0915469118ea6292d7063c4acf6ed147"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0915469118ea6292d7063c4acf6ed147">&#9670;&nbsp;</a></span>STX_unloaddmasample()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void STX_unloaddmasample </td>
+          <td>(</td>
+          <td class="paramtype">long int *&#160;</td>
+          <td class="paramname"><em>memory</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Permet de décharger de la mémoire un fichier .ADS d'echantillons DMA. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">memory</td><td>: Pointeur sur l'adresse de stockage du fichier en mémoire </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga385eab3a6403d682ed562b073913c2ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga385eab3a6403d682ed562b073913c2ef">&#9670;&nbsp;</a></span>STX_unloadsoundeffect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void STX_unloadsoundeffect </td>
+          <td>(</td>
+          <td class="paramtype">long int *&#160;</td>
+          <td class="paramname"><em>memory</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Permet de décharger de la mémoire un fichier d'effet audio .AEF. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">memory</td><td>: Pointeur sur l'adresse de stockage du fichier en mémoire </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.16
+</small></address>
+</body>
+</html>

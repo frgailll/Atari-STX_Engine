@@ -1,0 +1,838 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Atari STX_Engine: Gestion des caractères en mode graphique</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="atari logo.ico"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Atari STX_Engine
+   &#160;<span id="projectnumber">V1.0</span>
+   </div>
+   <div id="projectbrief">Bibliothéque de fonctions pour le moteur graphique des jeux</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#enum-members">Énumérations</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Gestion des caractères en mode graphique</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Énumérations</h2></td></tr>
+<tr class="memitem:gaf293f1e0dbd5297786ae48f68b54f9c3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___charsetlib.html#gaf293f1e0dbd5297786ae48f68b54f9c3">STX_displaysens</a> { <a class="el" href="group___charsetlib.html#ggaf293f1e0dbd5297786ae48f68b54f9c3a900874f156af5b7367ce28d30f665383">HOR</a> =(bool)TRUE, 
+<a class="el" href="group___charsetlib.html#ggaf293f1e0dbd5297786ae48f68b54f9c3ab02e8398372770d34ca3f67581a1bdfa">VER</a> =(bool)FALSE
+ }</td></tr>
+<tr class="memdesc:gaf293f1e0dbd5297786ae48f68b54f9c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration des sens d'affichage d'un string de charsets.  <a href="group___charsetlib.html#gaf293f1e0dbd5297786ae48f68b54f9c3">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gaf293f1e0dbd5297786ae48f68b54f9c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:gaf709f9b8170b4007e11695373632dc95"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___charsetlib.html#gaf709f9b8170b4007e11695373632dc95">STX_loadcharset</a> (char *Path)</td></tr>
+<tr class="memdesc:gaf709f9b8170b4007e11695373632dc95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de charger en mémoire un fichier de charset au format .CRS.  <a href="group___charsetlib.html#gaf709f9b8170b4007e11695373632dc95">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gaf709f9b8170b4007e11695373632dc95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacc197129112d8559836128164cda7538"><td class="memItemLeft" align="right" valign="top"><a id="gacc197129112d8559836128164cda7538"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___charsetlib.html#gacc197129112d8559836128164cda7538">STX_Unloadcharset</a> ()</td></tr>
+<tr class="memdesc:gacc197129112d8559836128164cda7538"><td class="mdescLeft">&#160;</td><td class="mdescRight">decharge les charset et libère la mémoire <br /></td></tr>
+<tr class="separator:gacc197129112d8559836128164cda7538"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga064262df7eb269390f0f4c93be33a06b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___charsetlib.html#ga064262df7eb269390f0f4c93be33a06b">STX_printstring</a> (unsigned short carx, unsigned short cary, unsigned char color, <a class="el" href="group___imagelib.html#gaac5fc11bffa7b371e0eb076666a68632">STX_displaymode</a> mode, <a class="el" href="group___charsetlib.html#gaf293f1e0dbd5297786ae48f68b54f9c3">STX_displaysens</a> sens, char *text)</td></tr>
+<tr class="memdesc:ga064262df7eb269390f0f4c93be33a06b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche une chaine de caractère en utilisant les charsets.  <a href="group___charsetlib.html#ga064262df7eb269390f0f4c93be33a06b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga064262df7eb269390f0f4c93be33a06b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4b500dc6da5d3c8ebc432eb4477c24c2"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___charsetlib.html#ga4b500dc6da5d3c8ebc432eb4477c24c2">STX_charto2digit</a> (char value, <a class="el" href="group___s_t_x___engine.html#ga97a80ca1602ebf2303258971a2c938e2">bool</a> showzero)</td></tr>
+<tr class="memdesc:ga4b500dc6da5d3c8ebc432eb4477c24c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convertie en une chaine de caractère de 2 digit une valeur decimal d'un octet (0 à 99)  <a href="group___charsetlib.html#ga4b500dc6da5d3c8ebc432eb4477c24c2">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga4b500dc6da5d3c8ebc432eb4477c24c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga724e9e5d4784b873362efa99f15c9a7e"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___charsetlib.html#ga724e9e5d4784b873362efa99f15c9a7e">STX_shortto3digit</a> (short value, <a class="el" href="group___s_t_x___engine.html#ga97a80ca1602ebf2303258971a2c938e2">bool</a> showzero)</td></tr>
+<tr class="memdesc:ga724e9e5d4784b873362efa99f15c9a7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convertie en une chaine de caractère de 3 digit une valeur decimal d'un mot (0 à 999)  <a href="group___charsetlib.html#ga724e9e5d4784b873362efa99f15c9a7e">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga724e9e5d4784b873362efa99f15c9a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabc2321d0a4d4298561a6489711e618bf"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___charsetlib.html#gabc2321d0a4d4298561a6489711e618bf">STX_shortto4digit</a> (short value, <a class="el" href="group___s_t_x___engine.html#ga97a80ca1602ebf2303258971a2c938e2">bool</a> showzero)</td></tr>
+<tr class="memdesc:gabc2321d0a4d4298561a6489711e618bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convertie en une chaine de caractère de 4 digit une valeur decimal d'un mot (0 à 9 999)  <a href="group___charsetlib.html#gabc2321d0a4d4298561a6489711e618bf">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gabc2321d0a4d4298561a6489711e618bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaad7c1e4c5b63819581e36dc9d3ae1ba8"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___charsetlib.html#gaad7c1e4c5b63819581e36dc9d3ae1ba8">STX_longto5digit</a> (long int value, <a class="el" href="group___s_t_x___engine.html#ga97a80ca1602ebf2303258971a2c938e2">bool</a> showzero)</td></tr>
+<tr class="memdesc:gaad7c1e4c5b63819581e36dc9d3ae1ba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convertie en une chaine de caractère de 5 digit une valeur decimal d'un mot long (0 à 99 999)  <a href="group___charsetlib.html#gaad7c1e4c5b63819581e36dc9d3ae1ba8">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gaad7c1e4c5b63819581e36dc9d3ae1ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1755078d247c96206e56f9e282c7df71"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___charsetlib.html#ga1755078d247c96206e56f9e282c7df71">STX_longto6digit</a> (long int value, <a class="el" href="group___s_t_x___engine.html#ga97a80ca1602ebf2303258971a2c938e2">bool</a> showzero)</td></tr>
+<tr class="memdesc:ga1755078d247c96206e56f9e282c7df71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convertie en une chaine de caractère de 6 digit une valeur decimal d'un mot long (0 à 999 999)  <a href="group___charsetlib.html#ga1755078d247c96206e56f9e282c7df71">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga1755078d247c96206e56f9e282c7df71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac2de9c6f2af070bb6c90143bbfd94451"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___charsetlib.html#gac2de9c6f2af070bb6c90143bbfd94451">STX_longto7digit</a> (long int value, <a class="el" href="group___s_t_x___engine.html#ga97a80ca1602ebf2303258971a2c938e2">bool</a> showzero)</td></tr>
+<tr class="memdesc:gac2de9c6f2af070bb6c90143bbfd94451"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convertie en une chaine de caractère de 7 digit une valeur decimal d'un mot long (0 à 9 999 999)  <a href="group___charsetlib.html#gac2de9c6f2af070bb6c90143bbfd94451">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gac2de9c6f2af070bb6c90143bbfd94451"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6140b2ab0c9d38f3383ecaf7d2a43d1d"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___charsetlib.html#ga6140b2ab0c9d38f3383ecaf7d2a43d1d">STX_longto8digit</a> (long int value, <a class="el" href="group___s_t_x___engine.html#ga97a80ca1602ebf2303258971a2c938e2">bool</a> showzero)</td></tr>
+<tr class="memdesc:ga6140b2ab0c9d38f3383ecaf7d2a43d1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convertie en une chaine de caractère de 8 digit une valeur decimal d'un mot long (0 à 99 999 999)  <a href="group___charsetlib.html#ga6140b2ab0c9d38f3383ecaf7d2a43d1d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga6140b2ab0c9d38f3383ecaf7d2a43d1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga27bf8c89643f3b75ac3f2b6f6b980d0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___charsetlib.html#ga27bf8c89643f3b75ac3f2b6f6b980d0d">STX_charto2digit</a> (char value, char *String, <a class="el" href="group___s_t_x___engine.html#ga97a80ca1602ebf2303258971a2c938e2">bool</a> showzero)</td></tr>
+<tr class="memdesc:ga27bf8c89643f3b75ac3f2b6f6b980d0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convertie en une chaine de caractère de 2 digit une valeur decimal d'un octet (0 à 99)  <a href="group___charsetlib.html#ga27bf8c89643f3b75ac3f2b6f6b980d0d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga27bf8c89643f3b75ac3f2b6f6b980d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2435ab1540f5d6eb5334ea91ef6e7cb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___charsetlib.html#ga2435ab1540f5d6eb5334ea91ef6e7cb4">STX_shortto3digit</a> (short value, char *String, <a class="el" href="group___s_t_x___engine.html#ga97a80ca1602ebf2303258971a2c938e2">bool</a> showzero)</td></tr>
+<tr class="memdesc:ga2435ab1540f5d6eb5334ea91ef6e7cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convertie en une chaine de caractère de 3 digit une valeur decimal d'un mot (0 à 999)  <a href="group___charsetlib.html#ga2435ab1540f5d6eb5334ea91ef6e7cb4">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga2435ab1540f5d6eb5334ea91ef6e7cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga65df962c0989d9a262db943b8e511a02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___charsetlib.html#ga65df962c0989d9a262db943b8e511a02">STX_shortto4digit</a> (short value, char *String, <a class="el" href="group___s_t_x___engine.html#ga97a80ca1602ebf2303258971a2c938e2">bool</a> showzero)</td></tr>
+<tr class="memdesc:ga65df962c0989d9a262db943b8e511a02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convertie en une chaine de caractère de 4 digit une valeur decimal d'un mot (0 à 9 999)  <a href="group___charsetlib.html#ga65df962c0989d9a262db943b8e511a02">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga65df962c0989d9a262db943b8e511a02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga48b886601c91b5e10c27f761508b1898"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___charsetlib.html#ga48b886601c91b5e10c27f761508b1898">STX_longto5digit</a> (long int value, char *String, <a class="el" href="group___s_t_x___engine.html#ga97a80ca1602ebf2303258971a2c938e2">bool</a> showzero)</td></tr>
+<tr class="memdesc:ga48b886601c91b5e10c27f761508b1898"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convertie en une chaine de caractère de 5 digit une valeur decimal d'un mot long (0 à 99 999)  <a href="group___charsetlib.html#ga48b886601c91b5e10c27f761508b1898">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga48b886601c91b5e10c27f761508b1898"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabadfcd83df70e36b5fd95027fc3ed1db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___charsetlib.html#gabadfcd83df70e36b5fd95027fc3ed1db">STX_longto6digit</a> (long int value, char *String, <a class="el" href="group___s_t_x___engine.html#ga97a80ca1602ebf2303258971a2c938e2">bool</a> showzero)</td></tr>
+<tr class="memdesc:gabadfcd83df70e36b5fd95027fc3ed1db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convertie en une chaine de caractère de 6 digit une valeur decimal d'un mot long (0 à 999 999)  <a href="group___charsetlib.html#gabadfcd83df70e36b5fd95027fc3ed1db">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gabadfcd83df70e36b5fd95027fc3ed1db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga500ffda6c917ec7bad00a3fab201d21b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___charsetlib.html#ga500ffda6c917ec7bad00a3fab201d21b">STX_longto7digit</a> (long int value, char *String, <a class="el" href="group___s_t_x___engine.html#ga97a80ca1602ebf2303258971a2c938e2">bool</a> showzero)</td></tr>
+<tr class="memdesc:ga500ffda6c917ec7bad00a3fab201d21b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convertie en une chaine de caractère de 7 digit une valeur decimal d'un mot long (0 à 9 999 999)  <a href="group___charsetlib.html#ga500ffda6c917ec7bad00a3fab201d21b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga500ffda6c917ec7bad00a3fab201d21b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga454261a723c359c906dd700c59a65da0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___charsetlib.html#ga454261a723c359c906dd700c59a65da0">STX_longto8digit</a> (long int value, char *String, <a class="el" href="group___s_t_x___engine.html#ga97a80ca1602ebf2303258971a2c938e2">bool</a> showzero)</td></tr>
+<tr class="memdesc:ga454261a723c359c906dd700c59a65da0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convertie en une chaine de caractère de 8 digit une valeur decimal d'un mot long (0 à 99 999 999)  <a href="group___charsetlib.html#ga454261a723c359c906dd700c59a65da0">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga454261a723c359c906dd700c59a65da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<h2 class="groupheader">Documentation du type de l'énumération</h2>
+<a id="gaf293f1e0dbd5297786ae48f68b54f9c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf293f1e0dbd5297786ae48f68b54f9c3">&#9670;&nbsp;</a></span>STX_displaysens</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___charsetlib.html#gaf293f1e0dbd5297786ae48f68b54f9c3">STX_displaysens</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enumeration des sens d'affichage d'un string de charsets. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="ggaf293f1e0dbd5297786ae48f68b54f9c3a900874f156af5b7367ce28d30f665383"></a>HOR&#160;</td><td class="fielddoc"><p>Affichage Horizontal du string </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf293f1e0dbd5297786ae48f68b54f9c3ab02e8398372770d34ca3f67581a1bdfa"></a>VER&#160;</td><td class="fielddoc"><p>Affichage Vertical du string </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="ga4b500dc6da5d3c8ebc432eb4477c24c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4b500dc6da5d3c8ebc432eb4477c24c2">&#9670;&nbsp;</a></span>STX_charto2digit() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* STX_charto2digit </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___s_t_x___engine.html#ga97a80ca1602ebf2303258971a2c938e2">bool</a>&#160;</td>
+          <td class="paramname"><em>showzero</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convertie en une chaine de caractère de 2 digit une valeur decimal d'un octet (0 à 99) </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>: valeur à convertir en chaine de caractère </td></tr>
+    <tr><td class="paramname">showzero</td><td>: si true, affiche les zeros non significatif </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>un pointeur sur la chaine de caractère à afficher </dd></dl>
+
+</div>
+</div>
+<a id="ga27bf8c89643f3b75ac3f2b6f6b980d0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga27bf8c89643f3b75ac3f2b6f6b980d0d">&#9670;&nbsp;</a></span>STX_charto2digit() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void STX_charto2digit </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>String</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___s_t_x___engine.html#ga97a80ca1602ebf2303258971a2c938e2">bool</a>&#160;</td>
+          <td class="paramname"><em>showzero</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convertie en une chaine de caractère de 2 digit une valeur decimal d'un octet (0 à 99) </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>: valeur à convertir en chaine de caractère </td></tr>
+    <tr><td class="paramname">String</td><td>: pointeur sur un tableau de 3 char </td></tr>
+    <tr><td class="paramname">showzero</td><td>: si true, affiche les zeros non significatif </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gaf709f9b8170b4007e11695373632dc95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf709f9b8170b4007e11695373632dc95">&#9670;&nbsp;</a></span>STX_loadcharset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short STX_loadcharset </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>Path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Permet de charger en mémoire un fichier de charset au format .CRS. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Path</td><td>: Pointeur sur le chemin d'accés et le nom du fichier CRS </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>-1 en cas d'erreur, sinon 0 </dd></dl>
+
+</div>
+</div>
+<a id="gaad7c1e4c5b63819581e36dc9d3ae1ba8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaad7c1e4c5b63819581e36dc9d3ae1ba8">&#9670;&nbsp;</a></span>STX_longto5digit() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* STX_longto5digit </td>
+          <td>(</td>
+          <td class="paramtype">long int&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___s_t_x___engine.html#ga97a80ca1602ebf2303258971a2c938e2">bool</a>&#160;</td>
+          <td class="paramname"><em>showzero</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convertie en une chaine de caractère de 5 digit une valeur decimal d'un mot long (0 à 99 999) </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>: valeur à convertir en chaine de caractère </td></tr>
+    <tr><td class="paramname">showzero</td><td>: si true, affiche les zeros non significatif </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>un pointeur sur la chaine de caractère à afficher </dd></dl>
+
+</div>
+</div>
+<a id="ga48b886601c91b5e10c27f761508b1898"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga48b886601c91b5e10c27f761508b1898">&#9670;&nbsp;</a></span>STX_longto5digit() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void STX_longto5digit </td>
+          <td>(</td>
+          <td class="paramtype">long int&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>String</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___s_t_x___engine.html#ga97a80ca1602ebf2303258971a2c938e2">bool</a>&#160;</td>
+          <td class="paramname"><em>showzero</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convertie en une chaine de caractère de 5 digit une valeur decimal d'un mot long (0 à 99 999) </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>: valeur à convertir en chaine de caractère </td></tr>
+    <tr><td class="paramname">String</td><td>: pointeur sur un tableau de 6 char </td></tr>
+    <tr><td class="paramname">showzero</td><td>: si true, affiche les zeros non significatif </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga1755078d247c96206e56f9e282c7df71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1755078d247c96206e56f9e282c7df71">&#9670;&nbsp;</a></span>STX_longto6digit() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* STX_longto6digit </td>
+          <td>(</td>
+          <td class="paramtype">long int&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___s_t_x___engine.html#ga97a80ca1602ebf2303258971a2c938e2">bool</a>&#160;</td>
+          <td class="paramname"><em>showzero</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convertie en une chaine de caractère de 6 digit une valeur decimal d'un mot long (0 à 999 999) </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>: valeur à convertir en chaine de caractère </td></tr>
+    <tr><td class="paramname">showzero</td><td>: si true, affiche les zeros non significatif </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>un pointeur sur la chaine de caractère à afficher </dd></dl>
+
+</div>
+</div>
+<a id="gabadfcd83df70e36b5fd95027fc3ed1db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabadfcd83df70e36b5fd95027fc3ed1db">&#9670;&nbsp;</a></span>STX_longto6digit() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void STX_longto6digit </td>
+          <td>(</td>
+          <td class="paramtype">long int&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>String</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___s_t_x___engine.html#ga97a80ca1602ebf2303258971a2c938e2">bool</a>&#160;</td>
+          <td class="paramname"><em>showzero</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convertie en une chaine de caractère de 6 digit une valeur decimal d'un mot long (0 à 999 999) </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>: valeur à convertir en chaine de caractère </td></tr>
+    <tr><td class="paramname">String</td><td>: pointeur sur un tableau de 7 char </td></tr>
+    <tr><td class="paramname">showzero</td><td>: si true, affiche les zeros non significatif </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gac2de9c6f2af070bb6c90143bbfd94451"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac2de9c6f2af070bb6c90143bbfd94451">&#9670;&nbsp;</a></span>STX_longto7digit() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* STX_longto7digit </td>
+          <td>(</td>
+          <td class="paramtype">long int&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___s_t_x___engine.html#ga97a80ca1602ebf2303258971a2c938e2">bool</a>&#160;</td>
+          <td class="paramname"><em>showzero</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convertie en une chaine de caractère de 7 digit une valeur decimal d'un mot long (0 à 9 999 999) </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>: valeur à convertir en chaine de caractère </td></tr>
+    <tr><td class="paramname">showzero</td><td>: si true, affiche les zeros non significatif </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>un pointeur sur la chaine de caractère à afficher </dd></dl>
+
+</div>
+</div>
+<a id="ga500ffda6c917ec7bad00a3fab201d21b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga500ffda6c917ec7bad00a3fab201d21b">&#9670;&nbsp;</a></span>STX_longto7digit() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void STX_longto7digit </td>
+          <td>(</td>
+          <td class="paramtype">long int&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>String</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___s_t_x___engine.html#ga97a80ca1602ebf2303258971a2c938e2">bool</a>&#160;</td>
+          <td class="paramname"><em>showzero</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convertie en une chaine de caractère de 7 digit une valeur decimal d'un mot long (0 à 9 999 999) </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>: valeur à convertir en chaine de caractère </td></tr>
+    <tr><td class="paramname">String</td><td>: pointeur sur un tableau de 8 char </td></tr>
+    <tr><td class="paramname">showzero</td><td>: si true, affiche les zeros non significatif </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga6140b2ab0c9d38f3383ecaf7d2a43d1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6140b2ab0c9d38f3383ecaf7d2a43d1d">&#9670;&nbsp;</a></span>STX_longto8digit() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* STX_longto8digit </td>
+          <td>(</td>
+          <td class="paramtype">long int&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___s_t_x___engine.html#ga97a80ca1602ebf2303258971a2c938e2">bool</a>&#160;</td>
+          <td class="paramname"><em>showzero</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convertie en une chaine de caractère de 8 digit une valeur decimal d'un mot long (0 à 99 999 999) </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>: valeur à convertir en chaine de caractère </td></tr>
+    <tr><td class="paramname">showzero</td><td>: si true, affiche les zeros non significatif </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>un pointeur sur la chaine de caractère à afficher </dd></dl>
+
+</div>
+</div>
+<a id="ga454261a723c359c906dd700c59a65da0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga454261a723c359c906dd700c59a65da0">&#9670;&nbsp;</a></span>STX_longto8digit() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void STX_longto8digit </td>
+          <td>(</td>
+          <td class="paramtype">long int&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>String</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___s_t_x___engine.html#ga97a80ca1602ebf2303258971a2c938e2">bool</a>&#160;</td>
+          <td class="paramname"><em>showzero</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convertie en une chaine de caractère de 8 digit une valeur decimal d'un mot long (0 à 99 999 999) </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>: valeur à convertir en chaine de caractère </td></tr>
+    <tr><td class="paramname">String</td><td>: pointeur sur un tableau de 9 char </td></tr>
+    <tr><td class="paramname">showzero</td><td>: si true, affiche les zeros non significatif </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga064262df7eb269390f0f4c93be33a06b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga064262df7eb269390f0f4c93be33a06b">&#9670;&nbsp;</a></span>STX_printstring()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void STX_printstring </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>carx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>cary</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___imagelib.html#gaac5fc11bffa7b371e0eb076666a68632">STX_displaymode</a>&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___charsetlib.html#gaf293f1e0dbd5297786ae48f68b54f9c3">STX_displaysens</a>&#160;</td>
+          <td class="paramname"><em>sens</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche une chaine de caractère en utilisant les charsets. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">carx</td><td>: Coordonnée X en caractère comprise entre 0 et 39 </td></tr>
+    <tr><td class="paramname">cary</td><td>: Coordonnée Y en caractère comprise entre 0 et 24 </td></tr>
+    <tr><td class="paramname">color</td><td>: Couleur d'affichage de 0 à 15 </td></tr>
+    <tr><td class="paramname">mode</td><td>: Trois mode d'affichage disponible (remplacement, transparence, effacement) </td></tr>
+    <tr><td class="paramname">sens</td><td>: affichage horizontalement (de la gauche vers la droite) ou verticalement (de bas en haut) </td></tr>
+    <tr><td class="paramname">*text</td><td>: pointeur sur une chaine de caractère à 0 terminale</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>Voir également</dt><dd><a class="el" href="group___imagelib.html#gaac5fc11bffa7b371e0eb076666a68632" title="Enumeration des mode d&#39;affichage des spriteset en tant que image.">STX_displaymode</a>, <a class="el" href="group___charsetlib.html#gaf293f1e0dbd5297786ae48f68b54f9c3" title="Enumeration des sens d&#39;affichage d&#39;un string de charsets.">STX_displaysens</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga724e9e5d4784b873362efa99f15c9a7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga724e9e5d4784b873362efa99f15c9a7e">&#9670;&nbsp;</a></span>STX_shortto3digit() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* STX_shortto3digit </td>
+          <td>(</td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___s_t_x___engine.html#ga97a80ca1602ebf2303258971a2c938e2">bool</a>&#160;</td>
+          <td class="paramname"><em>showzero</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convertie en une chaine de caractère de 3 digit une valeur decimal d'un mot (0 à 999) </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>: valeur à convertir en chaine de caractère </td></tr>
+    <tr><td class="paramname">showzero</td><td>: si true, affiche les zeros non significatif </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>un pointeur sur la chaine de caractère à afficher </dd></dl>
+
+</div>
+</div>
+<a id="ga2435ab1540f5d6eb5334ea91ef6e7cb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2435ab1540f5d6eb5334ea91ef6e7cb4">&#9670;&nbsp;</a></span>STX_shortto3digit() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void STX_shortto3digit </td>
+          <td>(</td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>String</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___s_t_x___engine.html#ga97a80ca1602ebf2303258971a2c938e2">bool</a>&#160;</td>
+          <td class="paramname"><em>showzero</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convertie en une chaine de caractère de 3 digit une valeur decimal d'un mot (0 à 999) </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>: valeur à convertir en chaine de caractère </td></tr>
+    <tr><td class="paramname">String</td><td>: pointeur sur un tableau de 4 char </td></tr>
+    <tr><td class="paramname">showzero</td><td>: si true, affiche les zeros non significatif </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gabc2321d0a4d4298561a6489711e618bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabc2321d0a4d4298561a6489711e618bf">&#9670;&nbsp;</a></span>STX_shortto4digit() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* STX_shortto4digit </td>
+          <td>(</td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___s_t_x___engine.html#ga97a80ca1602ebf2303258971a2c938e2">bool</a>&#160;</td>
+          <td class="paramname"><em>showzero</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convertie en une chaine de caractère de 4 digit une valeur decimal d'un mot (0 à 9 999) </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>: valeur à convertir en chaine de caractère </td></tr>
+    <tr><td class="paramname">showzero</td><td>: si true, affiche les zeros non significatif </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>un pointeur sur la chaine de caractère à afficher </dd></dl>
+
+</div>
+</div>
+<a id="ga65df962c0989d9a262db943b8e511a02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga65df962c0989d9a262db943b8e511a02">&#9670;&nbsp;</a></span>STX_shortto4digit() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void STX_shortto4digit </td>
+          <td>(</td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>String</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___s_t_x___engine.html#ga97a80ca1602ebf2303258971a2c938e2">bool</a>&#160;</td>
+          <td class="paramname"><em>showzero</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convertie en une chaine de caractère de 4 digit une valeur decimal d'un mot (0 à 9 999) </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>: valeur à convertir en chaine de caractère </td></tr>
+    <tr><td class="paramname">String</td><td>: pointeur sur un tableau de 5 char </td></tr>
+    <tr><td class="paramname">showzero</td><td>: si true, affiche les zeros non significatif </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.16
+</small></address>
+</body>
+</html>

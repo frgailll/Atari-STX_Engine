@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Atari STX_Engine:  Fichier source de src/spritelib.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="atari logo.ico"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Atari STX_Engine
+   &#160;<span id="projectnumber">V1.0</span>
+   </div>
+   <div id="projectbrief">Bibliothéque de fonctions pour le moteur graphique des jeux</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_53411faf9a1f8ea0f45d840513ae40fc.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">spritelib.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="spritelib_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#ifndef _SPRITELIBH_</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define _SPRITELIBH_</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keywordtype">short</span> <a class="code" href="group___spritelib.html#ga417784d30de6b18c318ea1e9ecf94033">STX_loadspriteset</a>(<span class="keywordtype">char</span> *Path);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___spritelib.html#ga413fd2602e1ce1f62d0ad1bbcd5184e7">STX_clearallsprites</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">short</span> <a class="code" href="group___spritelib.html#gad4db0cf8b8058a83989d8be7b42a5daf">STX_createsprite</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> motif, <span class="keywordtype">short</span> posx, <span class="keywordtype">short</span> posy, <span class="keywordtype">bool</span> enable);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___spritelib.html#gad214b8849c54f9195161a22592f66f15">STX_showallsprites</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keywordtype">short</span> <a class="code" href="group___spritelib.html#ga10b09c134925799b982ad54a4f8f53c7">STX_changespritemotif</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> spriteid, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> motif);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">short</span> <a class="code" href="group___spritelib.html#ga24caa5c63ea19e50b5a49bc19eca937b">STX_enablesprite</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> spriteid);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keywordtype">short</span> <a class="code" href="group___spritelib.html#ga0b5b36684b95ec27d83e6e1c0e7bf2c8">STX_disablesprite</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> spriteid);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___spritelib.html#gaacab6b6306c53abb6f809ba10b8b3d2f">STX_getspriteenabled</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> spriteid);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keywordtype">short</span> <a class="code" href="group___spritelib.html#ga75a6b9d01748e4649ac942cd0e1bfb84">STX_getspriteposition</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> spriteid, <span class="keywordtype">short</span> *posx, <span class="keywordtype">short</span> *posy);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keywordtype">short</span> <a class="code" href="group___spritelib.html#gabfa52e2ddaf1a6029ad0a525abf744a8">STX_setspriteposition</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> spriteid, <span class="keywordtype">short</span> posx, <span class="keywordtype">short</span> posy);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keywordtype">short</span> <a class="code" href="group___spritelib.html#gafae474ccd50a61fb6d57f1d3d0d33764">STX_movesprite</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> spriteid, <span class="keywordtype">short</span> xincr, <span class="keywordtype">short</span> yincr);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keywordtype">short</span> <a class="code" href="group___spritelib.html#gad2db7285c6110257a537c0388c325027">STX_clearsprite</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> spriteid);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="keywordtype">short</span> <a class="code" href="group___spritelib.html#ga0fa1da6167b8d6035d72ff0f7e45b9aa">STX_setanimation</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> spriteid, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> *motiflist, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> vitesse, <span class="keywordtype">bool</span> animloop);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="keywordtype">short</span> <a class="code" href="group___spritelib.html#gae75f8c2c02debe44df2d05a0e53b71b6">STX_animationenable</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> spriteid, <span class="keywordtype">bool</span> enable);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="keywordtype">short</span> <a class="code" href="group___spritelib.html#gac6fff8af56e0f69036eb484eb8634176">STX_setboundingboxe</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> spriteid,<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> posx, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> posy, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> width, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> height);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___spritelib.html#gab436cb323e4cc111359d5843310c307f">STX_spritescollision</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> spriteid1, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> spriteid2);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___spritelib.html#ga756ddb1b916a4068a1e049956326072c">STX_spriteclipped</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> spriteid1);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="group___spritelib.html#ga6d8087ea8da14f87a14c96d1402a0a02">STX_spritespeedadjuste</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> *compteur, <a class="code" href="group___spritelib.html#ga6f245c4f3aad9984912e275b26ba06e2">STX_speedadjustvalue</a> speed_reg);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="agroup___spritelib_html_ga0fa1da6167b8d6035d72ff0f7e45b9aa"><div class="ttname"><a href="group___spritelib.html#ga0fa1da6167b8d6035d72ff0f7e45b9aa">STX_setanimation</a></div><div class="ttdeci">short STX_setanimation(unsigned short spriteid, unsigned short *motiflist, unsigned char vitesse, bool animloop)</div><div class="ttdoc">Defini l'animation d'un sprite par rapport à une liste de motifs contenus dans un tableau....</div></div>
+<div class="ttc" id="agroup___spritelib_html_gaacab6b6306c53abb6f809ba10b8b3d2f"><div class="ttname"><a href="group___spritelib.html#gaacab6b6306c53abb6f809ba10b8b3d2f">STX_getspriteenabled</a></div><div class="ttdeci">bool STX_getspriteenabled(unsigned short spriteid)</div><div class="ttdoc">Permet de savoir si le sprite dont l'id est spécifié est Enable ou Disable.</div></div>
+<div class="ttc" id="agroup___spritelib_html_gac6fff8af56e0f69036eb484eb8634176"><div class="ttname"><a href="group___spritelib.html#gac6fff8af56e0f69036eb484eb8634176">STX_setboundingboxe</a></div><div class="ttdeci">short STX_setboundingboxe(unsigned char spriteid, unsigned char posx, unsigned char posy, unsigned char width, unsigned char height)</div><div class="ttdoc">Fixe les coordonnées de la boundingboxe dans un sprite pour les detections de collisions.</div></div>
+<div class="ttc" id="agroup___spritelib_html_ga24caa5c63ea19e50b5a49bc19eca937b"><div class="ttname"><a href="group___spritelib.html#ga24caa5c63ea19e50b5a49bc19eca937b">STX_enablesprite</a></div><div class="ttdeci">short STX_enablesprite(unsigned short spriteid)</div><div class="ttdoc">Valide l'affichage du sprite dont l'id est spécifié</div></div>
+<div class="ttc" id="agroup___spritelib_html_gabfa52e2ddaf1a6029ad0a525abf744a8"><div class="ttname"><a href="group___spritelib.html#gabfa52e2ddaf1a6029ad0a525abf744a8">STX_setspriteposition</a></div><div class="ttdeci">short STX_setspriteposition(unsigned short spriteid, short posx, short posy)</div><div class="ttdoc">Permet de fixer la position X et Y d'un sprite.</div></div>
+<div class="ttc" id="agroup___spritelib_html_ga10b09c134925799b982ad54a4f8f53c7"><div class="ttname"><a href="group___spritelib.html#ga10b09c134925799b982ad54a4f8f53c7">STX_changespritemotif</a></div><div class="ttdeci">short STX_changespritemotif(unsigned short spriteid, unsigned short motif)</div><div class="ttdoc">change le motif d'un sprite à afficher</div></div>
+<div class="ttc" id="agroup___spritelib_html_gafae474ccd50a61fb6d57f1d3d0d33764"><div class="ttname"><a href="group___spritelib.html#gafae474ccd50a61fb6d57f1d3d0d33764">STX_movesprite</a></div><div class="ttdeci">short STX_movesprite(unsigned short spriteid, short xincr, short yincr)</div><div class="ttdoc">Permet de definir le deplacement du sprite en X et Y.</div></div>
+<div class="ttc" id="agroup___spritelib_html_ga413fd2602e1ce1f62d0ad1bbcd5184e7"><div class="ttname"><a href="group___spritelib.html#ga413fd2602e1ce1f62d0ad1bbcd5184e7">STX_clearallsprites</a></div><div class="ttdeci">void STX_clearallsprites(void)</div><div class="ttdoc">Permet de detruires tous les sprites, les structures de données sont remises à zéro.</div></div>
+<div class="ttc" id="agroup___spritelib_html_ga6f245c4f3aad9984912e275b26ba06e2"><div class="ttname"><a href="group___spritelib.html#ga6f245c4f3aad9984912e275b26ba06e2">STX_speedadjustvalue</a></div><div class="ttdeci">STX_speedadjustvalue</div><div class="ttdoc">Enumeration des differentes regulation de vitesse pour le deplacement des sprites.</div><div class="ttdef"><b>Definition:</b> type.h:135</div></div>
+<div class="ttc" id="agroup___spritelib_html_gae75f8c2c02debe44df2d05a0e53b71b6"><div class="ttname"><a href="group___spritelib.html#gae75f8c2c02debe44df2d05a0e53b71b6">STX_animationenable</a></div><div class="ttdeci">short STX_animationenable(unsigned short spriteid, bool enable)</div><div class="ttdoc">Defini l'animation d'un sprite par rapport à une liste de motifs contenus dans un tableau.</div></div>
+<div class="ttc" id="agroup___spritelib_html_gab436cb323e4cc111359d5843310c307f"><div class="ttname"><a href="group___spritelib.html#gab436cb323e4cc111359d5843310c307f">STX_spritescollision</a></div><div class="ttdeci">bool STX_spritescollision(unsigned short spriteid1, unsigned short spriteid2)</div><div class="ttdoc">Fixe les coordonnées de la boundingboxe dans un sprite pour les detections de collisions.</div></div>
+<div class="ttc" id="agroup___spritelib_html_gad2db7285c6110257a537c0388c325027"><div class="ttname"><a href="group___spritelib.html#gad2db7285c6110257a537c0388c325027">STX_clearsprite</a></div><div class="ttdeci">short STX_clearsprite(unsigned short spriteid)</div><div class="ttdoc">Efface un sprite avec tous ces attributs.</div></div>
+<div class="ttc" id="agroup___spritelib_html_ga6d8087ea8da14f87a14c96d1402a0a02"><div class="ttname"><a href="group___spritelib.html#ga6d8087ea8da14f87a14c96d1402a0a02">STX_spritespeedadjuste</a></div><div class="ttdeci">unsigned short STX_spritespeedadjuste(unsigned short *compteur, STX_speedadjustvalue speed_reg)</div><div class="ttdoc">Permet d'indiquer le nombre de pixel à deplacer un sprite pour lui assurer une vitesse constante par ...</div></div>
+<div class="ttc" id="agroup___spritelib_html_ga0b5b36684b95ec27d83e6e1c0e7bf2c8"><div class="ttname"><a href="group___spritelib.html#ga0b5b36684b95ec27d83e6e1c0e7bf2c8">STX_disablesprite</a></div><div class="ttdeci">short STX_disablesprite(unsigned short spriteid)</div><div class="ttdoc">Dévalide l'affichage du sprite dont l'id est spicifié</div></div>
+<div class="ttc" id="agroup___spritelib_html_gad214b8849c54f9195161a22592f66f15"><div class="ttname"><a href="group___spritelib.html#gad214b8849c54f9195161a22592f66f15">STX_showallsprites</a></div><div class="ttdeci">void STX_showallsprites(void)</div><div class="ttdoc">Affiche tous les sprites créés et actifs.</div></div>
+<div class="ttc" id="agroup___spritelib_html_ga756ddb1b916a4068a1e049956326072c"><div class="ttname"><a href="group___spritelib.html#ga756ddb1b916a4068a1e049956326072c">STX_spriteclipped</a></div><div class="ttdeci">bool STX_spriteclipped(unsigned short spriteid1)</div><div class="ttdoc">Indique si le sprite est hors de la zone d'affichage clipping.</div></div>
+<div class="ttc" id="agroup___spritelib_html_ga417784d30de6b18c318ea1e9ecf94033"><div class="ttname"><a href="group___spritelib.html#ga417784d30de6b18c318ea1e9ecf94033">STX_loadspriteset</a></div><div class="ttdeci">short STX_loadspriteset(char *Path)</div><div class="ttdoc">Permet de charger en mémoire les motifs des sprites et mask crées avec le logiciel SPRITEVC....</div></div>
+<div class="ttc" id="agroup___spritelib_html_ga75a6b9d01748e4649ac942cd0e1bfb84"><div class="ttname"><a href="group___spritelib.html#ga75a6b9d01748e4649ac942cd0e1bfb84">STX_getspriteposition</a></div><div class="ttdeci">short STX_getspriteposition(unsigned short spriteid, short *posx, short *posy)</div><div class="ttdoc">Permet de récupérer la position X et Y d'un sprite.</div></div>
+<div class="ttc" id="agroup___spritelib_html_gad4db0cf8b8058a83989d8be7b42a5daf"><div class="ttname"><a href="group___spritelib.html#gad4db0cf8b8058a83989d8be7b42a5daf">STX_createsprite</a></div><div class="ttdeci">short STX_createsprite(unsigned short motif, short posx, short posy, bool enable)</div><div class="ttdoc">Permet de definir les attributs à donner aux sprites, fixer le motif utiliser, definir sa position et...</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.16
+</small></address>
+</body>
+</html>

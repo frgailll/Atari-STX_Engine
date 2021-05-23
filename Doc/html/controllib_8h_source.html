@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Atari STX_Engine:  Fichier source de src/controllib.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="atari logo.ico"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Atari STX_Engine
+   &#160;<span id="projectnumber">V1.0</span>
+   </div>
+   <div id="projectbrief">Bibliothéque de fonctions pour le moteur graphique des jeux</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_53411faf9a1f8ea0f45d840513ae40fc.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">controllib.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="controllib_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#ifndef _CONTROLLIBH_</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define _CONTROLLIBH_</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">//------------------ Touches de fonction -----------------</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="group___controllib.html#ga2772a1f7024ba1fd62e88ec1adb541f8">   23</a></span>&#160;<span class="preprocessor">#define     KEY_F1              59                              </span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="group___controllib.html#gae2e2edb31bb7796786da12f85f2d5cd1">   24</a></span>&#160;<span class="preprocessor">#define     KEY_F2              60                              </span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="group___controllib.html#ga38ebe8e5c5f1d5727c9638bf79fc3952">   25</a></span>&#160;<span class="preprocessor">#define     KEY_F3              61                              </span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="group___controllib.html#gab99474b01ffcbc57d74b60a77895e5e8">   26</a></span>&#160;<span class="preprocessor">#define     KEY_F4              62                              </span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="group___controllib.html#ga2a0aae1931111382ade29fd75ef64790">   27</a></span>&#160;<span class="preprocessor">#define     KEY_F5              63                              </span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="group___controllib.html#gad31281b771b8b85f4aa98bbd527d91a0">   28</a></span>&#160;<span class="preprocessor">#define     KEY_F6              64                              </span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="group___controllib.html#ga7eed6766ef9ddb721c6a2bce807fc9dc">   29</a></span>&#160;<span class="preprocessor">#define     KEY_F7              65                              </span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="group___controllib.html#ga7a8ad03f07f2e4757a70385e88fbbe3c">   30</a></span>&#160;<span class="preprocessor">#define     KEY_F8              66                              </span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="group___controllib.html#ga417a382624f91fb0cdfdf1c33adc8c90">   31</a></span>&#160;<span class="preprocessor">#define     KEY_F9              67                              </span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="group___controllib.html#gad37282615edb2c357149c2a1342b4a85">   32</a></span>&#160;<span class="preprocessor">#define     KEY_F10             68                              </span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">//------------------------- Ligne 1 -----------------------</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="group___controllib.html#ga75686b4afca96e15e07914e61fe62233">   35</a></span>&#160;<span class="preprocessor">#define     KEY_ECHAPE          1                               </span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="group___controllib.html#ga5a7fd35018971faa28dacd3e33a8f737">   36</a></span>&#160;<span class="preprocessor">#define     KEY_1               2                               </span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="group___controllib.html#ga3a146cb397d373be978dfa9fd1dc9b3a">   37</a></span>&#160;<span class="preprocessor">#define     KEY_2               3                               </span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="group___controllib.html#ga701a135e841c3cfb69d9c5bb1444e198">   38</a></span>&#160;<span class="preprocessor">#define     KEY_3               4                               </span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="group___controllib.html#ga219891753a1b6ccd51c8ae763905dbf9">   39</a></span>&#160;<span class="preprocessor">#define     KEY_4               5                               </span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="group___controllib.html#ga8520da12c76efb8ca95ca2068d1ca35c">   40</a></span>&#160;<span class="preprocessor">#define     KEY_5               6                               </span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="group___controllib.html#ga4ab32ce5ef6b5d115253d2a712f2e19b">   41</a></span>&#160;<span class="preprocessor">#define     KEY_6               7                               </span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="group___controllib.html#ga5895875bee3ae13b13cdb5e85b45161b">   42</a></span>&#160;<span class="preprocessor">#define     KEY_7               8                               </span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="group___controllib.html#gad2888e35bf1cbd0b25c3e82bc360c647">   43</a></span>&#160;<span class="preprocessor">#define     KEY_8               9                               </span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="group___controllib.html#gae6838379f118dfbfc78d82fcd8886a41">   44</a></span>&#160;<span class="preprocessor">#define     KEY_9               10                              </span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="group___controllib.html#ga51ca76d1508339b071a974798b90474b">   45</a></span>&#160;<span class="preprocessor">#define     KEY_0               11                              </span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="group___controllib.html#ga01193746941d5d16b62a796143085017">   46</a></span>&#160;<span class="preprocessor">#define     KEY_DEGRES          12                              </span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="group___controllib.html#gab19d3e7d4179ff46fdcf3edf90743e91">   47</a></span>&#160;<span class="preprocessor">#define     KEY_UNDERSCORE      13                              </span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="group___controllib.html#gad77cd08ee0b153efc9121290da8dff8b">   48</a></span>&#160;<span class="preprocessor">#define     KEY_LIVRE           41                              </span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="group___controllib.html#ga1e9a449dee19c686a2af4edcdc1a1042">   49</a></span>&#160;<span class="preprocessor">#define     KEY_BACKSPACE       14                              </span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">//------------------------- Ligne 2 -----------------------</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="group___controllib.html#ga4fa9fbcc86d5ee884a821459a87f3a54">   52</a></span>&#160;<span class="preprocessor">#define     KEY_TAB             15                              </span></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="group___controllib.html#ga024e62650f02bfd64a4ce2b158ec2dd7">   53</a></span>&#160;<span class="preprocessor">#define     KEY_A               16                              </span></div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="group___controllib.html#ga7c655f9f55336c6db42503e356028f4d">   54</a></span>&#160;<span class="preprocessor">#define     KEY_Z               17                              </span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="group___controllib.html#ga76fcab7ae716facf6eefcee03457fe7d">   55</a></span>&#160;<span class="preprocessor">#define     KEY_E               18                              </span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="group___controllib.html#gaa020da9e48a194889ac72f94408b3c25">   56</a></span>&#160;<span class="preprocessor">#define     KEY_R               19                              </span></div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="group___controllib.html#gadb39050b8845e8b16f503a747e196749">   57</a></span>&#160;<span class="preprocessor">#define     KEY_T               20                              </span></div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="group___controllib.html#gad9db04899df9fe71bb221c02721e28ac">   58</a></span>&#160;<span class="preprocessor">#define     KEY_Y               21                              </span></div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="group___controllib.html#ga050a6de4c5edb8eb9582c3eb80fed07f">   59</a></span>&#160;<span class="preprocessor">#define     KEY_U               22                              </span></div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="group___controllib.html#ga31ae832a3de882f92710ed9cb0b46e0a">   60</a></span>&#160;<span class="preprocessor">#define     KEY_I               23                              </span></div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="group___controllib.html#gadc0df72b7f6cbb006adeabff653ebeac">   61</a></span>&#160;<span class="preprocessor">#define     KEY_O               24                              </span></div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="group___controllib.html#ga0d7cb02ca48dc1dc020e54d104fb9915">   62</a></span>&#160;<span class="preprocessor">#define     KEY_P               25                              </span></div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="group___controllib.html#ga77d9a64af8e44fada2ae9e65967c82b3">   63</a></span>&#160;<span class="preprocessor">#define     KEY_CARET           26                              </span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="group___controllib.html#gabbc3a02489d28857b0d1f8cb2b5985fb">   64</a></span>&#160;<span class="preprocessor">#define     KEY_DOLLAR          27                              </span></div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="group___controllib.html#ga1d654db2e04ad94a58f880fb9e127ad6">   65</a></span>&#160;<span class="preprocessor">#define     KEY_DELETE          53                              </span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">//------------------------- Ligne 3 -----------------------</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="group___controllib.html#ga1cda14a8f28f9008ed77914ee9351560">   68</a></span>&#160;<span class="preprocessor">#define     KEY_CONTROL         29                              </span></div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="group___controllib.html#ga201284fc5d50eea7e2db09fb5495bceb">   69</a></span>&#160;<span class="preprocessor">#define     KEY_Q               30                              </span></div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="group___controllib.html#ga6f09e2899747f5db41369ce1dae11ebd">   70</a></span>&#160;<span class="preprocessor">#define     KEY_S               31                              </span></div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="group___controllib.html#gad2017b35fcff527a10050ab7c9af2d5c">   71</a></span>&#160;<span class="preprocessor">#define     KEY_D               32                              </span></div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="group___controllib.html#gacc696937f28ef5bdd90eeb8addd0ef82">   72</a></span>&#160;<span class="preprocessor">#define     KEY_F               33                              </span></div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="group___controllib.html#gac38f385af8c9c0b21678f07b55f28edf">   73</a></span>&#160;<span class="preprocessor">#define     KEY_G               34                              </span></div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="group___controllib.html#gac7cfd77bb9d2d498bbf591be4420f7a8">   74</a></span>&#160;<span class="preprocessor">#define     KEY_H               35                              </span></div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="group___controllib.html#ga5e90bac1d19a8a6b8bc79be340470271">   75</a></span>&#160;<span class="preprocessor">#define     KEY_J               36                              </span></div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="group___controllib.html#ga98a32c947983c2266dfc309eb7f3fc5c">   76</a></span>&#160;<span class="preprocessor">#define     KEY_K               37                              </span></div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="group___controllib.html#ga600bb1ce7eb7b6ca4dcbb41546c32ec5">   77</a></span>&#160;<span class="preprocessor">#define     KEY_L               38                              </span></div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="group___controllib.html#gae2552d156f2ef6dff240456f7c648beb">   78</a></span>&#160;<span class="preprocessor">#define     KEY_M               39                              </span></div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="group___controllib.html#ga2156176ee132e72f170871da119fdf46">   79</a></span>&#160;<span class="preprocessor">#define     KEY_PURCENT         40                              </span></div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="group___controllib.html#gafe5716cf1626fceab51044a6c2492831">   80</a></span>&#160;<span class="preprocessor">#define     KEY_RETURN          28                              </span></div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="group___controllib.html#ga11d46f8551106303f4cffb9d67084ef1">   81</a></span>&#160;<span class="preprocessor">#define     KEY_HASH            43                              </span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">//--------------------------- ligne 4 ----------------------</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="group___controllib.html#ga13a0f4f476ef33ca0ef8f62c3ed3823b">   85</a></span>&#160;<span class="preprocessor">#define     KEY_LEFTSHIFT       42                              </span></div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="group___controllib.html#ga3eefcaaf496c52c1c7283caa3d1dab99">   86</a></span>&#160;<span class="preprocessor">#define     KEY_MINUS           96                              </span></div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="group___controllib.html#gafdebd5d771ee260c703a74f459767c09">   87</a></span>&#160;<span class="preprocessor">#define     KEY_W               44                              </span></div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="group___controllib.html#ga832280ef5a7afeda19f32939951e8b10">   88</a></span>&#160;<span class="preprocessor">#define     KEY_X               45                              </span></div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="group___controllib.html#ga21db833332c950e74a8d5cd79ebffc8d">   89</a></span>&#160;<span class="preprocessor">#define     KEY_C               46                              </span></div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="group___controllib.html#ga1b4a450ef7e51ae0b691dd5489f74535">   90</a></span>&#160;<span class="preprocessor">#define     KEY_V               47                              </span></div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="group___controllib.html#gad2ae94d1ffed5c399aa6f8c40c0fc3c7">   91</a></span>&#160;<span class="preprocessor">#define     KEY_B               48                              </span></div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="group___controllib.html#ga2e446da6a7d4ff47e81f5318a40e53ea">   92</a></span>&#160;<span class="preprocessor">#define     KEY_N               49                              </span></div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="group___controllib.html#ga3727ebd605eebecd9823d39a0426eef0">   93</a></span>&#160;<span class="preprocessor">#define     KEY_QUESTION        50                              </span></div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="group___controllib.html#gaaaf77eb9716854e4838799c5d2bd26a5">   94</a></span>&#160;<span class="preprocessor">#define     KEY_SEMICOLON       51                              </span></div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="group___controllib.html#gae98958c265380bd0e491ef368c513196">   95</a></span>&#160;<span class="preprocessor">#define     KEY_SLASH           52                              </span></div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="group___controllib.html#ga0375ea9035bf8ce39b90665c49d27f34">   96</a></span>&#160;<span class="preprocessor">#define     KEY_EQUALS          53                              </span></div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="group___controllib.html#ga2f554668b12882e07f3b09affc1136d8">   97</a></span>&#160;<span class="preprocessor">#define     KEY_RIGHTSHIFT      54                              </span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">//--------------------------- Ligne 5 -----------------------</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="group___controllib.html#ga778c2cba8c697b09e1d6bf1d504e739f">  100</a></span>&#160;<span class="preprocessor">#define     KEY_ALTERNATE       T56                             </span></div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="group___controllib.html#ga8a5ff83d21dfa704c1c3eff56d5b3a4b">  101</a></span>&#160;<span class="preprocessor">#define     KEY_SPACE           57                              </span></div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="group___controllib.html#gaf168e54444bdaff5f50f6f4734784762">  102</a></span>&#160;<span class="preprocessor">#define     KEY_CAPSLOCK        58                              </span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">//------------------------- Zone fleche ---------------------</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="group___controllib.html#ga25d124148127e7f9f57ba21c0a8eaf7c">  105</a></span>&#160;<span class="preprocessor">#define     KEY_HELP            98                              </span></div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="group___controllib.html#gadedb4a254c6a94be9a46e28dc1e5d218">  106</a></span>&#160;<span class="preprocessor">#define     KEY_UNDO            97                              </span></div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="group___controllib.html#gaaa67a531439790dc20ed750f482d4a3e">  107</a></span>&#160;<span class="preprocessor">#define     KEY_INSERT          82                              </span></div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="group___controllib.html#gafa086fc916a81e7fd348ec00cf786916">  108</a></span>&#160;<span class="preprocessor">#define     KEY_UP              72                              </span></div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="group___controllib.html#ga7e3030900c439864f66525aab8031124">  109</a></span>&#160;<span class="preprocessor">#define     KEY_CLEARHOME       71                              </span></div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="group___controllib.html#gaf4d1b8a2912354646c74cf36c69f8223">  110</a></span>&#160;<span class="preprocessor">#define     KEY_LEFT            75                              </span></div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="group___controllib.html#ga203163bc0189184a1de6ca8d1e53c6bf">  111</a></span>&#160;<span class="preprocessor">#define     KEY_DOWN            80                              </span></div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="group___controllib.html#ga004194639b9ad76cea01d9e93716d4d6">  112</a></span>&#160;<span class="preprocessor">#define     KEY_RIGHT           77                              </span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">//----------------------- Pave numerique --------------------</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="group___controllib.html#ga1721d9ae08e99d266144824898583a2b">  115</a></span>&#160;<span class="preprocessor">#define     KEY_NUMPAD_OPENPAREN        99                      </span></div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="group___controllib.html#ga0c664fd5ab3ea81ce4609e0788bac146">  116</a></span>&#160;<span class="preprocessor">#define     KEY_NUMPAD_CLOSEPAREN       100                     </span></div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="group___controllib.html#gab901c992ebba24ffc5e2c93aa0d68a0b">  117</a></span>&#160;<span class="preprocessor">#define     KEY_NUMPAD_SLASH            101                     </span></div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="group___controllib.html#gaf042db1b57f01337a58a015c782fae35">  118</a></span>&#160;<span class="preprocessor">#define     KEY_NUMPAD_ASTERISK         102                     </span></div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="group___controllib.html#gaea32b738e4786e860581cd8b9044d670">  119</a></span>&#160;<span class="preprocessor">#define     KEY_NUMPAD_7                103                     </span></div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="group___controllib.html#gacb009ee42ceb6469cd6d5e952d6ad4d1">  120</a></span>&#160;<span class="preprocessor">#define     KEY_NUMPAD_8                104                     </span></div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="group___controllib.html#ga98184ef62f3e2f86ff64864d8a998184">  121</a></span>&#160;<span class="preprocessor">#define     KEY_NUMPAD_9                105                     </span></div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="group___controllib.html#gaefaf057d7e3b9928c07141ed32c1ee91">  122</a></span>&#160;<span class="preprocessor">#define     KEY_NUMPAD_MINUS            74                      </span></div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="group___controllib.html#gab77df6ba5be61034da8530fda270c22e">  123</a></span>&#160;<span class="preprocessor">#define     KEY_NUMPAD_4                106                     </span></div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="group___controllib.html#gaf4f1ead45029692ae2581de5ecd567d5">  124</a></span>&#160;<span class="preprocessor">#define     KEY_NUMPAD_5                107                     </span></div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="group___controllib.html#ga2ee117602040aac06c38d5fe6268aa7e">  125</a></span>&#160;<span class="preprocessor">#define     KEY_NUMPAD_6                108                     </span></div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="group___controllib.html#ga32ff5a9c01683d41f4f0f17fc483a640">  126</a></span>&#160;<span class="preprocessor">#define     KEY_NUMPAD_PLUS             78                      </span></div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="group___controllib.html#gaaeb5f24ba1befa0ab86fbb9b4836a6a8">  127</a></span>&#160;<span class="preprocessor">#define     KEY_NUMPAD_1                109                     </span></div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="group___controllib.html#gaeb343b8be7ea6d2ecab19fc022400df9">  128</a></span>&#160;<span class="preprocessor">#define     KEY_NUMPAD_2                110                     </span></div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="group___controllib.html#ga2666c8967f32df00209613cd3dd11512">  129</a></span>&#160;<span class="preprocessor">#define     KEY_NUMPAD_3                111                     </span></div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="group___controllib.html#ga369ec47d8430b7b346390e2d0095ae53">  130</a></span>&#160;<span class="preprocessor">#define     KEY_NUMPAD_ENTER            114                     </span></div>
+<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="group___controllib.html#ga358289c650ce0bceed4de1d9872a36a4">  131</a></span>&#160;<span class="preprocessor">#define     KEY_NUMPAD_0                112                     </span></div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="group___controllib.html#ga950fb27791c3f0b9fba7a8053d2fdcf9">  132</a></span>&#160;<span class="preprocessor">#define     KEY_NUMPAD_PERIOD           113                     </span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="preprocessor">void STX_startjoystickreport();</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___controllib.html#gadd985aa209211ef68a4b6f3b76421353">STX_startmousereport</a>();</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<a class="code" href="group___controllib.html#ga9b88ec89fc942506d3a2c69309cb3793">STX_joystickvalue</a> <a class="code" href="group___controllib.html#gaaebb2d689faafc1583ec13af401976f8">STX_getjoystickstatus</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> joystickid, <a class="code" href="group___controllib.html#ga029f35c2423f4c9191a5c5be98fa3da0">STX_joystickaction</a> *action);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___controllib.html#gaf3dda9c17c2ce5d6f497ff8a14c0985d">STX_readikbdmouseposition</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> *PosAbsolueX, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> *PosAbsolueY);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___controllib.html#ga7c0183d84415081c88d4f5327c55c17e">STX_readikbdmouseoffset</a>(<span class="keywordtype">short</span> *PosRelativeX, <span class="keywordtype">short</span> *PosRelativeY);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___controllib.html#gab1e6a6b837e0c1365ae6d7e81d067254">STX_readikbddateandtime</a>(<a class="code" href="struct_s_t_x__ikbddatetime.html">STX_ikbddatetime</a> *datetime);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___controllib.html#ga53d4172c70f371bb13ffb26533938993">STX_writeikbddateandtime</a>(<a class="code" href="struct_s_t_x__ikbddatetime.html">STX_ikbddatetime</a> *datetime);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___controllib.html#ga6fc546e32e4cc52bf086657da545602a">STX_setikbdmousethreshold</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> TicksX, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> TicksY);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___controllib.html#ga991c9f38efef718cde33ecbf1e0d92b6">STX_setikbdmousescale</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> TicksX, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> TicksY);</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160; </div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___controllib.html#ga5de1445ab8e56af81e468112b6c96115">STX_keyboardkeypress</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> KeyValue);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160; </div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="astruct_s_t_x__ikbddatetime_html"><div class="ttname"><a href="struct_s_t_x__ikbddatetime.html">STX_ikbddatetime</a></div><div class="ttdoc">Structure de valeur BCD fournissant la date et l'heure du systéme.</div><div class="ttdef"><b>Definition:</b> type.h:121</div></div>
+<div class="ttc" id="agroup___controllib_html_ga6fc546e32e4cc52bf086657da545602a"><div class="ttname"><a href="group___controllib.html#ga6fc546e32e4cc52bf086657da545602a">STX_setikbdmousethreshold</a></div><div class="ttdeci">void STX_setikbdmousethreshold(unsigned char TicksX, unsigned char TicksY)</div><div class="ttdoc">Fixe le nombre de Ticks en X et Y nescessaire pour le declenchement du report de la position relative...</div></div>
+<div class="ttc" id="agroup___controllib_html_ga7c0183d84415081c88d4f5327c55c17e"><div class="ttname"><a href="group___controllib.html#ga7c0183d84415081c88d4f5327c55c17e">STX_readikbdmouseoffset</a></div><div class="ttdeci">void STX_readikbdmouseoffset(short *PosRelativeX, short *PosRelativeY)</div><div class="ttdoc">Lecture de la position relative en X et Y de la souris.</div></div>
+<div class="ttc" id="agroup___controllib_html_ga991c9f38efef718cde33ecbf1e0d92b6"><div class="ttname"><a href="group___controllib.html#ga991c9f38efef718cde33ecbf1e0d92b6">STX_setikbdmousescale</a></div><div class="ttdeci">void STX_setikbdmousescale(unsigned char TicksX, unsigned char TicksY)</div><div class="ttdoc">Fixe le nombre de Ticks en X et Y nescessaires pour assurer un déplacement de 1 pixel à 'écran.</div></div>
+<div class="ttc" id="agroup___controllib_html_ga029f35c2423f4c9191a5c5be98fa3da0"><div class="ttname"><a href="group___controllib.html#ga029f35c2423f4c9191a5c5be98fa3da0">STX_joystickaction</a></div><div class="ttdeci">STX_joystickaction</div><div class="ttdoc">Enumeration des valeurs du bouton action du joystick.</div><div class="ttdef"><b>Definition:</b> type.h:50</div></div>
+<div class="ttc" id="agroup___controllib_html_gaf3dda9c17c2ce5d6f497ff8a14c0985d"><div class="ttname"><a href="group___controllib.html#gaf3dda9c17c2ce5d6f497ff8a14c0985d">STX_readikbdmouseposition</a></div><div class="ttdeci">void STX_readikbdmouseposition(unsigned short *PosAbsolueX, unsigned short *PosAbsolueY)</div><div class="ttdoc">Lecture de la position absolue en X et Y de la souris.</div></div>
+<div class="ttc" id="agroup___controllib_html_ga53d4172c70f371bb13ffb26533938993"><div class="ttname"><a href="group___controllib.html#ga53d4172c70f371bb13ffb26533938993">STX_writeikbddateandtime</a></div><div class="ttdeci">bool STX_writeikbddateandtime(STX_ikbddatetime *datetime)</div><div class="ttdoc">Ecriture de la date et l'heure du système.</div></div>
+<div class="ttc" id="agroup___controllib_html_ga5de1445ab8e56af81e468112b6c96115"><div class="ttname"><a href="group___controllib.html#ga5de1445ab8e56af81e468112b6c96115">STX_keyboardkeypress</a></div><div class="ttdeci">bool STX_keyboardkeypress(unsigned char KeyValue)</div><div class="ttdoc">Vérifie si la touche demandée est pressée.</div></div>
+<div class="ttc" id="agroup___controllib_html_ga9b88ec89fc942506d3a2c69309cb3793"><div class="ttname"><a href="group___controllib.html#ga9b88ec89fc942506d3a2c69309cb3793">STX_joystickvalue</a></div><div class="ttdeci">STX_joystickvalue</div><div class="ttdoc">Enumeration des valeurs de positionnement du joystick.</div><div class="ttdef"><b>Definition:</b> type.h:32</div></div>
+<div class="ttc" id="agroup___controllib_html_gaaebb2d689faafc1583ec13af401976f8"><div class="ttname"><a href="group___controllib.html#gaaebb2d689faafc1583ec13af401976f8">STX_getjoystickstatus</a></div><div class="ttdeci">STX_joystickvalue STX_getjoystickstatus(unsigned char joystickid, STX_joystickaction *action)</div><div class="ttdoc">Lecture du status d'un joystick et de l'état du bouton d'action.</div></div>
+<div class="ttc" id="agroup___controllib_html_gadd985aa209211ef68a4b6f3b76421353"><div class="ttname"><a href="group___controllib.html#gadd985aa209211ef68a4b6f3b76421353">STX_startmousereport</a></div><div class="ttdeci">void STX_startmousereport()</div><div class="ttdoc">Active le report du status de la souris.</div></div>
+<div class="ttc" id="agroup___controllib_html_gab1e6a6b837e0c1365ae6d7e81d067254"><div class="ttname"><a href="group___controllib.html#gab1e6a6b837e0c1365ae6d7e81d067254">STX_readikbddateandtime</a></div><div class="ttdeci">void STX_readikbddateandtime(STX_ikbddatetime *datetime)</div><div class="ttdoc">Lecture de la date et l'heure du système.</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.16
+</small></address>
+</body>
+</html>

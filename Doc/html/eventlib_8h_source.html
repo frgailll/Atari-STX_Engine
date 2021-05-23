@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Atari STX_Engine:  Fichier source de src/eventlib.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="atari logo.ico"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Atari STX_Engine
+   &#160;<span id="projectnumber">V1.0</span>
+   </div>
+   <div id="projectbrief">Bibliothéque de fonctions pour le moteur graphique des jeux</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_53411faf9a1f8ea0f45d840513ae40fc.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">eventlib.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="eventlib_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifndef _EVENTLIBH_</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define _EVENTLIBH_</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keywordtype">short</span> <a class="code" href="group___eventlib.html#gac367efa89db8b6a38d0c81cbd7b4fbb5">STX_regevent</a>();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___eventlib.html#ga32acdc0bf268df11ef3a197000f65346">STX_sendevent</a>(<span class="keywordtype">short</span> idsender, <span class="keywordtype">short</span> eventvalue);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___eventlib.html#gac8b7b0745d95e4c9feea13b8e5f911d4">STX_sendeventex</a>(<span class="keywordtype">short</span> idsender, <span class="keywordtype">short</span> eventvalue, <span class="keywordtype">short</span> param1, <span class="keywordtype">long</span> <span class="keywordtype">int</span> param2);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___eventlib.html#ga2cd005ce7e2e1eef87135e5e806ecf1e">STX_getevent</a>(<span class="keywordtype">short</span> idsender, <span class="keywordtype">short</span> *eventvalue);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___eventlib.html#ga40c2194919afbbe2ac0a1e74e2c88a93">STX_geteventex</a>(<span class="keywordtype">short</span> idsender, <span class="keywordtype">short</span> *eventvalue, <span class="keywordtype">short</span> *param1, <span class="keywordtype">long</span> <span class="keywordtype">int</span> *param2);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="agroup___eventlib_html_ga32acdc0bf268df11ef3a197000f65346"><div class="ttname"><a href="group___eventlib.html#ga32acdc0bf268df11ef3a197000f65346">STX_sendevent</a></div><div class="ttdeci">void STX_sendevent(short idsender, short eventvalue)</div><div class="ttdoc">Envoie d'un evenement au dispatcher.</div></div>
+<div class="ttc" id="agroup___eventlib_html_gac8b7b0745d95e4c9feea13b8e5f911d4"><div class="ttname"><a href="group___eventlib.html#gac8b7b0745d95e4c9feea13b8e5f911d4">STX_sendeventex</a></div><div class="ttdeci">void STX_sendeventex(short idsender, short eventvalue, short param1, long int param2)</div><div class="ttdoc">Envoie d'un evenement avec parametres au dispatcher.</div></div>
+<div class="ttc" id="agroup___eventlib_html_gac367efa89db8b6a38d0c81cbd7b4fbb5"><div class="ttname"><a href="group___eventlib.html#gac367efa89db8b6a38d0c81cbd7b4fbb5">STX_regevent</a></div><div class="ttdeci">short STX_regevent()</div><div class="ttdoc">Inscription auprés du dispatcher d'evenement.</div></div>
+<div class="ttc" id="agroup___eventlib_html_ga2cd005ce7e2e1eef87135e5e806ecf1e"><div class="ttname"><a href="group___eventlib.html#ga2cd005ce7e2e1eef87135e5e806ecf1e">STX_getevent</a></div><div class="ttdeci">bool STX_getevent(short idsender, short *eventvalue)</div><div class="ttdoc">Lecture d'un evenement du dispatcher.</div></div>
+<div class="ttc" id="agroup___eventlib_html_ga40c2194919afbbe2ac0a1e74e2c88a93"><div class="ttname"><a href="group___eventlib.html#ga40c2194919afbbe2ac0a1e74e2c88a93">STX_geteventex</a></div><div class="ttdeci">bool STX_geteventex(short idsender, short *eventvalue, short *param1, long int *param2)</div><div class="ttdoc">Lecture d'un evenement avec parametres du dispatcher.</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.16
+</small></address>
+</body>
+</html>

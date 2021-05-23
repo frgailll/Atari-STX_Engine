@@ -1,0 +1,963 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Atari STX_Engine: Gestionnaire de tiles</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="atari logo.ico"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Atari STX_Engine
+   &#160;<span id="projectnumber">V0.2</span>
+   </div>
+   <div id="projectbrief">Bibliothéque de fonction pour le moteur graphique des jeux</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Gestionnaire de tiles</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:ga5b67614054cb53dd914bbcc9a6e7c3c9"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tilelib.html#ga5b67614054cb53dd914bbcc9a6e7c3c9">STX_loadtilesmap</a> (char *Pathtilemap, char *Pathtileset)</td></tr>
+<tr class="memdesc:ga5b67614054cb53dd914bbcc9a6e7c3c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Charge en memoire un fichier de definition d'une tilesmap au format TLM et le fichier des tileset au format TLS.  <a href="group___tilelib.html#ga5b67614054cb53dd914bbcc9a6e7c3c9">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga5b67614054cb53dd914bbcc9a6e7c3c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf405b62949d37f1c171fd5f77dff2693"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tilelib.html#gaf405b62949d37f1c171fd5f77dff2693">STX_savetilesmap</a> (unsigned long int *saveadresse)</td></tr>
+<tr class="memdesc:gaf405b62949d37f1c171fd5f77dff2693"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sauvegarde en mémoire la tilesmap en cours.  <a href="group___tilelib.html#gaf405b62949d37f1c171fd5f77dff2693">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gaf405b62949d37f1c171fd5f77dff2693"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga74c625c1ea53acaf2280589e6d4c44ce"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tilelib.html#ga74c625c1ea53acaf2280589e6d4c44ce">STX_restoretilesmap</a> (unsigned long int *saveadresse)</td></tr>
+<tr class="memdesc:ga74c625c1ea53acaf2280589e6d4c44ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restore la tilesmap qui à été sauvegardée.  <a href="group___tilelib.html#ga74c625c1ea53acaf2280589e6d4c44ce">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga74c625c1ea53acaf2280589e6d4c44ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga826c3a2fd3a51dd9dcdca10de7439447"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tilelib.html#ga826c3a2fd3a51dd9dcdca10de7439447">STX_gettilesmapsize</a> (unsigned short *MapWidth, unsigned short *MapHeight)</td></tr>
+<tr class="memdesc:ga826c3a2fd3a51dd9dcdca10de7439447"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fourni les dimensions en tiles de la map.  <a href="group___tilelib.html#ga826c3a2fd3a51dd9dcdca10de7439447">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga826c3a2fd3a51dd9dcdca10de7439447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaf04a4de7b367640499db488a65ce1f8"><td class="memItemLeft" align="right" valign="top"><a id="gaaf04a4de7b367640499db488a65ce1f8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tilelib.html#gaaf04a4de7b367640499db488a65ce1f8">STX_releasetilesmap</a> (void)</td></tr>
+<tr class="memdesc:gaaf04a4de7b367640499db488a65ce1f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Libération des resources utilisées par la tilesmap. <br /></td></tr>
+<tr class="separator:gaaf04a4de7b367640499db488a65ce1f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac04f6911f5de0d5e8d7016972d2974fd"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tilelib.html#gac04f6911f5de0d5e8d7016972d2974fd">STX_gettilepositionfromsprite</a> (unsigned short spriteid, short xanchoroffset, short yanchoroffset, unsigned short *tilex, unsigned short *tiley)</td></tr>
+<tr class="memdesc:gac04f6911f5de0d5e8d7016972d2974fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fourni les coordonnées X et Y en tile d'un sprite sur la map.  <a href="group___tilelib.html#gac04f6911f5de0d5e8d7016972d2974fd">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gac04f6911f5de0d5e8d7016972d2974fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1fcc13729fafa5a91c205290028957d2"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tilelib.html#ga1fcc13729fafa5a91c205290028957d2">STX_getscreenpositionfromtile</a> (unsigned short tilex, unsigned short tiley, unsigned short *posx, unsigned short *posy)</td></tr>
+<tr class="memdesc:ga1fcc13729fafa5a91c205290028957d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fourni les coordonnées X et Y en pixel (position écran) d'un tile situé dans la zone visible de la map.  <a href="group___tilelib.html#ga1fcc13729fafa5a91c205290028957d2">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga1fcc13729fafa5a91c205290028957d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9891af64148f35864d0c282d6431d002"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tilelib.html#ga9891af64148f35864d0c282d6431d002">STX_gettilevalue</a> (unsigned short tilex, unsigned short tiley, unsigned short *tilevalue, unsigned short *tileid)</td></tr>
+<tr class="memdesc:ga9891af64148f35864d0c282d6431d002"><td class="mdescLeft">&#160;</td><td class="mdescRight">fourni la valeur et l'id d'un tile par rapport à ces coordonnées dans la map  <a href="group___tilelib.html#ga9891af64148f35864d0c282d6431d002">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga9891af64148f35864d0c282d6431d002"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac4ddc40883756c5c442a85552ec85cb3"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tilelib.html#gac4ddc40883756c5c442a85552ec85cb3">STX_gettilevaluefromtileid</a> (unsigned short tileid)</td></tr>
+<tr class="memdesc:gac4ddc40883756c5c442a85552ec85cb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">fourni la valeur d'un tile par rapport à un id  <a href="group___tilelib.html#gac4ddc40883756c5c442a85552ec85cb3">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gac4ddc40883756c5c442a85552ec85cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4e6a2c986acd83baea2aefaaf9845f06"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tilelib.html#ga4e6a2c986acd83baea2aefaaf9845f06">STX_gettileproperty</a> (unsigned short tileid, short xtileoffset, short ytileoffset, <a class="el" href="type_8h.html#afbb2e97abbaa8206da21de5f9e41e126">STX_tileproperties</a> propertyvalue, unsigned char *property)</td></tr>
+<tr class="memdesc:ga4e6a2c986acd83baea2aefaaf9845f06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recupére la propriété d'un tile suivant son id avec offset en X et Y.  <a href="group___tilelib.html#ga4e6a2c986acd83baea2aefaaf9845f06">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga4e6a2c986acd83baea2aefaaf9845f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga26c5a9878b86ef8a28ffe364d889a8c3"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tilelib.html#ga26c5a9878b86ef8a28ffe364d889a8c3">STX_gettilevaluefromtile</a> (unsigned short tileid, short xtileoffset, short ytileoffset, unsigned short *tilevalue, unsigned short *newtileid)</td></tr>
+<tr class="memdesc:ga26c5a9878b86ef8a28ffe364d889a8c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recupére la valeur d'un tile par rapport à un tileid avec offset en X et Y.  <a href="group___tilelib.html#ga26c5a9878b86ef8a28ffe364d889a8c3">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga26c5a9878b86ef8a28ffe364d889a8c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga11ada3f1c992a427f04b318421eee140"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tilelib.html#ga11ada3f1c992a427f04b318421eee140">STX_gettileprop1</a> (unsigned short tilevalue)</td></tr>
+<tr class="memdesc:ga11ada3f1c992a427f04b318421eee140"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recupére la propriété numero 1 d'un tile par rapport à sa valeur.  <a href="group___tilelib.html#ga11ada3f1c992a427f04b318421eee140">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga11ada3f1c992a427f04b318421eee140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaede9592a8ce93785508f3911c40aab4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tilelib.html#gaede9592a8ce93785508f3911c40aab4f">STX_settileprop1</a> (unsigned short tilevalue, unsigned char property)</td></tr>
+<tr class="memdesc:gaede9592a8ce93785508f3911c40aab4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">permet de modifier la propriété 1 associée à la valeur d'un tile  <a href="group___tilelib.html#gaede9592a8ce93785508f3911c40aab4f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gaede9592a8ce93785508f3911c40aab4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf28c75c6ac412e63a6be8dd3fe2cf774"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tilelib.html#gaf28c75c6ac412e63a6be8dd3fe2cf774">STX_gettileprop2</a> (unsigned short tilevalue)</td></tr>
+<tr class="memdesc:gaf28c75c6ac412e63a6be8dd3fe2cf774"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recupére la propriété numero 2 d'un tile par rapport à sa valeur.  <a href="group___tilelib.html#gaf28c75c6ac412e63a6be8dd3fe2cf774">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gaf28c75c6ac412e63a6be8dd3fe2cf774"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga417adb0eed347bd3577515f72d3b62cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tilelib.html#ga417adb0eed347bd3577515f72d3b62cc">STX_settileprop2</a> (unsigned short tilevalue, unsigned char property)</td></tr>
+<tr class="memdesc:ga417adb0eed347bd3577515f72d3b62cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">permet de modifier la propriété 2 associée à la valeur d'un tile  <a href="group___tilelib.html#ga417adb0eed347bd3577515f72d3b62cc">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga417adb0eed347bd3577515f72d3b62cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf903526abcb0342bf71c0572635caabe"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tilelib.html#gaf903526abcb0342bf71c0572635caabe">STX_gettileprop3</a> (unsigned short tilevalue)</td></tr>
+<tr class="memdesc:gaf903526abcb0342bf71c0572635caabe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recupére la propriété numero 3 d'un tile par rapport à sa valeur.  <a href="group___tilelib.html#gaf903526abcb0342bf71c0572635caabe">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gaf903526abcb0342bf71c0572635caabe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf3c07be05eb5b1ce9a0405288ef7feea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tilelib.html#gaf3c07be05eb5b1ce9a0405288ef7feea">STX_settileprop3</a> (unsigned short tilevalue, unsigned char property)</td></tr>
+<tr class="memdesc:gaf3c07be05eb5b1ce9a0405288ef7feea"><td class="mdescLeft">&#160;</td><td class="mdescRight">permet de modifier la propriété 3 associée à la valeur d'un tile  <a href="group___tilelib.html#gaf3c07be05eb5b1ce9a0405288ef7feea">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gaf3c07be05eb5b1ce9a0405288ef7feea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga40fffad7c2c4fc79ffc84f4c6da63f91"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tilelib.html#ga40fffad7c2c4fc79ffc84f4c6da63f91">STX_settilesmaparea</a> (unsigned short posx, unsigned short posy, unsigned char tileW, unsigned char tileH)</td></tr>
+<tr class="memdesc:ga40fffad7c2c4fc79ffc84f4c6da63f91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defini taille affichable de le tilesmap ainsi que sa position de départ à l'écran.  <a href="group___tilelib.html#ga40fffad7c2c4fc79ffc84f4c6da63f91">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga40fffad7c2c4fc79ffc84f4c6da63f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0aa62925780a1a87b64a01d306282af3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tilelib.html#ga0aa62925780a1a87b64a01d306282af3">STX_drawtilesmap</a> (unsigned short tileX, unsigned short tileY)</td></tr>
+<tr class="memdesc:ga0aa62925780a1a87b64a01d306282af3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dessine la map à partir du tile en position X et Y.  <a href="group___tilelib.html#ga0aa62925780a1a87b64a01d306282af3">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga0aa62925780a1a87b64a01d306282af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7ff5c64dba9171e14d6986da341609a0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tilelib.html#ga7ff5c64dba9171e14d6986da341609a0">STX_changetilevalue</a> (unsigned short tileX, unsigned short tileY, unsigned short newvalue)</td></tr>
+<tr class="memdesc:ga7ff5c64dba9171e14d6986da341609a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifie la valeur du tile au coordonnée X et Y dans la tilesmap.  <a href="group___tilelib.html#ga7ff5c64dba9171e14d6986da341609a0">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga7ff5c64dba9171e14d6986da341609a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaf76186ef6991541d1d54332bedf0d25"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tilelib.html#gaaf76186ef6991541d1d54332bedf0d25">STX_redrawtile</a> (unsigned short tileX, unsigned short tileY)</td></tr>
+<tr class="memdesc:gaaf76186ef6991541d1d54332bedf0d25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redessine un tile au coordonnée X et Y dans la tilesmap.  <a href="group___tilelib.html#gaaf76186ef6991541d1d54332bedf0d25">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gaaf76186ef6991541d1d54332bedf0d25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="ga7ff5c64dba9171e14d6986da341609a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7ff5c64dba9171e14d6986da341609a0">&#9670;&nbsp;</a></span>STX_changetilevalue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int STX_changetilevalue </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>tileX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>tileY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>newvalue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Modifie la valeur du tile au coordonnée X et Y dans la tilesmap. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tileX</td><td>: position en X du tile dans la tilesmap </td></tr>
+    <tr><td class="paramname">tileY</td><td>: position en Y du tile dans la tilesmap </td></tr>
+    <tr><td class="paramname">newvalue</td><td>: Nouvelle valeur du tile </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>-1 si X ou Y sont en dehors de la map, sinon 0 </dd></dl>
+
+</div>
+</div>
+<a id="ga0aa62925780a1a87b64a01d306282af3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0aa62925780a1a87b64a01d306282af3">&#9670;&nbsp;</a></span>STX_drawtilesmap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void STX_drawtilesmap </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>tileX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>tileY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dessine la map à partir du tile en position X et Y. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tileX</td><td>: position en X du tile de départ </td></tr>
+    <tr><td class="paramname">tileY</td><td>: position en Y du tile de départ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga1fcc13729fafa5a91c205290028957d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1fcc13729fafa5a91c205290028957d2">&#9670;&nbsp;</a></span>STX_getscreenpositionfromtile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short STX_getscreenpositionfromtile </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>tilex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>tiley</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short *&#160;</td>
+          <td class="paramname"><em>posx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short *&#160;</td>
+          <td class="paramname"><em>posy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fourni les coordonnées X et Y en pixel (position écran) d'un tile situé dans la zone visible de la map. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tilex</td><td>: position X du tile dans la map </td></tr>
+    <tr><td class="paramname">tiley</td><td>: position Y du tile dans la map </td></tr>
+    <tr><td class="paramname">posx</td><td>: pointeur d'adresse qui recevera la valeur X en pixel ecran de la position du tile </td></tr>
+    <tr><td class="paramname">posy</td><td>: pointeur d'adresse qui recevera la valeur Y en pixel ecran de la position du tile </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>-1 si le tile est hors de la zone visible de la map, sinon 0 </dd></dl>
+
+</div>
+</div>
+<a id="gac04f6911f5de0d5e8d7016972d2974fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac04f6911f5de0d5e8d7016972d2974fd">&#9670;&nbsp;</a></span>STX_gettilepositionfromsprite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short STX_gettilepositionfromsprite </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>spriteid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>xanchoroffset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>yanchoroffset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short *&#160;</td>
+          <td class="paramname"><em>tilex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short *&#160;</td>
+          <td class="paramname"><em>tiley</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fourni les coordonnées X et Y en tile d'un sprite sur la map. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">spriteid</td><td>: numéro du sprite pour lequel on veux connaitre ses coordonnées en tile </td></tr>
+    <tr><td class="paramname">xanchoroffset</td><td>: offset en X de l'ancre du sprite (en pixel) </td></tr>
+    <tr><td class="paramname">yanchoroffset</td><td>: offset en Y de l'ancre du sprite (en pixel) </td></tr>
+    <tr><td class="paramname">tilex</td><td>: pointeur d'adresse qui recevera la valeur X tile </td></tr>
+    <tr><td class="paramname">tiley</td><td>: pointeur d'adresse qui recevera la valeur Y tile </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>-1 si sprite non créé ou desable, sinon 0 </dd></dl>
+
+</div>
+</div>
+<a id="ga11ada3f1c992a427f04b318421eee140"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga11ada3f1c992a427f04b318421eee140">&#9670;&nbsp;</a></span>STX_gettileprop1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char STX_gettileprop1 </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>tilevalue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Recupére la propriété numero 1 d'un tile par rapport à sa valeur. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tilevalue</td><td>: Valeur du tile dont on veut récupérer la propriété </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>La propriéré numéro 1 </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>les tiles ayant la valeur 0 sont exclus, la valeur de retour sera 0 </dd></dl>
+
+</div>
+</div>
+<a id="gaf28c75c6ac412e63a6be8dd3fe2cf774"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf28c75c6ac412e63a6be8dd3fe2cf774">&#9670;&nbsp;</a></span>STX_gettileprop2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char STX_gettileprop2 </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>tilevalue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Recupére la propriété numero 2 d'un tile par rapport à sa valeur. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tilevalue</td><td>: Valeur du tile dont on veut récupérer la propriété </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>La propriéré numéro 2 </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>les tiles ayant la valeur 0 sont exclus, la valeur de retour sera 0 </dd></dl>
+
+</div>
+</div>
+<a id="gaf903526abcb0342bf71c0572635caabe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf903526abcb0342bf71c0572635caabe">&#9670;&nbsp;</a></span>STX_gettileprop3()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char STX_gettileprop3 </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>tilevalue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Recupére la propriété numero 3 d'un tile par rapport à sa valeur. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tilevalue</td><td>: Valeur du tile dont on veut récupérer la propriété </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>La propriéré numéro 3 </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>les tiles ayant la valeur 0 sont exclus, la valeur de retour sera 0 </dd></dl>
+
+</div>
+</div>
+<a id="ga4e6a2c986acd83baea2aefaaf9845f06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4e6a2c986acd83baea2aefaaf9845f06">&#9670;&nbsp;</a></span>STX_gettileproperty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short STX_gettileproperty </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>tileid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>xtileoffset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>ytileoffset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="type_8h.html#afbb2e97abbaa8206da21de5f9e41e126">STX_tileproperties</a>&#160;</td>
+          <td class="paramname"><em>propertyvalue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>property</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Recupére la propriété d'un tile suivant son id avec offset en X et Y. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tileid</td><td>: numéro du tile pour lequel on veut connaitre sa propriété ou la propriété d'un tile adjacent (utilisation des offset X et Y dans ce cas) </td></tr>
+    <tr><td class="paramname">xtileoffset</td><td>: offset en X (en tile) </td></tr>
+    <tr><td class="paramname">ytileoffset</td><td>: offset en Y (en tile) </td></tr>
+    <tr><td class="paramname">propertyvalue</td><td>: Id de la propriété demandé (TILEPROPERTY1, TILEPROPERTY2, TILEPROPERTY3) </td></tr>
+    <tr><td class="paramname">property</td><td>: pointeur d'adresse qui recevera la valeur de la propriété </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>-1 si en dehors de la map ou erreur, sinon 0</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>un tile ayant une valeur de 0 n'a pas de propriété, la valeur retourné sera alors de -1 </dd></dl>
+<dl class="section see"><dt>Voir également</dt><dd><a class="el" href="type_8h.html#afbb2e97abbaa8206da21de5f9e41e126" title="Enumeration des differentes propriétés d&#39;un tile.">STX_tileproperties</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga826c3a2fd3a51dd9dcdca10de7439447"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga826c3a2fd3a51dd9dcdca10de7439447">&#9670;&nbsp;</a></span>STX_gettilesmapsize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void STX_gettilesmapsize </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short *&#160;</td>
+          <td class="paramname"><em>MapWidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short *&#160;</td>
+          <td class="paramname"><em>MapHeight</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fourni les dimensions en tiles de la map. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*MapWidth</td><td>: pointeur sur la variable qui recevera la largeur de la map en tiles </td></tr>
+    <tr><td class="paramname">*MapHeight</td><td>: pointeur sur la variable qui recevera la hauteur de la map en tiles </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga9891af64148f35864d0c282d6431d002"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9891af64148f35864d0c282d6431d002">&#9670;&nbsp;</a></span>STX_gettilevalue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short STX_gettilevalue </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>tilex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>tiley</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short *&#160;</td>
+          <td class="paramname"><em>tilevalue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short *&#160;</td>
+          <td class="paramname"><em>tileid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>fourni la valeur et l'id d'un tile par rapport à ces coordonnées dans la map </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tilex</td><td>: coordonnée X du tile dans la map </td></tr>
+    <tr><td class="paramname">tiley</td><td>: coordonnée Y du tile dans la map </td></tr>
+    <tr><td class="paramname">tilevalue</td><td>: pointeur d'adresse qui recevera la valeur du tile dont les coordonnées sont X et Y dans la map </td></tr>
+    <tr><td class="paramname">tileid</td><td>: pointeur d'adresse qui recevera l'id du tile dont les coordonnées sont X et Y dans la map </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>-1 si coordonnées en dehors de la map, sinon 0 </dd></dl>
+
+</div>
+</div>
+<a id="ga26c5a9878b86ef8a28ffe364d889a8c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga26c5a9878b86ef8a28ffe364d889a8c3">&#9670;&nbsp;</a></span>STX_gettilevaluefromtile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short STX_gettilevaluefromtile </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>tileid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>xtileoffset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>ytileoffset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short *&#160;</td>
+          <td class="paramname"><em>tilevalue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short *&#160;</td>
+          <td class="paramname"><em>newtileid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Recupére la valeur d'un tile par rapport à un tileid avec offset en X et Y. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tileid</td><td>: id du tile pour lequel on veut connaitre sa valeur ou la valeur d'un tile adjacent (utilisation des offset X et Y dans ce cas) </td></tr>
+    <tr><td class="paramname">xtileoffset</td><td>: offset en X (en tile) </td></tr>
+    <tr><td class="paramname">ytileoffset</td><td>: offset en Y (en tile) </td></tr>
+    <tr><td class="paramname">tilevalue</td><td>: pointeur d'adresse qui recevera la valeur du tile testé </td></tr>
+    <tr><td class="paramname">newtileid</td><td>: pointeur d'adresse qui recevera l'id du tile testé </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>-1 si en dehors de la map, sinon 0 </dd></dl>
+
+</div>
+</div>
+<a id="gac4ddc40883756c5c442a85552ec85cb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac4ddc40883756c5c442a85552ec85cb3">&#9670;&nbsp;</a></span>STX_gettilevaluefromtileid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short STX_gettilevaluefromtileid </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>tileid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>fourni la valeur d'un tile par rapport à un id </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tileid</td><td>: valeur de l'id du tile </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>la valeur du tile suivant son id </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>si la valeur tileid est en dehors de la map, la valeur de retour sera 0 </dd></dl>
+
+</div>
+</div>
+<a id="ga5b67614054cb53dd914bbcc9a6e7c3c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5b67614054cb53dd914bbcc9a6e7c3c9">&#9670;&nbsp;</a></span>STX_loadtilesmap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short STX_loadtilesmap </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>Pathtilemap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>Pathtileset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Charge en memoire un fichier de definition d'une tilesmap au format TLM et le fichier des tileset au format TLS. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*Pathtilemap</td><td>: pointeur sur le nom et le chemin d'accés au fichier .TLM </td></tr>
+    <tr><td class="paramname">*Pathtileset</td><td>: pointeur sur le nom et le chemin d'accés au fichier .TLS </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>la taille en octet de la tilemap si pas d'erreur, sinon valeur négative </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Une seul tilesmap peut-être charger à la fois </dd></dl>
+
+</div>
+</div>
+<a id="gaaf76186ef6991541d1d54332bedf0d25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaf76186ef6991541d1d54332bedf0d25">&#9670;&nbsp;</a></span>STX_redrawtile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int STX_redrawtile </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>tileX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>tileY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Redessine un tile au coordonnée X et Y dans la tilesmap. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tileX</td><td>: position en X du tile dans la tilesmap </td></tr>
+    <tr><td class="paramname">tileY</td><td>: position en Y du tile dans la tilesmap </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>-1 si X ou Y sont en dehors de la zone d'écran ou la tilesmap est visible, sinon 0 </dd></dl>
+
+</div>
+</div>
+<a id="ga74c625c1ea53acaf2280589e6d4c44ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga74c625c1ea53acaf2280589e6d4c44ce">&#9670;&nbsp;</a></span>STX_restoretilesmap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short STX_restoretilesmap </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long int *&#160;</td>
+          <td class="paramname"><em>saveadresse</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Restore la tilesmap qui à été sauvegardée. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*saveadresse</td><td>: pointeur sur l'adresse de la sauvegarde </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>-1 si le pointeur est null, sinon 0 </dd></dl>
+
+</div>
+</div>
+<a id="gaf405b62949d37f1c171fd5f77dff2693"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf405b62949d37f1c171fd5f77dff2693">&#9670;&nbsp;</a></span>STX_savetilesmap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short STX_savetilesmap </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long int *&#160;</td>
+          <td class="paramname"><em>saveadresse</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sauvegarde en mémoire la tilesmap en cours. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*saveadresse</td><td>: pointeur sur l'adresse de sauvegarde </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>-1 si le pointeur est null, sinon 0 </dd></dl>
+
+</div>
+</div>
+<a id="gaede9592a8ce93785508f3911c40aab4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaede9592a8ce93785508f3911c40aab4f">&#9670;&nbsp;</a></span>STX_settileprop1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void STX_settileprop1 </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>tilevalue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>property</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>permet de modifier la propriété 1 associée à la valeur d'un tile </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tilevalue</td><td>: Valeur du tile dont on veut modifier la propriété </td></tr>
+    <tr><td class="paramname">property</td><td>: Valeur de la propriété </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>les tiles ayant la valeur 0 n'ont pas de proriété </dd></dl>
+
+</div>
+</div>
+<a id="ga417adb0eed347bd3577515f72d3b62cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga417adb0eed347bd3577515f72d3b62cc">&#9670;&nbsp;</a></span>STX_settileprop2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void STX_settileprop2 </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>tilevalue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>property</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>permet de modifier la propriété 2 associée à la valeur d'un tile </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tilevalue</td><td>: Valeur du tile dont on veut modifier la propriété </td></tr>
+    <tr><td class="paramname">property</td><td>: Valeur de la propriété </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>les tiles ayant la valeur 0 n'ont pas de proriété </dd></dl>
+
+</div>
+</div>
+<a id="gaf3c07be05eb5b1ce9a0405288ef7feea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf3c07be05eb5b1ce9a0405288ef7feea">&#9670;&nbsp;</a></span>STX_settileprop3()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void STX_settileprop3 </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>tilevalue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>property</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>permet de modifier la propriété 3 associée à la valeur d'un tile </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tilevalue</td><td>: Valeur du tile dont on veut modifier la propriété </td></tr>
+    <tr><td class="paramname">property</td><td>: Valeur de la propriété </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>les tiles ayant la valeur 0 n'ont pas de proriété </dd></dl>
+
+</div>
+</div>
+<a id="ga40fffad7c2c4fc79ffc84f4c6da63f91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga40fffad7c2c4fc79ffc84f4c6da63f91">&#9670;&nbsp;</a></span>STX_settilesmaparea()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int STX_settilesmaparea </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>posx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>posy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>tileW</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>tileH</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defini taille affichable de le tilesmap ainsi que sa position de départ à l'écran. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">posx</td><td>: position en X sur l'écran </td></tr>
+    <tr><td class="paramname">posy</td><td>: position en X sur l'écran </td></tr>
+    <tr><td class="paramname">tileW</td><td>: Nombre de tile en largeur qui sera déssiner </td></tr>
+    <tr><td class="paramname">tileH</td><td>: Nombre de tile en hauteur qui sera déssiner </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>valeur négative si erreur d'allocation mémoire, sinon 0 </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>X doit être un multiple de 16 </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.16
+</small></address>
+</body>
+</html>

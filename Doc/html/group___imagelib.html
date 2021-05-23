@@ -1,0 +1,360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Atari STX_Engine: Gestion des images</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="atari logo.ico"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Atari STX_Engine
+   &#160;<span id="projectnumber">V1.0</span>
+   </div>
+   <div id="projectbrief">Bibliothéque de fonctions pour le moteur graphique des jeux</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Énumérations</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Gestion des images</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:gaf9980575c8e1dd014484ddc13e7579c8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___imagelib.html#gaf9980575c8e1dd014484ddc13e7579c8">STX_PICTURESIZE</a>&#160;&#160;&#160;32000</td></tr>
+<tr class="separator:gaf9980575c8e1dd014484ddc13e7579c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Énumérations</h2></td></tr>
+<tr class="memitem:gaeca80ae2ef3e4d5e2d450396b0689dea"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___imagelib.html#gaeca80ae2ef3e4d5e2d450396b0689dea">STX_picturetype</a> { <a class="el" href="group___imagelib.html#ggaeca80ae2ef3e4d5e2d450396b0689deaa77972db7f882c0c000f2347047950d82">PICTYPNEO</a> =(unsigned char)1, 
+<a class="el" href="group___imagelib.html#ggaeca80ae2ef3e4d5e2d450396b0689deaaa920236615a308943837a3692756da75">PICTYPDEGAS</a> =(unsigned char)12, 
+<a class="el" href="group___imagelib.html#ggaeca80ae2ef3e4d5e2d450396b0689deaaa40af506c4203ce371463ce4937b54d3">PICTYPDEGASEL</a> =(unsigned char)13
+ }</td></tr>
+<tr class="memdesc:gaeca80ae2ef3e4d5e2d450396b0689dea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration des type d'image possible à charger et à afficher.  <a href="group___imagelib.html#gaeca80ae2ef3e4d5e2d450396b0689dea">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gaeca80ae2ef3e4d5e2d450396b0689dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaac5fc11bffa7b371e0eb076666a68632"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___imagelib.html#gaac5fc11bffa7b371e0eb076666a68632">STX_displaymode</a> { <a class="el" href="group___imagelib.html#ggaac5fc11bffa7b371e0eb076666a68632a765ae4f8f09e8a28e363acc11643ed91">REPLACE</a> =(unsigned char)0, 
+<a class="el" href="group___imagelib.html#ggaac5fc11bffa7b371e0eb076666a68632a15d7820ba482f3e36ff47d7d2f1892ef">TRANSPARENT</a> =(unsigned char)1, 
+<a class="el" href="group___imagelib.html#ggaac5fc11bffa7b371e0eb076666a68632a49ecf38895ec3d2a7a48c9a283f5dd41">EFFACE</a> =(unsigned char)2
+ }</td></tr>
+<tr class="memdesc:gaac5fc11bffa7b371e0eb076666a68632"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration des mode d'affichage des spriteset en tant que image.  <a href="group___imagelib.html#gaac5fc11bffa7b371e0eb076666a68632">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gaac5fc11bffa7b371e0eb076666a68632"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:ga264b53fabaeddd06c6c49c9cad79ec9b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___imagelib.html#ga264b53fabaeddd06c6c49c9cad79ec9b">STX_loadpicture</a> (<a class="el" href="group___imagelib.html#gaeca80ae2ef3e4d5e2d450396b0689dea">STX_picturetype</a> type, char *path, long int *memory)</td></tr>
+<tr class="memdesc:ga264b53fabaeddd06c6c49c9cad79ec9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Charge en memoire une image Neochrome, degas ou degaselite.  <a href="group___imagelib.html#ga264b53fabaeddd06c6c49c9cad79ec9b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga264b53fabaeddd06c6c49c9cad79ec9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4a328fb741dc51170aff6d1a4a6fd380"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___imagelib.html#ga4a328fb741dc51170aff6d1a4a6fd380">STX_blitloadedpicture</a> (long int *srcaddr, long int *destaddr, unsigned short src_x, unsigned short src_y, unsigned short src_width, unsigned short src_height, unsigned short dest_x, unsigned short dest_y)</td></tr>
+<tr class="memdesc:ga4a328fb741dc51170aff6d1a4a6fd380"><td class="mdescLeft">&#160;</td><td class="mdescRight">copie l'image ou une partie de l'image de la memoire source à une position dans une memoire destination  <a href="group___imagelib.html#ga4a328fb741dc51170aff6d1a4a6fd380">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga4a328fb741dc51170aff6d1a4a6fd380"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga875a1f83192296add6691eeb70992521"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___imagelib.html#ga875a1f83192296add6691eeb70992521">STX_displayspriteset</a> (unsigned short motifid, unsigned short posx, unsigned short posy, <a class="el" href="group___imagelib.html#gaac5fc11bffa7b371e0eb076666a68632">STX_displaymode</a> mode)</td></tr>
+<tr class="memdesc:ga875a1f83192296add6691eeb70992521"><td class="mdescLeft">&#160;</td><td class="mdescRight">affiche un motif de spriteset en tant qu'image, pas de mémorisation de l'arriére plan  <a href="group___imagelib.html#ga875a1f83192296add6691eeb70992521">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga875a1f83192296add6691eeb70992521"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<h2 class="groupheader">Documentation des macros</h2>
+<a id="gaf9980575c8e1dd014484ddc13e7579c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf9980575c8e1dd014484ddc13e7579c8">&#9670;&nbsp;</a></span>STX_PICTURESIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STX_PICTURESIZE&#160;&#160;&#160;32000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Taille d'une image en m�moire </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation du type de l'énumération</h2>
+<a id="gaac5fc11bffa7b371e0eb076666a68632"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaac5fc11bffa7b371e0eb076666a68632">&#9670;&nbsp;</a></span>STX_displaymode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___imagelib.html#gaac5fc11bffa7b371e0eb076666a68632">STX_displaymode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enumeration des mode d'affichage des spriteset en tant que image. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="ggaac5fc11bffa7b371e0eb076666a68632a765ae4f8f09e8a28e363acc11643ed91"></a>REPLACE&#160;</td><td class="fielddoc"><p>Affichage en mode replace </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaac5fc11bffa7b371e0eb076666a68632a15d7820ba482f3e36ff47d7d2f1892ef"></a>TRANSPARENT&#160;</td><td class="fielddoc"><p>Affichage en mode transparence </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaac5fc11bffa7b371e0eb076666a68632a49ecf38895ec3d2a7a48c9a283f5dd41"></a>EFFACE&#160;</td><td class="fielddoc"><p>Affichage en mode effacement </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="gaeca80ae2ef3e4d5e2d450396b0689dea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeca80ae2ef3e4d5e2d450396b0689dea">&#9670;&nbsp;</a></span>STX_picturetype</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___imagelib.html#gaeca80ae2ef3e4d5e2d450396b0689dea">STX_picturetype</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enumeration des type d'image possible à charger et à afficher. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="ggaeca80ae2ef3e4d5e2d450396b0689deaa77972db7f882c0c000f2347047950d82"></a>PICTYPNEO&#160;</td><td class="fielddoc"><p>Numero du type d'image Neocharome </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaeca80ae2ef3e4d5e2d450396b0689deaaa920236615a308943837a3692756da75"></a>PICTYPDEGAS&#160;</td><td class="fielddoc"><p>Numero du type d'image Degas </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaeca80ae2ef3e4d5e2d450396b0689deaaa40af506c4203ce371463ce4937b54d3"></a>PICTYPDEGASEL&#160;</td><td class="fielddoc"><p>Numero du type d'image DegasElite </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="ga4a328fb741dc51170aff6d1a4a6fd380"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4a328fb741dc51170aff6d1a4a6fd380">&#9670;&nbsp;</a></span>STX_blitloadedpicture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void STX_blitloadedpicture </td>
+          <td>(</td>
+          <td class="paramtype">long int *&#160;</td>
+          <td class="paramname"><em>srcaddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long int *&#160;</td>
+          <td class="paramname"><em>destaddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>src_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>src_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>src_width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>src_height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>dest_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>dest_y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>copie l'image ou une partie de l'image de la memoire source à une position dans une memoire destination </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">srcaddr</td><td>: Adresse source de stockage de l'image </td></tr>
+    <tr><td class="paramname">destaddr</td><td>: Adresse de destination de copie de l'image </td></tr>
+    <tr><td class="paramname">src_x</td><td>: Position X dans l'image de la zone à blitter </td></tr>
+    <tr><td class="paramname">src_y</td><td>: Position Y dans l'image de la zone à blitter </td></tr>
+    <tr><td class="paramname">src_width</td><td>: Largeur de la zone à blitter </td></tr>
+    <tr><td class="paramname">src_height</td><td>: Hauteur de la zone à blitter </td></tr>
+    <tr><td class="paramname">dest_x</td><td>: Position X de l'image dans la mémoire de destination </td></tr>
+    <tr><td class="paramname">dest_y</td><td>: Position Y de l'image dans la mémoire de destination </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga875a1f83192296add6691eeb70992521"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga875a1f83192296add6691eeb70992521">&#9670;&nbsp;</a></span>STX_displayspriteset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void STX_displayspriteset </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>motifid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>posx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>posy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___imagelib.html#gaac5fc11bffa7b371e0eb076666a68632">STX_displaymode</a>&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>affiche un motif de spriteset en tant qu'image, pas de mémorisation de l'arriére plan </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">motifid</td><td>: numéro du motif dans la fichier </td></tr>
+    <tr><td class="paramname">posx</td><td>: coordonnée d'affichage X à l'écran </td></tr>
+    <tr><td class="paramname">posy</td><td>: coordonnée d'affichage Y à l'écran </td></tr>
+    <tr><td class="paramname">mode</td><td>: mode d'affichage Replace, transparent ou efface</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>Voir également</dt><dd><a class="el" href="group___imagelib.html#gaac5fc11bffa7b371e0eb076666a68632" title="Enumeration des mode d&#39;affichage des spriteset en tant que image.">STX_displaymode</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga264b53fabaeddd06c6c49c9cad79ec9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga264b53fabaeddd06c6c49c9cad79ec9b">&#9670;&nbsp;</a></span>STX_loadpicture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int STX_loadpicture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___imagelib.html#gaeca80ae2ef3e4d5e2d450396b0689dea">STX_picturetype</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long int *&#160;</td>
+          <td class="paramname"><em>memory</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Charge en memoire une image Neochrome, degas ou degaselite. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>: Type de l'image à charger </td></tr>
+    <tr><td class="paramname">*path</td><td>: pointeur sur le nom et le chemi d'accés au fichier </td></tr>
+    <tr><td class="paramname">memory</td><td>: Adresse de stockage de l'image en mémoire </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 si pas d'erreur, sinon valeur négative </dd></dl>
+<dl class="section see"><dt>Voir également</dt><dd><a class="el" href="group___imagelib.html#gaeca80ae2ef3e4d5e2d450396b0689dea" title="Enumeration des type d&#39;image possible à charger et à afficher.">STX_picturetype</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.16
+</small></address>
+</body>
+</html>

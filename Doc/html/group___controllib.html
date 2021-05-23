@@ -1,0 +1,2142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Atari STX_Engine: Control des Joysticks, du clavier et de la souris</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="atari logo.ico"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Atari STX_Engine
+   &#160;<span id="projectnumber">V1.0</span>
+   </div>
+   <div id="projectbrief">Bibliothéque de fonctions pour le moteur graphique des jeux</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Structures de données</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Énumérations</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Control des Joysticks, du clavier et de la souris</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Structures de données</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_t_x__ikbddatetime.html">STX_ikbddatetime</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure de valeur BCD fournissant la date et l'heure du systéme.  <a href="struct_s_t_x__ikbddatetime.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga2772a1f7024ba1fd62e88ec1adb541f8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga2772a1f7024ba1fd62e88ec1adb541f8">KEY_F1</a>&#160;&#160;&#160;59</td></tr>
+<tr class="separator:ga2772a1f7024ba1fd62e88ec1adb541f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae2e2edb31bb7796786da12f85f2d5cd1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gae2e2edb31bb7796786da12f85f2d5cd1">KEY_F2</a>&#160;&#160;&#160;60</td></tr>
+<tr class="separator:gae2e2edb31bb7796786da12f85f2d5cd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga38ebe8e5c5f1d5727c9638bf79fc3952"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga38ebe8e5c5f1d5727c9638bf79fc3952">KEY_F3</a>&#160;&#160;&#160;61</td></tr>
+<tr class="separator:ga38ebe8e5c5f1d5727c9638bf79fc3952"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab99474b01ffcbc57d74b60a77895e5e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gab99474b01ffcbc57d74b60a77895e5e8">KEY_F4</a>&#160;&#160;&#160;62</td></tr>
+<tr class="separator:gab99474b01ffcbc57d74b60a77895e5e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2a0aae1931111382ade29fd75ef64790"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga2a0aae1931111382ade29fd75ef64790">KEY_F5</a>&#160;&#160;&#160;63</td></tr>
+<tr class="separator:ga2a0aae1931111382ade29fd75ef64790"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad31281b771b8b85f4aa98bbd527d91a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gad31281b771b8b85f4aa98bbd527d91a0">KEY_F6</a>&#160;&#160;&#160;64</td></tr>
+<tr class="separator:gad31281b771b8b85f4aa98bbd527d91a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7eed6766ef9ddb721c6a2bce807fc9dc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga7eed6766ef9ddb721c6a2bce807fc9dc">KEY_F7</a>&#160;&#160;&#160;65</td></tr>
+<tr class="separator:ga7eed6766ef9ddb721c6a2bce807fc9dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7a8ad03f07f2e4757a70385e88fbbe3c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga7a8ad03f07f2e4757a70385e88fbbe3c">KEY_F8</a>&#160;&#160;&#160;66</td></tr>
+<tr class="separator:ga7a8ad03f07f2e4757a70385e88fbbe3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga417a382624f91fb0cdfdf1c33adc8c90"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga417a382624f91fb0cdfdf1c33adc8c90">KEY_F9</a>&#160;&#160;&#160;67</td></tr>
+<tr class="separator:ga417a382624f91fb0cdfdf1c33adc8c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad37282615edb2c357149c2a1342b4a85"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gad37282615edb2c357149c2a1342b4a85">KEY_F10</a>&#160;&#160;&#160;68</td></tr>
+<tr class="separator:gad37282615edb2c357149c2a1342b4a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga75686b4afca96e15e07914e61fe62233"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga75686b4afca96e15e07914e61fe62233">KEY_ECHAPE</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:ga75686b4afca96e15e07914e61fe62233"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5a7fd35018971faa28dacd3e33a8f737"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga5a7fd35018971faa28dacd3e33a8f737">KEY_1</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:ga5a7fd35018971faa28dacd3e33a8f737"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3a146cb397d373be978dfa9fd1dc9b3a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga3a146cb397d373be978dfa9fd1dc9b3a">KEY_2</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:ga3a146cb397d373be978dfa9fd1dc9b3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga701a135e841c3cfb69d9c5bb1444e198"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga701a135e841c3cfb69d9c5bb1444e198">KEY_3</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:ga701a135e841c3cfb69d9c5bb1444e198"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga219891753a1b6ccd51c8ae763905dbf9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga219891753a1b6ccd51c8ae763905dbf9">KEY_4</a>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:ga219891753a1b6ccd51c8ae763905dbf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8520da12c76efb8ca95ca2068d1ca35c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga8520da12c76efb8ca95ca2068d1ca35c">KEY_5</a>&#160;&#160;&#160;6</td></tr>
+<tr class="separator:ga8520da12c76efb8ca95ca2068d1ca35c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4ab32ce5ef6b5d115253d2a712f2e19b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga4ab32ce5ef6b5d115253d2a712f2e19b">KEY_6</a>&#160;&#160;&#160;7</td></tr>
+<tr class="separator:ga4ab32ce5ef6b5d115253d2a712f2e19b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5895875bee3ae13b13cdb5e85b45161b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga5895875bee3ae13b13cdb5e85b45161b">KEY_7</a>&#160;&#160;&#160;8</td></tr>
+<tr class="separator:ga5895875bee3ae13b13cdb5e85b45161b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad2888e35bf1cbd0b25c3e82bc360c647"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gad2888e35bf1cbd0b25c3e82bc360c647">KEY_8</a>&#160;&#160;&#160;9</td></tr>
+<tr class="separator:gad2888e35bf1cbd0b25c3e82bc360c647"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae6838379f118dfbfc78d82fcd8886a41"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gae6838379f118dfbfc78d82fcd8886a41">KEY_9</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:gae6838379f118dfbfc78d82fcd8886a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga51ca76d1508339b071a974798b90474b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga51ca76d1508339b071a974798b90474b">KEY_0</a>&#160;&#160;&#160;11</td></tr>
+<tr class="separator:ga51ca76d1508339b071a974798b90474b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga01193746941d5d16b62a796143085017"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga01193746941d5d16b62a796143085017">KEY_DEGRES</a>&#160;&#160;&#160;12</td></tr>
+<tr class="separator:ga01193746941d5d16b62a796143085017"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab19d3e7d4179ff46fdcf3edf90743e91"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gab19d3e7d4179ff46fdcf3edf90743e91">KEY_UNDERSCORE</a>&#160;&#160;&#160;13</td></tr>
+<tr class="separator:gab19d3e7d4179ff46fdcf3edf90743e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad77cd08ee0b153efc9121290da8dff8b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gad77cd08ee0b153efc9121290da8dff8b">KEY_LIVRE</a>&#160;&#160;&#160;41</td></tr>
+<tr class="separator:gad77cd08ee0b153efc9121290da8dff8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e9a449dee19c686a2af4edcdc1a1042"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga1e9a449dee19c686a2af4edcdc1a1042">KEY_BACKSPACE</a>&#160;&#160;&#160;14</td></tr>
+<tr class="separator:ga1e9a449dee19c686a2af4edcdc1a1042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4fa9fbcc86d5ee884a821459a87f3a54"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga4fa9fbcc86d5ee884a821459a87f3a54">KEY_TAB</a>&#160;&#160;&#160;15</td></tr>
+<tr class="separator:ga4fa9fbcc86d5ee884a821459a87f3a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga024e62650f02bfd64a4ce2b158ec2dd7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga024e62650f02bfd64a4ce2b158ec2dd7">KEY_A</a>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:ga024e62650f02bfd64a4ce2b158ec2dd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7c655f9f55336c6db42503e356028f4d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga7c655f9f55336c6db42503e356028f4d">KEY_Z</a>&#160;&#160;&#160;17</td></tr>
+<tr class="separator:ga7c655f9f55336c6db42503e356028f4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga76fcab7ae716facf6eefcee03457fe7d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga76fcab7ae716facf6eefcee03457fe7d">KEY_E</a>&#160;&#160;&#160;18</td></tr>
+<tr class="separator:ga76fcab7ae716facf6eefcee03457fe7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa020da9e48a194889ac72f94408b3c25"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gaa020da9e48a194889ac72f94408b3c25">KEY_R</a>&#160;&#160;&#160;19</td></tr>
+<tr class="separator:gaa020da9e48a194889ac72f94408b3c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadb39050b8845e8b16f503a747e196749"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gadb39050b8845e8b16f503a747e196749">KEY_T</a>&#160;&#160;&#160;20</td></tr>
+<tr class="separator:gadb39050b8845e8b16f503a747e196749"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad9db04899df9fe71bb221c02721e28ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gad9db04899df9fe71bb221c02721e28ac">KEY_Y</a>&#160;&#160;&#160;21</td></tr>
+<tr class="separator:gad9db04899df9fe71bb221c02721e28ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga050a6de4c5edb8eb9582c3eb80fed07f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga050a6de4c5edb8eb9582c3eb80fed07f">KEY_U</a>&#160;&#160;&#160;22</td></tr>
+<tr class="separator:ga050a6de4c5edb8eb9582c3eb80fed07f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga31ae832a3de882f92710ed9cb0b46e0a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga31ae832a3de882f92710ed9cb0b46e0a">KEY_I</a>&#160;&#160;&#160;23</td></tr>
+<tr class="separator:ga31ae832a3de882f92710ed9cb0b46e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadc0df72b7f6cbb006adeabff653ebeac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gadc0df72b7f6cbb006adeabff653ebeac">KEY_O</a>&#160;&#160;&#160;24</td></tr>
+<tr class="separator:gadc0df72b7f6cbb006adeabff653ebeac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0d7cb02ca48dc1dc020e54d104fb9915"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga0d7cb02ca48dc1dc020e54d104fb9915">KEY_P</a>&#160;&#160;&#160;25</td></tr>
+<tr class="separator:ga0d7cb02ca48dc1dc020e54d104fb9915"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga77d9a64af8e44fada2ae9e65967c82b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga77d9a64af8e44fada2ae9e65967c82b3">KEY_CARET</a>&#160;&#160;&#160;26</td></tr>
+<tr class="separator:ga77d9a64af8e44fada2ae9e65967c82b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabbc3a02489d28857b0d1f8cb2b5985fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gabbc3a02489d28857b0d1f8cb2b5985fb">KEY_DOLLAR</a>&#160;&#160;&#160;27</td></tr>
+<tr class="separator:gabbc3a02489d28857b0d1f8cb2b5985fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1d654db2e04ad94a58f880fb9e127ad6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga1d654db2e04ad94a58f880fb9e127ad6">KEY_DELETE</a>&#160;&#160;&#160;53</td></tr>
+<tr class="separator:ga1d654db2e04ad94a58f880fb9e127ad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1cda14a8f28f9008ed77914ee9351560"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga1cda14a8f28f9008ed77914ee9351560">KEY_CONTROL</a>&#160;&#160;&#160;29</td></tr>
+<tr class="separator:ga1cda14a8f28f9008ed77914ee9351560"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga201284fc5d50eea7e2db09fb5495bceb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga201284fc5d50eea7e2db09fb5495bceb">KEY_Q</a>&#160;&#160;&#160;30</td></tr>
+<tr class="separator:ga201284fc5d50eea7e2db09fb5495bceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6f09e2899747f5db41369ce1dae11ebd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga6f09e2899747f5db41369ce1dae11ebd">KEY_S</a>&#160;&#160;&#160;31</td></tr>
+<tr class="separator:ga6f09e2899747f5db41369ce1dae11ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad2017b35fcff527a10050ab7c9af2d5c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gad2017b35fcff527a10050ab7c9af2d5c">KEY_D</a>&#160;&#160;&#160;32</td></tr>
+<tr class="separator:gad2017b35fcff527a10050ab7c9af2d5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacc696937f28ef5bdd90eeb8addd0ef82"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gacc696937f28ef5bdd90eeb8addd0ef82">KEY_F</a>&#160;&#160;&#160;33</td></tr>
+<tr class="separator:gacc696937f28ef5bdd90eeb8addd0ef82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac38f385af8c9c0b21678f07b55f28edf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gac38f385af8c9c0b21678f07b55f28edf">KEY_G</a>&#160;&#160;&#160;34</td></tr>
+<tr class="separator:gac38f385af8c9c0b21678f07b55f28edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac7cfd77bb9d2d498bbf591be4420f7a8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gac7cfd77bb9d2d498bbf591be4420f7a8">KEY_H</a>&#160;&#160;&#160;35</td></tr>
+<tr class="separator:gac7cfd77bb9d2d498bbf591be4420f7a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5e90bac1d19a8a6b8bc79be340470271"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga5e90bac1d19a8a6b8bc79be340470271">KEY_J</a>&#160;&#160;&#160;36</td></tr>
+<tr class="separator:ga5e90bac1d19a8a6b8bc79be340470271"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga98a32c947983c2266dfc309eb7f3fc5c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga98a32c947983c2266dfc309eb7f3fc5c">KEY_K</a>&#160;&#160;&#160;37</td></tr>
+<tr class="separator:ga98a32c947983c2266dfc309eb7f3fc5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga600bb1ce7eb7b6ca4dcbb41546c32ec5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga600bb1ce7eb7b6ca4dcbb41546c32ec5">KEY_L</a>&#160;&#160;&#160;38</td></tr>
+<tr class="separator:ga600bb1ce7eb7b6ca4dcbb41546c32ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae2552d156f2ef6dff240456f7c648beb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gae2552d156f2ef6dff240456f7c648beb">KEY_M</a>&#160;&#160;&#160;39</td></tr>
+<tr class="separator:gae2552d156f2ef6dff240456f7c648beb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2156176ee132e72f170871da119fdf46"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga2156176ee132e72f170871da119fdf46">KEY_PURCENT</a>&#160;&#160;&#160;40</td></tr>
+<tr class="separator:ga2156176ee132e72f170871da119fdf46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafe5716cf1626fceab51044a6c2492831"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gafe5716cf1626fceab51044a6c2492831">KEY_RETURN</a>&#160;&#160;&#160;28</td></tr>
+<tr class="separator:gafe5716cf1626fceab51044a6c2492831"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga11d46f8551106303f4cffb9d67084ef1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga11d46f8551106303f4cffb9d67084ef1">KEY_HASH</a>&#160;&#160;&#160;43</td></tr>
+<tr class="separator:ga11d46f8551106303f4cffb9d67084ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga13a0f4f476ef33ca0ef8f62c3ed3823b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga13a0f4f476ef33ca0ef8f62c3ed3823b">KEY_LEFTSHIFT</a>&#160;&#160;&#160;42</td></tr>
+<tr class="separator:ga13a0f4f476ef33ca0ef8f62c3ed3823b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3eefcaaf496c52c1c7283caa3d1dab99"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga3eefcaaf496c52c1c7283caa3d1dab99">KEY_MINUS</a>&#160;&#160;&#160;96</td></tr>
+<tr class="separator:ga3eefcaaf496c52c1c7283caa3d1dab99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafdebd5d771ee260c703a74f459767c09"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gafdebd5d771ee260c703a74f459767c09">KEY_W</a>&#160;&#160;&#160;44</td></tr>
+<tr class="separator:gafdebd5d771ee260c703a74f459767c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga832280ef5a7afeda19f32939951e8b10"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga832280ef5a7afeda19f32939951e8b10">KEY_X</a>&#160;&#160;&#160;45</td></tr>
+<tr class="separator:ga832280ef5a7afeda19f32939951e8b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga21db833332c950e74a8d5cd79ebffc8d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga21db833332c950e74a8d5cd79ebffc8d">KEY_C</a>&#160;&#160;&#160;46</td></tr>
+<tr class="separator:ga21db833332c950e74a8d5cd79ebffc8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1b4a450ef7e51ae0b691dd5489f74535"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga1b4a450ef7e51ae0b691dd5489f74535">KEY_V</a>&#160;&#160;&#160;47</td></tr>
+<tr class="separator:ga1b4a450ef7e51ae0b691dd5489f74535"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad2ae94d1ffed5c399aa6f8c40c0fc3c7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gad2ae94d1ffed5c399aa6f8c40c0fc3c7">KEY_B</a>&#160;&#160;&#160;48</td></tr>
+<tr class="separator:gad2ae94d1ffed5c399aa6f8c40c0fc3c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2e446da6a7d4ff47e81f5318a40e53ea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga2e446da6a7d4ff47e81f5318a40e53ea">KEY_N</a>&#160;&#160;&#160;49</td></tr>
+<tr class="separator:ga2e446da6a7d4ff47e81f5318a40e53ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3727ebd605eebecd9823d39a0426eef0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga3727ebd605eebecd9823d39a0426eef0">KEY_QUESTION</a>&#160;&#160;&#160;50</td></tr>
+<tr class="separator:ga3727ebd605eebecd9823d39a0426eef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaaf77eb9716854e4838799c5d2bd26a5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gaaaf77eb9716854e4838799c5d2bd26a5">KEY_SEMICOLON</a>&#160;&#160;&#160;51</td></tr>
+<tr class="separator:gaaaf77eb9716854e4838799c5d2bd26a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae98958c265380bd0e491ef368c513196"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gae98958c265380bd0e491ef368c513196">KEY_SLASH</a>&#160;&#160;&#160;52</td></tr>
+<tr class="separator:gae98958c265380bd0e491ef368c513196"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0375ea9035bf8ce39b90665c49d27f34"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga0375ea9035bf8ce39b90665c49d27f34">KEY_EQUALS</a>&#160;&#160;&#160;53</td></tr>
+<tr class="separator:ga0375ea9035bf8ce39b90665c49d27f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2f554668b12882e07f3b09affc1136d8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga2f554668b12882e07f3b09affc1136d8">KEY_RIGHTSHIFT</a>&#160;&#160;&#160;54</td></tr>
+<tr class="separator:ga2f554668b12882e07f3b09affc1136d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga778c2cba8c697b09e1d6bf1d504e739f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga778c2cba8c697b09e1d6bf1d504e739f">KEY_ALTERNATE</a>&#160;&#160;&#160;T56</td></tr>
+<tr class="separator:ga778c2cba8c697b09e1d6bf1d504e739f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8a5ff83d21dfa704c1c3eff56d5b3a4b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga8a5ff83d21dfa704c1c3eff56d5b3a4b">KEY_SPACE</a>&#160;&#160;&#160;57</td></tr>
+<tr class="separator:ga8a5ff83d21dfa704c1c3eff56d5b3a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf168e54444bdaff5f50f6f4734784762"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gaf168e54444bdaff5f50f6f4734784762">KEY_CAPSLOCK</a>&#160;&#160;&#160;58</td></tr>
+<tr class="separator:gaf168e54444bdaff5f50f6f4734784762"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga25d124148127e7f9f57ba21c0a8eaf7c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga25d124148127e7f9f57ba21c0a8eaf7c">KEY_HELP</a>&#160;&#160;&#160;98</td></tr>
+<tr class="separator:ga25d124148127e7f9f57ba21c0a8eaf7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadedb4a254c6a94be9a46e28dc1e5d218"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gadedb4a254c6a94be9a46e28dc1e5d218">KEY_UNDO</a>&#160;&#160;&#160;97</td></tr>
+<tr class="separator:gadedb4a254c6a94be9a46e28dc1e5d218"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaa67a531439790dc20ed750f482d4a3e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gaaa67a531439790dc20ed750f482d4a3e">KEY_INSERT</a>&#160;&#160;&#160;82</td></tr>
+<tr class="separator:gaaa67a531439790dc20ed750f482d4a3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafa086fc916a81e7fd348ec00cf786916"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gafa086fc916a81e7fd348ec00cf786916">KEY_UP</a>&#160;&#160;&#160;72</td></tr>
+<tr class="separator:gafa086fc916a81e7fd348ec00cf786916"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7e3030900c439864f66525aab8031124"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga7e3030900c439864f66525aab8031124">KEY_CLEARHOME</a>&#160;&#160;&#160;71</td></tr>
+<tr class="separator:ga7e3030900c439864f66525aab8031124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf4d1b8a2912354646c74cf36c69f8223"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gaf4d1b8a2912354646c74cf36c69f8223">KEY_LEFT</a>&#160;&#160;&#160;75</td></tr>
+<tr class="separator:gaf4d1b8a2912354646c74cf36c69f8223"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga203163bc0189184a1de6ca8d1e53c6bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga203163bc0189184a1de6ca8d1e53c6bf">KEY_DOWN</a>&#160;&#160;&#160;80</td></tr>
+<tr class="separator:ga203163bc0189184a1de6ca8d1e53c6bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga004194639b9ad76cea01d9e93716d4d6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga004194639b9ad76cea01d9e93716d4d6">KEY_RIGHT</a>&#160;&#160;&#160;77</td></tr>
+<tr class="separator:ga004194639b9ad76cea01d9e93716d4d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1721d9ae08e99d266144824898583a2b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga1721d9ae08e99d266144824898583a2b">KEY_NUMPAD_OPENPAREN</a>&#160;&#160;&#160;99</td></tr>
+<tr class="separator:ga1721d9ae08e99d266144824898583a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0c664fd5ab3ea81ce4609e0788bac146"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga0c664fd5ab3ea81ce4609e0788bac146">KEY_NUMPAD_CLOSEPAREN</a>&#160;&#160;&#160;100</td></tr>
+<tr class="separator:ga0c664fd5ab3ea81ce4609e0788bac146"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab901c992ebba24ffc5e2c93aa0d68a0b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gab901c992ebba24ffc5e2c93aa0d68a0b">KEY_NUMPAD_SLASH</a>&#160;&#160;&#160;101</td></tr>
+<tr class="separator:gab901c992ebba24ffc5e2c93aa0d68a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf042db1b57f01337a58a015c782fae35"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gaf042db1b57f01337a58a015c782fae35">KEY_NUMPAD_ASTERISK</a>&#160;&#160;&#160;102</td></tr>
+<tr class="separator:gaf042db1b57f01337a58a015c782fae35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaea32b738e4786e860581cd8b9044d670"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gaea32b738e4786e860581cd8b9044d670">KEY_NUMPAD_7</a>&#160;&#160;&#160;103</td></tr>
+<tr class="separator:gaea32b738e4786e860581cd8b9044d670"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacb009ee42ceb6469cd6d5e952d6ad4d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gacb009ee42ceb6469cd6d5e952d6ad4d1">KEY_NUMPAD_8</a>&#160;&#160;&#160;104</td></tr>
+<tr class="separator:gacb009ee42ceb6469cd6d5e952d6ad4d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga98184ef62f3e2f86ff64864d8a998184"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga98184ef62f3e2f86ff64864d8a998184">KEY_NUMPAD_9</a>&#160;&#160;&#160;105</td></tr>
+<tr class="separator:ga98184ef62f3e2f86ff64864d8a998184"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaefaf057d7e3b9928c07141ed32c1ee91"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gaefaf057d7e3b9928c07141ed32c1ee91">KEY_NUMPAD_MINUS</a>&#160;&#160;&#160;74</td></tr>
+<tr class="separator:gaefaf057d7e3b9928c07141ed32c1ee91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab77df6ba5be61034da8530fda270c22e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gab77df6ba5be61034da8530fda270c22e">KEY_NUMPAD_4</a>&#160;&#160;&#160;106</td></tr>
+<tr class="separator:gab77df6ba5be61034da8530fda270c22e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf4f1ead45029692ae2581de5ecd567d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gaf4f1ead45029692ae2581de5ecd567d5">KEY_NUMPAD_5</a>&#160;&#160;&#160;107</td></tr>
+<tr class="separator:gaf4f1ead45029692ae2581de5ecd567d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2ee117602040aac06c38d5fe6268aa7e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga2ee117602040aac06c38d5fe6268aa7e">KEY_NUMPAD_6</a>&#160;&#160;&#160;108</td></tr>
+<tr class="separator:ga2ee117602040aac06c38d5fe6268aa7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga32ff5a9c01683d41f4f0f17fc483a640"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga32ff5a9c01683d41f4f0f17fc483a640">KEY_NUMPAD_PLUS</a>&#160;&#160;&#160;78</td></tr>
+<tr class="separator:ga32ff5a9c01683d41f4f0f17fc483a640"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaeb5f24ba1befa0ab86fbb9b4836a6a8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gaaeb5f24ba1befa0ab86fbb9b4836a6a8">KEY_NUMPAD_1</a>&#160;&#160;&#160;109</td></tr>
+<tr class="separator:gaaeb5f24ba1befa0ab86fbb9b4836a6a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb343b8be7ea6d2ecab19fc022400df9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gaeb343b8be7ea6d2ecab19fc022400df9">KEY_NUMPAD_2</a>&#160;&#160;&#160;110</td></tr>
+<tr class="separator:gaeb343b8be7ea6d2ecab19fc022400df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2666c8967f32df00209613cd3dd11512"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga2666c8967f32df00209613cd3dd11512">KEY_NUMPAD_3</a>&#160;&#160;&#160;111</td></tr>
+<tr class="separator:ga2666c8967f32df00209613cd3dd11512"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga369ec47d8430b7b346390e2d0095ae53"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga369ec47d8430b7b346390e2d0095ae53">KEY_NUMPAD_ENTER</a>&#160;&#160;&#160;114</td></tr>
+<tr class="separator:ga369ec47d8430b7b346390e2d0095ae53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga358289c650ce0bceed4de1d9872a36a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga358289c650ce0bceed4de1d9872a36a4">KEY_NUMPAD_0</a>&#160;&#160;&#160;112</td></tr>
+<tr class="separator:ga358289c650ce0bceed4de1d9872a36a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga950fb27791c3f0b9fba7a8053d2fdcf9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga950fb27791c3f0b9fba7a8053d2fdcf9">KEY_NUMPAD_PERIOD</a>&#160;&#160;&#160;113</td></tr>
+<tr class="separator:ga950fb27791c3f0b9fba7a8053d2fdcf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Énumérations</h2></td></tr>
+<tr class="memitem:ga9b88ec89fc942506d3a2c69309cb3793"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga9b88ec89fc942506d3a2c69309cb3793">STX_joystickvalue</a> { <br />
+&#160;&#160;<a class="el" href="group___controllib.html#gga9b88ec89fc942506d3a2c69309cb3793a41d32e2e938092af4bd2357cfd413eb0">JOY_ERROR</a> =(unsigned char)0xFF, 
+<a class="el" href="group___controllib.html#gga9b88ec89fc942506d3a2c69309cb3793a05f25880b9a9ec098379c1f6be742682">JOY_UP</a> =(unsigned char)0x01, 
+<a class="el" href="group___controllib.html#gga9b88ec89fc942506d3a2c69309cb3793a76c8c4e6d945b163ef1bd87e2e0b58aa">JOY_RIGHT</a> =(unsigned char)0x08, 
+<a class="el" href="group___controllib.html#gga9b88ec89fc942506d3a2c69309cb3793a58ec7b8847be5467694d882fb1133a9c">JOY_DOWN</a> =(unsigned char)0x02, 
+<br />
+&#160;&#160;<a class="el" href="group___controllib.html#gga9b88ec89fc942506d3a2c69309cb3793ae07924a05c719edda9d15bdf369c134d">JOY_LEFT</a> =(unsigned char)0x04, 
+<a class="el" href="group___controllib.html#gga9b88ec89fc942506d3a2c69309cb3793a81216202ecb701a7c12aa5af61a6c1bc">JOY_UPRIGHT</a> =(unsigned char)0x09, 
+<a class="el" href="group___controllib.html#gga9b88ec89fc942506d3a2c69309cb3793a0495e47b26e6eac4358282db4da42ea4">JOY_DOWNRIGHT</a> =(unsigned char)0x0A, 
+<a class="el" href="group___controllib.html#gga9b88ec89fc942506d3a2c69309cb3793a2bb20f2f7c68ccc9b1428fd85746cfea">JOY_DOWNLEFT</a> =(unsigned char)0x06, 
+<br />
+&#160;&#160;<a class="el" href="group___controllib.html#gga9b88ec89fc942506d3a2c69309cb3793ac89944d553d93ef2868c976695b01b28">JOY_UPLEFT</a> =(unsigned char)0x05, 
+<a class="el" href="group___controllib.html#gga9b88ec89fc942506d3a2c69309cb3793a55ba77a3571ca2df6f8b9157d85bc99b">JOY_PAUSE</a> =(unsigned char)0x00
+<br />
+ }</td></tr>
+<tr class="memdesc:ga9b88ec89fc942506d3a2c69309cb3793"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration des valeurs de positionnement du joystick.  <a href="group___controllib.html#ga9b88ec89fc942506d3a2c69309cb3793">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga9b88ec89fc942506d3a2c69309cb3793"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga029f35c2423f4c9191a5c5be98fa3da0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga029f35c2423f4c9191a5c5be98fa3da0">STX_joystickaction</a> { <a class="el" href="group___controllib.html#gga029f35c2423f4c9191a5c5be98fa3da0a88ec0385d29a8183577e60cf6051cc14">JOY_ACTION</a> =(unsigned char)0x80, 
+<a class="el" href="group___controllib.html#gga029f35c2423f4c9191a5c5be98fa3da0a7e34ff0f536357a7cfa1a4a46ca279c3">JOY_NOACTION</a> =(unsigned char)0x00
+ }</td></tr>
+<tr class="memdesc:ga029f35c2423f4c9191a5c5be98fa3da0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration des valeurs du bouton action du joystick.  <a href="group___controllib.html#ga029f35c2423f4c9191a5c5be98fa3da0">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga029f35c2423f4c9191a5c5be98fa3da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:ga46bced104244ba010698afde6e6b1871"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga46bced104244ba010698afde6e6b1871">STX_startjoystickreport</a> ()</td></tr>
+<tr class="memdesc:ga46bced104244ba010698afde6e6b1871"><td class="mdescLeft">&#160;</td><td class="mdescRight">Active le report du status des joysticks 0 et 1.  <a href="group___controllib.html#ga46bced104244ba010698afde6e6b1871">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga46bced104244ba010698afde6e6b1871"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd985aa209211ef68a4b6f3b76421353"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gadd985aa209211ef68a4b6f3b76421353">STX_startmousereport</a> ()</td></tr>
+<tr class="memdesc:gadd985aa209211ef68a4b6f3b76421353"><td class="mdescLeft">&#160;</td><td class="mdescRight">Active le report du status de la souris.  <a href="group___controllib.html#gadd985aa209211ef68a4b6f3b76421353">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gadd985aa209211ef68a4b6f3b76421353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaebb2d689faafc1583ec13af401976f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___controllib.html#ga9b88ec89fc942506d3a2c69309cb3793">STX_joystickvalue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gaaebb2d689faafc1583ec13af401976f8">STX_getjoystickstatus</a> (unsigned char joystickid, <a class="el" href="group___controllib.html#ga029f35c2423f4c9191a5c5be98fa3da0">STX_joystickaction</a> *action)</td></tr>
+<tr class="memdesc:gaaebb2d689faafc1583ec13af401976f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lecture du status d'un joystick et de l'état du bouton d'action.  <a href="group___controllib.html#gaaebb2d689faafc1583ec13af401976f8">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gaaebb2d689faafc1583ec13af401976f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf3dda9c17c2ce5d6f497ff8a14c0985d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gaf3dda9c17c2ce5d6f497ff8a14c0985d">STX_readikbdmouseposition</a> (unsigned short *PosAbsolueX, unsigned short *PosAbsolueY)</td></tr>
+<tr class="memdesc:gaf3dda9c17c2ce5d6f497ff8a14c0985d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lecture de la position absolue en X et Y de la souris.  <a href="group___controllib.html#gaf3dda9c17c2ce5d6f497ff8a14c0985d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gaf3dda9c17c2ce5d6f497ff8a14c0985d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7c0183d84415081c88d4f5327c55c17e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga7c0183d84415081c88d4f5327c55c17e">STX_readikbdmouseoffset</a> (short *PosRelativeX, short *PosRelativeY)</td></tr>
+<tr class="memdesc:ga7c0183d84415081c88d4f5327c55c17e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lecture de la position relative en X et Y de la souris.  <a href="group___controllib.html#ga7c0183d84415081c88d4f5327c55c17e">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga7c0183d84415081c88d4f5327c55c17e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab1e6a6b837e0c1365ae6d7e81d067254"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#gab1e6a6b837e0c1365ae6d7e81d067254">STX_readikbddateandtime</a> (<a class="el" href="struct_s_t_x__ikbddatetime.html">STX_ikbddatetime</a> *datetime)</td></tr>
+<tr class="memdesc:gab1e6a6b837e0c1365ae6d7e81d067254"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lecture de la date et l'heure du système.  <a href="group___controllib.html#gab1e6a6b837e0c1365ae6d7e81d067254">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gab1e6a6b837e0c1365ae6d7e81d067254"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga53d4172c70f371bb13ffb26533938993"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___s_t_x___engine.html#ga97a80ca1602ebf2303258971a2c938e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga53d4172c70f371bb13ffb26533938993">STX_writeikbddateandtime</a> (<a class="el" href="struct_s_t_x__ikbddatetime.html">STX_ikbddatetime</a> *datetime)</td></tr>
+<tr class="memdesc:ga53d4172c70f371bb13ffb26533938993"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ecriture de la date et l'heure du système.  <a href="group___controllib.html#ga53d4172c70f371bb13ffb26533938993">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga53d4172c70f371bb13ffb26533938993"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6fc546e32e4cc52bf086657da545602a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga6fc546e32e4cc52bf086657da545602a">STX_setikbdmousethreshold</a> (unsigned char TicksX, unsigned char TicksY)</td></tr>
+<tr class="memdesc:ga6fc546e32e4cc52bf086657da545602a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fixe le nombre de Ticks en X et Y nescessaire pour le declenchement du report de la position relative de la souris.  <a href="group___controllib.html#ga6fc546e32e4cc52bf086657da545602a">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga6fc546e32e4cc52bf086657da545602a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga991c9f38efef718cde33ecbf1e0d92b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga991c9f38efef718cde33ecbf1e0d92b6">STX_setikbdmousescale</a> (unsigned char TicksX, unsigned char TicksY)</td></tr>
+<tr class="memdesc:ga991c9f38efef718cde33ecbf1e0d92b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fixe le nombre de Ticks en X et Y nescessaires pour assurer un déplacement de 1 pixel à 'écran.  <a href="group___controllib.html#ga991c9f38efef718cde33ecbf1e0d92b6">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga991c9f38efef718cde33ecbf1e0d92b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5de1445ab8e56af81e468112b6c96115"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___s_t_x___engine.html#ga97a80ca1602ebf2303258971a2c938e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___controllib.html#ga5de1445ab8e56af81e468112b6c96115">STX_keyboardkeypress</a> (unsigned char KeyValue)</td></tr>
+<tr class="memdesc:ga5de1445ab8e56af81e468112b6c96115"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vérifie si la touche demandée est pressée.  <a href="group___controllib.html#ga5de1445ab8e56af81e468112b6c96115">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga5de1445ab8e56af81e468112b6c96115"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<h2 class="groupheader">Documentation des macros</h2>
+<a id="ga51ca76d1508339b071a974798b90474b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga51ca76d1508339b071a974798b90474b">&#9670;&nbsp;</a></span>KEY_0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_0&#160;&#160;&#160;11</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche 0 </p>
+
+</div>
+</div>
+<a id="ga5a7fd35018971faa28dacd3e33a8f737"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5a7fd35018971faa28dacd3e33a8f737">&#9670;&nbsp;</a></span>KEY_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_1&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche 1 </p>
+
+</div>
+</div>
+<a id="ga3a146cb397d373be978dfa9fd1dc9b3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3a146cb397d373be978dfa9fd1dc9b3a">&#9670;&nbsp;</a></span>KEY_2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_2&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche 2 </p>
+
+</div>
+</div>
+<a id="ga701a135e841c3cfb69d9c5bb1444e198"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga701a135e841c3cfb69d9c5bb1444e198">&#9670;&nbsp;</a></span>KEY_3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_3&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche 3 </p>
+
+</div>
+</div>
+<a id="ga219891753a1b6ccd51c8ae763905dbf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga219891753a1b6ccd51c8ae763905dbf9">&#9670;&nbsp;</a></span>KEY_4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_4&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche 4 </p>
+
+</div>
+</div>
+<a id="ga8520da12c76efb8ca95ca2068d1ca35c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8520da12c76efb8ca95ca2068d1ca35c">&#9670;&nbsp;</a></span>KEY_5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_5&#160;&#160;&#160;6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche 5 </p>
+
+</div>
+</div>
+<a id="ga4ab32ce5ef6b5d115253d2a712f2e19b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4ab32ce5ef6b5d115253d2a712f2e19b">&#9670;&nbsp;</a></span>KEY_6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_6&#160;&#160;&#160;7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche 6 </p>
+
+</div>
+</div>
+<a id="ga5895875bee3ae13b13cdb5e85b45161b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5895875bee3ae13b13cdb5e85b45161b">&#9670;&nbsp;</a></span>KEY_7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_7&#160;&#160;&#160;8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche 7 </p>
+
+</div>
+</div>
+<a id="gad2888e35bf1cbd0b25c3e82bc360c647"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad2888e35bf1cbd0b25c3e82bc360c647">&#9670;&nbsp;</a></span>KEY_8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_8&#160;&#160;&#160;9</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche 8 </p>
+
+</div>
+</div>
+<a id="gae6838379f118dfbfc78d82fcd8886a41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae6838379f118dfbfc78d82fcd8886a41">&#9670;&nbsp;</a></span>KEY_9</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_9&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche 9 </p>
+
+</div>
+</div>
+<a id="ga024e62650f02bfd64a4ce2b158ec2dd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga024e62650f02bfd64a4ce2b158ec2dd7">&#9670;&nbsp;</a></span>KEY_A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_A&#160;&#160;&#160;16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche A </p>
+
+</div>
+</div>
+<a id="ga778c2cba8c697b09e1d6bf1d504e739f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga778c2cba8c697b09e1d6bf1d504e739f">&#9670;&nbsp;</a></span>KEY_ALTERNATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_ALTERNATE&#160;&#160;&#160;T56</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche Alternette </p>
+
+</div>
+</div>
+<a id="gad2ae94d1ffed5c399aa6f8c40c0fc3c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad2ae94d1ffed5c399aa6f8c40c0fc3c7">&#9670;&nbsp;</a></span>KEY_B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_B&#160;&#160;&#160;48</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche B </p>
+
+</div>
+</div>
+<a id="ga1e9a449dee19c686a2af4edcdc1a1042"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1e9a449dee19c686a2af4edcdc1a1042">&#9670;&nbsp;</a></span>KEY_BACKSPACE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_BACKSPACE&#160;&#160;&#160;14</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche effacement arriere </p>
+
+</div>
+</div>
+<a id="ga21db833332c950e74a8d5cd79ebffc8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga21db833332c950e74a8d5cd79ebffc8d">&#9670;&nbsp;</a></span>KEY_C</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_C&#160;&#160;&#160;46</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche C </p>
+
+</div>
+</div>
+<a id="gaf168e54444bdaff5f50f6f4734784762"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf168e54444bdaff5f50f6f4734784762">&#9670;&nbsp;</a></span>KEY_CAPSLOCK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_CAPSLOCK&#160;&#160;&#160;58</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche Majuscule </p>
+
+</div>
+</div>
+<a id="ga77d9a64af8e44fada2ae9e65967c82b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga77d9a64af8e44fada2ae9e65967c82b3">&#9670;&nbsp;</a></span>KEY_CARET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_CARET&#160;&#160;&#160;26</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche ^ </p>
+
+</div>
+</div>
+<a id="ga7e3030900c439864f66525aab8031124"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7e3030900c439864f66525aab8031124">&#9670;&nbsp;</a></span>KEY_CLEARHOME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_CLEARHOME&#160;&#160;&#160;71</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche Home </p>
+
+</div>
+</div>
+<a id="ga1cda14a8f28f9008ed77914ee9351560"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1cda14a8f28f9008ed77914ee9351560">&#9670;&nbsp;</a></span>KEY_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_CONTROL&#160;&#160;&#160;29</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche Control </p>
+
+</div>
+</div>
+<a id="gad2017b35fcff527a10050ab7c9af2d5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad2017b35fcff527a10050ab7c9af2d5c">&#9670;&nbsp;</a></span>KEY_D</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_D&#160;&#160;&#160;32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche D </p>
+
+</div>
+</div>
+<a id="ga01193746941d5d16b62a796143085017"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga01193746941d5d16b62a796143085017">&#9670;&nbsp;</a></span>KEY_DEGRES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_DEGRES&#160;&#160;&#160;12</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche ° </p>
+
+</div>
+</div>
+<a id="ga1d654db2e04ad94a58f880fb9e127ad6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1d654db2e04ad94a58f880fb9e127ad6">&#9670;&nbsp;</a></span>KEY_DELETE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_DELETE&#160;&#160;&#160;53</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche effacement </p>
+
+</div>
+</div>
+<a id="gabbc3a02489d28857b0d1f8cb2b5985fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabbc3a02489d28857b0d1f8cb2b5985fb">&#9670;&nbsp;</a></span>KEY_DOLLAR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_DOLLAR&#160;&#160;&#160;27</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche $ </p>
+
+</div>
+</div>
+<a id="ga203163bc0189184a1de6ca8d1e53c6bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga203163bc0189184a1de6ca8d1e53c6bf">&#9670;&nbsp;</a></span>KEY_DOWN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_DOWN&#160;&#160;&#160;80</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche Fleche Bas </p>
+
+</div>
+</div>
+<a id="ga76fcab7ae716facf6eefcee03457fe7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga76fcab7ae716facf6eefcee03457fe7d">&#9670;&nbsp;</a></span>KEY_E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_E&#160;&#160;&#160;18</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche E </p>
+
+</div>
+</div>
+<a id="ga75686b4afca96e15e07914e61fe62233"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga75686b4afca96e15e07914e61fe62233">&#9670;&nbsp;</a></span>KEY_ECHAPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_ECHAPE&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche Escape </p>
+
+</div>
+</div>
+<a id="ga0375ea9035bf8ce39b90665c49d27f34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0375ea9035bf8ce39b90665c49d27f34">&#9670;&nbsp;</a></span>KEY_EQUALS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_EQUALS&#160;&#160;&#160;53</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche = </p>
+
+</div>
+</div>
+<a id="gacc696937f28ef5bdd90eeb8addd0ef82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacc696937f28ef5bdd90eeb8addd0ef82">&#9670;&nbsp;</a></span>KEY_F</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_F&#160;&#160;&#160;33</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche F </p>
+
+</div>
+</div>
+<a id="ga2772a1f7024ba1fd62e88ec1adb541f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2772a1f7024ba1fd62e88ec1adb541f8">&#9670;&nbsp;</a></span>KEY_F1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_F1&#160;&#160;&#160;59</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche de fonction F1 </p>
+
+</div>
+</div>
+<a id="gad37282615edb2c357149c2a1342b4a85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad37282615edb2c357149c2a1342b4a85">&#9670;&nbsp;</a></span>KEY_F10</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_F10&#160;&#160;&#160;68</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche de fonction F10 </p>
+
+</div>
+</div>
+<a id="gae2e2edb31bb7796786da12f85f2d5cd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae2e2edb31bb7796786da12f85f2d5cd1">&#9670;&nbsp;</a></span>KEY_F2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_F2&#160;&#160;&#160;60</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche de fonction F2 </p>
+
+</div>
+</div>
+<a id="ga38ebe8e5c5f1d5727c9638bf79fc3952"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga38ebe8e5c5f1d5727c9638bf79fc3952">&#9670;&nbsp;</a></span>KEY_F3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_F3&#160;&#160;&#160;61</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche de fonction F3 </p>
+
+</div>
+</div>
+<a id="gab99474b01ffcbc57d74b60a77895e5e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab99474b01ffcbc57d74b60a77895e5e8">&#9670;&nbsp;</a></span>KEY_F4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_F4&#160;&#160;&#160;62</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche de fonction F4 </p>
+
+</div>
+</div>
+<a id="ga2a0aae1931111382ade29fd75ef64790"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2a0aae1931111382ade29fd75ef64790">&#9670;&nbsp;</a></span>KEY_F5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_F5&#160;&#160;&#160;63</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche de fonction F5 </p>
+
+</div>
+</div>
+<a id="gad31281b771b8b85f4aa98bbd527d91a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad31281b771b8b85f4aa98bbd527d91a0">&#9670;&nbsp;</a></span>KEY_F6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_F6&#160;&#160;&#160;64</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche de fonction F6 </p>
+
+</div>
+</div>
+<a id="ga7eed6766ef9ddb721c6a2bce807fc9dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7eed6766ef9ddb721c6a2bce807fc9dc">&#9670;&nbsp;</a></span>KEY_F7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_F7&#160;&#160;&#160;65</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche de fonction F7 </p>
+
+</div>
+</div>
+<a id="ga7a8ad03f07f2e4757a70385e88fbbe3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7a8ad03f07f2e4757a70385e88fbbe3c">&#9670;&nbsp;</a></span>KEY_F8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_F8&#160;&#160;&#160;66</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche de fonction F8 </p>
+
+</div>
+</div>
+<a id="ga417a382624f91fb0cdfdf1c33adc8c90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga417a382624f91fb0cdfdf1c33adc8c90">&#9670;&nbsp;</a></span>KEY_F9</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_F9&#160;&#160;&#160;67</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche de fonction F9 </p>
+
+</div>
+</div>
+<a id="gac38f385af8c9c0b21678f07b55f28edf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac38f385af8c9c0b21678f07b55f28edf">&#9670;&nbsp;</a></span>KEY_G</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_G&#160;&#160;&#160;34</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche G </p>
+
+</div>
+</div>
+<a id="gac7cfd77bb9d2d498bbf591be4420f7a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac7cfd77bb9d2d498bbf591be4420f7a8">&#9670;&nbsp;</a></span>KEY_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_H&#160;&#160;&#160;35</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche H </p>
+
+</div>
+</div>
+<a id="ga11d46f8551106303f4cffb9d67084ef1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga11d46f8551106303f4cffb9d67084ef1">&#9670;&nbsp;</a></span>KEY_HASH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_HASH&#160;&#160;&#160;43</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche # </p>
+
+</div>
+</div>
+<a id="ga25d124148127e7f9f57ba21c0a8eaf7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga25d124148127e7f9f57ba21c0a8eaf7c">&#9670;&nbsp;</a></span>KEY_HELP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_HELP&#160;&#160;&#160;98</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche Help </p>
+
+</div>
+</div>
+<a id="ga31ae832a3de882f92710ed9cb0b46e0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga31ae832a3de882f92710ed9cb0b46e0a">&#9670;&nbsp;</a></span>KEY_I</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_I&#160;&#160;&#160;23</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche I </p>
+
+</div>
+</div>
+<a id="gaaa67a531439790dc20ed750f482d4a3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaa67a531439790dc20ed750f482d4a3e">&#9670;&nbsp;</a></span>KEY_INSERT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_INSERT&#160;&#160;&#160;82</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche Insert </p>
+
+</div>
+</div>
+<a id="ga5e90bac1d19a8a6b8bc79be340470271"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5e90bac1d19a8a6b8bc79be340470271">&#9670;&nbsp;</a></span>KEY_J</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_J&#160;&#160;&#160;36</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche J </p>
+
+</div>
+</div>
+<a id="ga98a32c947983c2266dfc309eb7f3fc5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga98a32c947983c2266dfc309eb7f3fc5c">&#9670;&nbsp;</a></span>KEY_K</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_K&#160;&#160;&#160;37</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche K </p>
+
+</div>
+</div>
+<a id="ga600bb1ce7eb7b6ca4dcbb41546c32ec5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga600bb1ce7eb7b6ca4dcbb41546c32ec5">&#9670;&nbsp;</a></span>KEY_L</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_L&#160;&#160;&#160;38</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche L </p>
+
+</div>
+</div>
+<a id="gaf4d1b8a2912354646c74cf36c69f8223"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf4d1b8a2912354646c74cf36c69f8223">&#9670;&nbsp;</a></span>KEY_LEFT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_LEFT&#160;&#160;&#160;75</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche Fleche Gauche </p>
+
+</div>
+</div>
+<a id="ga13a0f4f476ef33ca0ef8f62c3ed3823b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga13a0f4f476ef33ca0ef8f62c3ed3823b">&#9670;&nbsp;</a></span>KEY_LEFTSHIFT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_LEFTSHIFT&#160;&#160;&#160;42</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche Shift Gauche </p>
+
+</div>
+</div>
+<a id="gad77cd08ee0b153efc9121290da8dff8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad77cd08ee0b153efc9121290da8dff8b">&#9670;&nbsp;</a></span>KEY_LIVRE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_LIVRE&#160;&#160;&#160;41</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche £ </p>
+
+</div>
+</div>
+<a id="gae2552d156f2ef6dff240456f7c648beb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae2552d156f2ef6dff240456f7c648beb">&#9670;&nbsp;</a></span>KEY_M</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_M&#160;&#160;&#160;39</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche M </p>
+
+</div>
+</div>
+<a id="ga3eefcaaf496c52c1c7283caa3d1dab99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3eefcaaf496c52c1c7283caa3d1dab99">&#9670;&nbsp;</a></span>KEY_MINUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_MINUS&#160;&#160;&#160;96</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche - </p>
+
+</div>
+</div>
+<a id="ga2e446da6a7d4ff47e81f5318a40e53ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2e446da6a7d4ff47e81f5318a40e53ea">&#9670;&nbsp;</a></span>KEY_N</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_N&#160;&#160;&#160;49</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche N </p>
+
+</div>
+</div>
+<a id="ga358289c650ce0bceed4de1d9872a36a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga358289c650ce0bceed4de1d9872a36a4">&#9670;&nbsp;</a></span>KEY_NUMPAD_0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_NUMPAD_0&#160;&#160;&#160;112</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pavé Numérique 0 </p>
+
+</div>
+</div>
+<a id="gaaeb5f24ba1befa0ab86fbb9b4836a6a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaeb5f24ba1befa0ab86fbb9b4836a6a8">&#9670;&nbsp;</a></span>KEY_NUMPAD_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_NUMPAD_1&#160;&#160;&#160;109</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pavé Numérique 1 </p>
+
+</div>
+</div>
+<a id="gaeb343b8be7ea6d2ecab19fc022400df9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeb343b8be7ea6d2ecab19fc022400df9">&#9670;&nbsp;</a></span>KEY_NUMPAD_2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_NUMPAD_2&#160;&#160;&#160;110</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pavé Numérique 2 </p>
+
+</div>
+</div>
+<a id="ga2666c8967f32df00209613cd3dd11512"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2666c8967f32df00209613cd3dd11512">&#9670;&nbsp;</a></span>KEY_NUMPAD_3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_NUMPAD_3&#160;&#160;&#160;111</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pavé Numérique 3 </p>
+
+</div>
+</div>
+<a id="gab77df6ba5be61034da8530fda270c22e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab77df6ba5be61034da8530fda270c22e">&#9670;&nbsp;</a></span>KEY_NUMPAD_4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_NUMPAD_4&#160;&#160;&#160;106</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pavé Numérique 4 </p>
+
+</div>
+</div>
+<a id="gaf4f1ead45029692ae2581de5ecd567d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf4f1ead45029692ae2581de5ecd567d5">&#9670;&nbsp;</a></span>KEY_NUMPAD_5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_NUMPAD_5&#160;&#160;&#160;107</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pavé Numérique 5 </p>
+
+</div>
+</div>
+<a id="ga2ee117602040aac06c38d5fe6268aa7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2ee117602040aac06c38d5fe6268aa7e">&#9670;&nbsp;</a></span>KEY_NUMPAD_6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_NUMPAD_6&#160;&#160;&#160;108</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pavé Numérique 6 </p>
+
+</div>
+</div>
+<a id="gaea32b738e4786e860581cd8b9044d670"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaea32b738e4786e860581cd8b9044d670">&#9670;&nbsp;</a></span>KEY_NUMPAD_7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_NUMPAD_7&#160;&#160;&#160;103</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pavé Numérique 7 </p>
+
+</div>
+</div>
+<a id="gacb009ee42ceb6469cd6d5e952d6ad4d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacb009ee42ceb6469cd6d5e952d6ad4d1">&#9670;&nbsp;</a></span>KEY_NUMPAD_8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_NUMPAD_8&#160;&#160;&#160;104</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pavé Numérique 8 </p>
+
+</div>
+</div>
+<a id="ga98184ef62f3e2f86ff64864d8a998184"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga98184ef62f3e2f86ff64864d8a998184">&#9670;&nbsp;</a></span>KEY_NUMPAD_9</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_NUMPAD_9&#160;&#160;&#160;105</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pavé Numérique 9 </p>
+
+</div>
+</div>
+<a id="gaf042db1b57f01337a58a015c782fae35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf042db1b57f01337a58a015c782fae35">&#9670;&nbsp;</a></span>KEY_NUMPAD_ASTERISK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_NUMPAD_ASTERISK&#160;&#160;&#160;102</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pavé Numérique * </p>
+
+</div>
+</div>
+<a id="ga0c664fd5ab3ea81ce4609e0788bac146"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0c664fd5ab3ea81ce4609e0788bac146">&#9670;&nbsp;</a></span>KEY_NUMPAD_CLOSEPAREN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_NUMPAD_CLOSEPAREN&#160;&#160;&#160;100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pavé Numérique ) </p>
+
+</div>
+</div>
+<a id="ga369ec47d8430b7b346390e2d0095ae53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga369ec47d8430b7b346390e2d0095ae53">&#9670;&nbsp;</a></span>KEY_NUMPAD_ENTER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_NUMPAD_ENTER&#160;&#160;&#160;114</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pavé Numérique Enter </p>
+
+</div>
+</div>
+<a id="gaefaf057d7e3b9928c07141ed32c1ee91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaefaf057d7e3b9928c07141ed32c1ee91">&#9670;&nbsp;</a></span>KEY_NUMPAD_MINUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_NUMPAD_MINUS&#160;&#160;&#160;74</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pavé Numérique - </p>
+
+</div>
+</div>
+<a id="ga1721d9ae08e99d266144824898583a2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1721d9ae08e99d266144824898583a2b">&#9670;&nbsp;</a></span>KEY_NUMPAD_OPENPAREN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_NUMPAD_OPENPAREN&#160;&#160;&#160;99</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pavé Numérique ( </p>
+
+</div>
+</div>
+<a id="ga950fb27791c3f0b9fba7a8053d2fdcf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga950fb27791c3f0b9fba7a8053d2fdcf9">&#9670;&nbsp;</a></span>KEY_NUMPAD_PERIOD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_NUMPAD_PERIOD&#160;&#160;&#160;113</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pavé Numérique . </p>
+
+</div>
+</div>
+<a id="ga32ff5a9c01683d41f4f0f17fc483a640"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga32ff5a9c01683d41f4f0f17fc483a640">&#9670;&nbsp;</a></span>KEY_NUMPAD_PLUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_NUMPAD_PLUS&#160;&#160;&#160;78</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pavé Numérique + </p>
+
+</div>
+</div>
+<a id="gab901c992ebba24ffc5e2c93aa0d68a0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab901c992ebba24ffc5e2c93aa0d68a0b">&#9670;&nbsp;</a></span>KEY_NUMPAD_SLASH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_NUMPAD_SLASH&#160;&#160;&#160;101</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pavé Numérique / </p>
+
+</div>
+</div>
+<a id="gadc0df72b7f6cbb006adeabff653ebeac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadc0df72b7f6cbb006adeabff653ebeac">&#9670;&nbsp;</a></span>KEY_O</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_O&#160;&#160;&#160;24</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche O </p>
+
+</div>
+</div>
+<a id="ga0d7cb02ca48dc1dc020e54d104fb9915"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0d7cb02ca48dc1dc020e54d104fb9915">&#9670;&nbsp;</a></span>KEY_P</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_P&#160;&#160;&#160;25</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche P </p>
+
+</div>
+</div>
+<a id="ga2156176ee132e72f170871da119fdf46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2156176ee132e72f170871da119fdf46">&#9670;&nbsp;</a></span>KEY_PURCENT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_PURCENT&#160;&#160;&#160;40</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche % </p>
+
+</div>
+</div>
+<a id="ga201284fc5d50eea7e2db09fb5495bceb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga201284fc5d50eea7e2db09fb5495bceb">&#9670;&nbsp;</a></span>KEY_Q</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_Q&#160;&#160;&#160;30</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche Q </p>
+
+</div>
+</div>
+<a id="ga3727ebd605eebecd9823d39a0426eef0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3727ebd605eebecd9823d39a0426eef0">&#9670;&nbsp;</a></span>KEY_QUESTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_QUESTION&#160;&#160;&#160;50</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche ? </p>
+
+</div>
+</div>
+<a id="gaa020da9e48a194889ac72f94408b3c25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa020da9e48a194889ac72f94408b3c25">&#9670;&nbsp;</a></span>KEY_R</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_R&#160;&#160;&#160;19</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche R </p>
+
+</div>
+</div>
+<a id="gafe5716cf1626fceab51044a6c2492831"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafe5716cf1626fceab51044a6c2492831">&#9670;&nbsp;</a></span>KEY_RETURN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_RETURN&#160;&#160;&#160;28</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche Return </p>
+
+</div>
+</div>
+<a id="ga004194639b9ad76cea01d9e93716d4d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga004194639b9ad76cea01d9e93716d4d6">&#9670;&nbsp;</a></span>KEY_RIGHT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_RIGHT&#160;&#160;&#160;77</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche Fleche Droite </p>
+
+</div>
+</div>
+<a id="ga2f554668b12882e07f3b09affc1136d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2f554668b12882e07f3b09affc1136d8">&#9670;&nbsp;</a></span>KEY_RIGHTSHIFT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_RIGHTSHIFT&#160;&#160;&#160;54</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche Shift Droit </p>
+
+</div>
+</div>
+<a id="ga6f09e2899747f5db41369ce1dae11ebd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6f09e2899747f5db41369ce1dae11ebd">&#9670;&nbsp;</a></span>KEY_S</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_S&#160;&#160;&#160;31</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche S </p>
+
+</div>
+</div>
+<a id="gaaaf77eb9716854e4838799c5d2bd26a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaaf77eb9716854e4838799c5d2bd26a5">&#9670;&nbsp;</a></span>KEY_SEMICOLON</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_SEMICOLON&#160;&#160;&#160;51</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche ; </p>
+
+</div>
+</div>
+<a id="gae98958c265380bd0e491ef368c513196"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae98958c265380bd0e491ef368c513196">&#9670;&nbsp;</a></span>KEY_SLASH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_SLASH&#160;&#160;&#160;52</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche / </p>
+
+</div>
+</div>
+<a id="ga8a5ff83d21dfa704c1c3eff56d5b3a4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8a5ff83d21dfa704c1c3eff56d5b3a4b">&#9670;&nbsp;</a></span>KEY_SPACE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_SPACE&#160;&#160;&#160;57</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche Espace </p>
+
+</div>
+</div>
+<a id="gadb39050b8845e8b16f503a747e196749"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadb39050b8845e8b16f503a747e196749">&#9670;&nbsp;</a></span>KEY_T</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_T&#160;&#160;&#160;20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche T </p>
+
+</div>
+</div>
+<a id="ga4fa9fbcc86d5ee884a821459a87f3a54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4fa9fbcc86d5ee884a821459a87f3a54">&#9670;&nbsp;</a></span>KEY_TAB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_TAB&#160;&#160;&#160;15</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche Tabulation </p>
+
+</div>
+</div>
+<a id="ga050a6de4c5edb8eb9582c3eb80fed07f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga050a6de4c5edb8eb9582c3eb80fed07f">&#9670;&nbsp;</a></span>KEY_U</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_U&#160;&#160;&#160;22</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche U </p>
+
+</div>
+</div>
+<a id="gab19d3e7d4179ff46fdcf3edf90743e91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab19d3e7d4179ff46fdcf3edf90743e91">&#9670;&nbsp;</a></span>KEY_UNDERSCORE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_UNDERSCORE&#160;&#160;&#160;13</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche _ </p>
+
+</div>
+</div>
+<a id="gadedb4a254c6a94be9a46e28dc1e5d218"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadedb4a254c6a94be9a46e28dc1e5d218">&#9670;&nbsp;</a></span>KEY_UNDO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_UNDO&#160;&#160;&#160;97</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche Undo </p>
+
+</div>
+</div>
+<a id="gafa086fc916a81e7fd348ec00cf786916"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafa086fc916a81e7fd348ec00cf786916">&#9670;&nbsp;</a></span>KEY_UP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_UP&#160;&#160;&#160;72</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche Fleche haut </p>
+
+</div>
+</div>
+<a id="ga1b4a450ef7e51ae0b691dd5489f74535"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1b4a450ef7e51ae0b691dd5489f74535">&#9670;&nbsp;</a></span>KEY_V</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_V&#160;&#160;&#160;47</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche V </p>
+
+</div>
+</div>
+<a id="gafdebd5d771ee260c703a74f459767c09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafdebd5d771ee260c703a74f459767c09">&#9670;&nbsp;</a></span>KEY_W</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_W&#160;&#160;&#160;44</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche W </p>
+
+</div>
+</div>
+<a id="ga832280ef5a7afeda19f32939951e8b10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga832280ef5a7afeda19f32939951e8b10">&#9670;&nbsp;</a></span>KEY_X</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_X&#160;&#160;&#160;45</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche X </p>
+
+</div>
+</div>
+<a id="gad9db04899df9fe71bb221c02721e28ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad9db04899df9fe71bb221c02721e28ac">&#9670;&nbsp;</a></span>KEY_Y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_Y&#160;&#160;&#160;21</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche Y </p>
+
+</div>
+</div>
+<a id="ga7c655f9f55336c6db42503e356028f4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7c655f9f55336c6db42503e356028f4d">&#9670;&nbsp;</a></span>KEY_Z</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_Z&#160;&#160;&#160;17</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Touche Z </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation du type de l'énumération</h2>
+<a id="ga029f35c2423f4c9191a5c5be98fa3da0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga029f35c2423f4c9191a5c5be98fa3da0">&#9670;&nbsp;</a></span>STX_joystickaction</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___controllib.html#ga029f35c2423f4c9191a5c5be98fa3da0">STX_joystickaction</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enumeration des valeurs du bouton action du joystick. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="gga029f35c2423f4c9191a5c5be98fa3da0a88ec0385d29a8183577e60cf6051cc14"></a>JOY_ACTION&#160;</td><td class="fielddoc"><p>Valeur activation bouton action joystick </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga029f35c2423f4c9191a5c5be98fa3da0a7e34ff0f536357a7cfa1a4a46ca279c3"></a>JOY_NOACTION&#160;</td><td class="fielddoc"><p>Valeur bouton action joystick relaché </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga9b88ec89fc942506d3a2c69309cb3793"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9b88ec89fc942506d3a2c69309cb3793">&#9670;&nbsp;</a></span>STX_joystickvalue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___controllib.html#ga9b88ec89fc942506d3a2c69309cb3793">STX_joystickvalue</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enumeration des valeurs de positionnement du joystick. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="gga9b88ec89fc942506d3a2c69309cb3793a41d32e2e938092af4bd2357cfd413eb0"></a>JOY_ERROR&#160;</td><td class="fielddoc"><p>Valeur en cas d'erreur (ID superieur à 1) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9b88ec89fc942506d3a2c69309cb3793a05f25880b9a9ec098379c1f6be742682"></a>JOY_UP&#160;</td><td class="fielddoc"><p>Valeur position joystick en haut </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9b88ec89fc942506d3a2c69309cb3793a76c8c4e6d945b163ef1bd87e2e0b58aa"></a>JOY_RIGHT&#160;</td><td class="fielddoc"><p>Valeur position joystick à droite </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9b88ec89fc942506d3a2c69309cb3793a58ec7b8847be5467694d882fb1133a9c"></a>JOY_DOWN&#160;</td><td class="fielddoc"><p>Valeur position joystick en bas </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9b88ec89fc942506d3a2c69309cb3793ae07924a05c719edda9d15bdf369c134d"></a>JOY_LEFT&#160;</td><td class="fielddoc"><p>Valeur position joystick à gauche </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9b88ec89fc942506d3a2c69309cb3793a81216202ecb701a7c12aa5af61a6c1bc"></a>JOY_UPRIGHT&#160;</td><td class="fielddoc"><p>Valeur position joystick en haut à droite </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9b88ec89fc942506d3a2c69309cb3793a0495e47b26e6eac4358282db4da42ea4"></a>JOY_DOWNRIGHT&#160;</td><td class="fielddoc"><p>Valeur position joystick en bas à droite </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9b88ec89fc942506d3a2c69309cb3793a2bb20f2f7c68ccc9b1428fd85746cfea"></a>JOY_DOWNLEFT&#160;</td><td class="fielddoc"><p>Valeur position joystick en bas à gauche </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9b88ec89fc942506d3a2c69309cb3793ac89944d553d93ef2868c976695b01b28"></a>JOY_UPLEFT&#160;</td><td class="fielddoc"><p>Valeur position joystick en haut à gauche </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9b88ec89fc942506d3a2c69309cb3793a55ba77a3571ca2df6f8b9157d85bc99b"></a>JOY_PAUSE&#160;</td><td class="fielddoc"><p>Valeur position joystick inactif </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="gaaebb2d689faafc1583ec13af401976f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaebb2d689faafc1583ec13af401976f8">&#9670;&nbsp;</a></span>STX_getjoystickstatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___controllib.html#ga9b88ec89fc942506d3a2c69309cb3793">STX_joystickvalue</a> STX_getjoystickstatus </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>joystickid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___controllib.html#ga029f35c2423f4c9191a5c5be98fa3da0">STX_joystickaction</a> *&#160;</td>
+          <td class="paramname"><em>action</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lecture du status d'un joystick et de l'état du bouton d'action. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">joystickid</td><td>: numéro du joystick, 0 ou 1 </td></tr>
+    <tr><td class="paramname">*action</td><td>: adresse de la variable qui reçevera l'état du bouton action </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>valeur de positionnement du joystick</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>fonctionne pour les joysticks connectés sous le clavier des atari STF et STE </dd></dl>
+<dl class="section see"><dt>Voir également</dt><dd><a class="el" href="group___controllib.html#ga9b88ec89fc942506d3a2c69309cb3793" title="Enumeration des valeurs de positionnement du joystick.">STX_joystickvalue</a>, <a class="el" href="group___controllib.html#ga029f35c2423f4c9191a5c5be98fa3da0" title="Enumeration des valeurs du bouton action du joystick.">STX_joystickaction</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga5de1445ab8e56af81e468112b6c96115"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5de1445ab8e56af81e468112b6c96115">&#9670;&nbsp;</a></span>STX_keyboardkeypress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___s_t_x___engine.html#ga97a80ca1602ebf2303258971a2c938e2">bool</a> STX_keyboardkeypress </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>KeyValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vérifie si la touche demandée est pressée. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">KeyValue</td><td>: Numéro de la touche </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>True si la touche attendue est préssée </dd></dl>
+
+</div>
+</div>
+<a id="gab1e6a6b837e0c1365ae6d7e81d067254"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab1e6a6b837e0c1365ae6d7e81d067254">&#9670;&nbsp;</a></span>STX_readikbddateandtime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void STX_readikbddateandtime </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_s_t_x__ikbddatetime.html">STX_ikbddatetime</a> *&#160;</td>
+          <td class="paramname"><em>datetime</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lecture de la date et l'heure du système. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*datetime</td><td>: Pointeur sur une structure ikbddatetime</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Dand la struture ikbddatetime les valeurs sont fournies en BCD </dd></dl>
+
+</div>
+</div>
+<a id="ga7c0183d84415081c88d4f5327c55c17e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7c0183d84415081c88d4f5327c55c17e">&#9670;&nbsp;</a></span>STX_readikbdmouseoffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void STX_readikbdmouseoffset </td>
+          <td>(</td>
+          <td class="paramtype">short *&#160;</td>
+          <td class="paramname"><em>PosRelativeX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short *&#160;</td>
+          <td class="paramname"><em>PosRelativeY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lecture de la position relative en X et Y de la souris. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*PosRelativeX</td><td>: Pointeur qui recevera la valeur X </td></tr>
+    <tr><td class="paramname">*PosRelativeY</td><td>: Pointeur qui recevera la valeur Y </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gaf3dda9c17c2ce5d6f497ff8a14c0985d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf3dda9c17c2ce5d6f497ff8a14c0985d">&#9670;&nbsp;</a></span>STX_readikbdmouseposition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void STX_readikbdmouseposition </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short *&#160;</td>
+          <td class="paramname"><em>PosAbsolueX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short *&#160;</td>
+          <td class="paramname"><em>PosAbsolueY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lecture de la position absolue en X et Y de la souris. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*PosAbsolueX</td><td>: Pointeur qui recevera la valeur X </td></tr>
+    <tr><td class="paramname">*PosAbsolueY</td><td>: Pointeur qui recevera la valeur Y </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga991c9f38efef718cde33ecbf1e0d92b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga991c9f38efef718cde33ecbf1e0d92b6">&#9670;&nbsp;</a></span>STX_setikbdmousescale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void STX_setikbdmousescale </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>TicksX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>TicksY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fixe le nombre de Ticks en X et Y nescessaires pour assurer un déplacement de 1 pixel à 'écran. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">TicksX</td><td>: Nombre de Ticks sur l'axe horizontal </td></tr>
+    <tr><td class="paramname">TicksY</td><td>: Nombre de Ticks sur l'axe vertical</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Les ticks represente le nombre d'impulsions créées par les roues dentés de la souris </dd></dl>
+
+</div>
+</div>
+<a id="ga6fc546e32e4cc52bf086657da545602a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6fc546e32e4cc52bf086657da545602a">&#9670;&nbsp;</a></span>STX_setikbdmousethreshold()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void STX_setikbdmousethreshold </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>TicksX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>TicksY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fixe le nombre de Ticks en X et Y nescessaire pour le declenchement du report de la position relative de la souris. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">TicksX</td><td>: Nombre de Ticks sur l'axe horizontal </td></tr>
+    <tr><td class="paramname">TicksY</td><td>: Nombre de Ticks sur l'axe vertical</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Les ticks represente le nombre d'impulsions créées par les roues dentés de la souris </dd></dl>
+
+</div>
+</div>
+<a id="ga46bced104244ba010698afde6e6b1871"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga46bced104244ba010698afde6e6b1871">&#9670;&nbsp;</a></span>STX_startjoystickreport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void STX_startjoystickreport </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Active le report du status des joysticks 0 et 1. </p>
+<dl class="section note"><dt>Note</dt><dd>Cette fonction stopera le reprot du status de la souris </dd></dl>
+
+</div>
+</div>
+<a id="gadd985aa209211ef68a4b6f3b76421353"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadd985aa209211ef68a4b6f3b76421353">&#9670;&nbsp;</a></span>STX_startmousereport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void STX_startmousereport </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Active le report du status de la souris. </p>
+<dl class="section note"><dt>Note</dt><dd>Cette fonction stopera le reprot du status des joystick 0 et 1 </dd></dl>
+
+</div>
+</div>
+<a id="ga53d4172c70f371bb13ffb26533938993"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga53d4172c70f371bb13ffb26533938993">&#9670;&nbsp;</a></span>STX_writeikbddateandtime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___s_t_x___engine.html#ga97a80ca1602ebf2303258971a2c938e2">bool</a> STX_writeikbddateandtime </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_s_t_x__ikbddatetime.html">STX_ikbddatetime</a> *&#160;</td>
+          <td class="paramname"><em>datetime</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ecriture de la date et l'heure du système. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*datetime</td><td>: Pointeur sur une structure ikbddatetime</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Dand la struture ikbddatetime les valeurs sont fournies en BCD </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.16
+</small></address>
+</body>
+</html>

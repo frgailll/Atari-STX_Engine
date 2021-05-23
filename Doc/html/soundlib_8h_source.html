@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Atari STX_Engine:  Fichier source de src/soundlib.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="atari logo.ico"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Atari STX_Engine
+   &#160;<span id="projectnumber">V1.0</span>
+   </div>
+   <div id="projectbrief">Bibliothéque de fonctions pour le moteur graphique des jeux</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_53411faf9a1f8ea0f45d840513ae40fc.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">soundlib.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="soundlib_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifndef _SOUNDLIBH_</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define _SOUNDLIBH_</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="type_8h.html">src\type.h</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___soundlib.html#ga8b28ee0485f125ffe582c29f0ef1ca2f">STX_setsoundtimer</a>(<a class="code" href="group___soundlib.html#ga68d9143df34801515c6ed7ae2dbcd64f">STX_sndtimerdiv</a> div, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> compteur); </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">long</span> <span class="keywordtype">int</span> *<a class="code" href="group___soundlib.html#ga1ab101969328e6d44c45be3ec7635f74">STX_loadsoundeffect</a>(<span class="keywordtype">char</span> *Path);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___soundlib.html#ga385eab3a6403d682ed562b073913c2ef">STX_unloadsoundeffect</a>(<span class="keywordtype">long</span> <span class="keywordtype">int</span> *memory);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___soundlib.html#gaefdca341a10c24b8ba47add8432adcd5">STX_playsound1</a>(<span class="keywordtype">long</span> <span class="keywordtype">int</span> *memory, <span class="keywordtype">bool</span> boucle);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___soundlib.html#gae508b850220fbdb57fe1602d1df9751b">STX_playsound2</a>(<span class="keywordtype">long</span> <span class="keywordtype">int</span> *memory, <span class="keywordtype">bool</span> boucle);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___soundlib.html#ga2fb85c027dcdf7bfdef210303c455852">STX_playsound3</a>(<span class="keywordtype">long</span> <span class="keywordtype">int</span> *memory, <span class="keywordtype">bool</span> boucle);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___soundlib.html#gab5d10ab84fb2f3244b19cfe02b14a849">STX_Stopsound1</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___soundlib.html#gaaafa4fadd306c0a0de015c2a68f2f3bc">STX_Stopsound2</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___soundlib.html#ga0160336c7c66c565f4c2c6b335d0ac3f">STX_Stopsound3</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___soundlib.html#ga5b28a09f03741b3b07e80fc08b0217ed">STX_mutesound</a>();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keywordtype">long</span> <span class="keywordtype">int</span> *<a class="code" href="group___soundlib.html#ga814a137034d7948551cdb19addfeced8">STX_loaddmasample</a>(<span class="keywordtype">char</span> *Path);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___soundlib.html#ga0915469118ea6292d7063c4acf6ed147">STX_unloaddmasample</a>(<span class="keywordtype">long</span> <span class="keywordtype">int</span> *memory);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___soundlib.html#ga5e7655acbf74ff4114d70dd930c96ee3">STX_playdmasample</a>(<span class="keywordtype">long</span> <span class="keywordtype">int</span> *memory, <span class="keywordtype">bool</span> boucle);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___soundlib.html#ga6f3d3ab245806ae70fed83eba4b99910">STX_stopdmasample</a>();</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___soundlib.html#gaf81fe1eee7129ed28d2e9adcccf23586">STX_setdmasampleinterrupt</a>(); </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___soundlib.html#gaffedc9942872676ff2915a96a10a49c6">STX_removedmasampleinterrupt</a>();</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___soundlib.html#ga0b14a3190ddca62a0f887d87ea74028e">STX_dmasampleendframe</a>();</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="agroup___soundlib_html_gaffedc9942872676ff2915a96a10a49c6"><div class="ttname"><a href="group___soundlib.html#gaffedc9942872676ff2915a96a10a49c6">STX_removedmasampleinterrupt</a></div><div class="ttdeci">void STX_removedmasampleinterrupt()</div><div class="ttdoc">Désactive l'appel de la fonction STX_dmasampleendframe() en fin de lecture d'echantillons DMA.</div></div>
+<div class="ttc" id="agroup___soundlib_html_ga0915469118ea6292d7063c4acf6ed147"><div class="ttname"><a href="group___soundlib.html#ga0915469118ea6292d7063c4acf6ed147">STX_unloaddmasample</a></div><div class="ttdeci">void STX_unloaddmasample(long int *memory)</div><div class="ttdoc">Permet de décharger de la mémoire un fichier .ADS d'echantillons DMA.</div></div>
+<div class="ttc" id="agroup___soundlib_html_ga0160336c7c66c565f4c2c6b335d0ac3f"><div class="ttname"><a href="group___soundlib.html#ga0160336c7c66c565f4c2c6b335d0ac3f">STX_Stopsound3</a></div><div class="ttdeci">void STX_Stopsound3(void)</div><div class="ttdoc">Stop le player 3.</div></div>
+<div class="ttc" id="agroup___soundlib_html_ga385eab3a6403d682ed562b073913c2ef"><div class="ttname"><a href="group___soundlib.html#ga385eab3a6403d682ed562b073913c2ef">STX_unloadsoundeffect</a></div><div class="ttdeci">void STX_unloadsoundeffect(long int *memory)</div><div class="ttdoc">Permet de décharger de la mémoire un fichier d'effet audio .AEF.</div></div>
+<div class="ttc" id="agroup___soundlib_html_ga8b28ee0485f125ffe582c29f0ef1ca2f"><div class="ttname"><a href="group___soundlib.html#ga8b28ee0485f125ffe582c29f0ef1ca2f">STX_setsoundtimer</a></div><div class="ttdeci">void STX_setsoundtimer(STX_sndtimerdiv div, unsigned char compteur)</div><div class="ttdoc">Permet de fixer la base de temps du timer en charge des effets audios en interruption.</div></div>
+<div class="ttc" id="atype_8h_html"><div class="ttname"><a href="type_8h.html">type.h</a></div></div>
+<div class="ttc" id="agroup___soundlib_html_ga5b28a09f03741b3b07e80fc08b0217ed"><div class="ttname"><a href="group___soundlib.html#ga5b28a09f03741b3b07e80fc08b0217ed">STX_mutesound</a></div><div class="ttdeci">void STX_mutesound()</div><div class="ttdoc">Coupe tous les players audio en cours.</div></div>
+<div class="ttc" id="agroup___soundlib_html_ga68d9143df34801515c6ed7ae2dbcd64f"><div class="ttname"><a href="group___soundlib.html#ga68d9143df34801515c6ed7ae2dbcd64f">STX_sndtimerdiv</a></div><div class="ttdeci">STX_sndtimerdiv</div><div class="ttdoc">Enumeration des valeurs possibles pour definir la valeur du diviseur de fréquence du timer D du MFP.</div><div class="ttdef"><b>Definition:</b> type.h:74</div></div>
+<div class="ttc" id="agroup___soundlib_html_gab5d10ab84fb2f3244b19cfe02b14a849"><div class="ttname"><a href="group___soundlib.html#gab5d10ab84fb2f3244b19cfe02b14a849">STX_Stopsound1</a></div><div class="ttdeci">void STX_Stopsound1(void)</div><div class="ttdoc">Stop le player 1.</div></div>
+<div class="ttc" id="agroup___soundlib_html_ga2fb85c027dcdf7bfdef210303c455852"><div class="ttname"><a href="group___soundlib.html#ga2fb85c027dcdf7bfdef210303c455852">STX_playsound3</a></div><div class="ttdeci">void STX_playsound3(long int *memory, bool boucle)</div><div class="ttdoc">Permet de jouer un effet audio chargé en mémoire sur le player 3.</div></div>
+<div class="ttc" id="agroup___soundlib_html_ga0b14a3190ddca62a0f887d87ea74028e"><div class="ttname"><a href="group___soundlib.html#ga0b14a3190ddca62a0f887d87ea74028e">STX_dmasampleendframe</a></div><div class="ttdeci">void STX_dmasampleendframe()</div><div class="ttdoc">Fonction appeleé à la fin de chaque lecture d'echantillons DMA si STX_setdmasampleinterrupt() aà été ...</div></div>
+<div class="ttc" id="agroup___soundlib_html_gae508b850220fbdb57fe1602d1df9751b"><div class="ttname"><a href="group___soundlib.html#gae508b850220fbdb57fe1602d1df9751b">STX_playsound2</a></div><div class="ttdeci">void STX_playsound2(long int *memory, bool boucle)</div><div class="ttdoc">Permet de jouer un effet audio chargé en mémoire sur le player 2.</div></div>
+<div class="ttc" id="agroup___soundlib_html_gaaafa4fadd306c0a0de015c2a68f2f3bc"><div class="ttname"><a href="group___soundlib.html#gaaafa4fadd306c0a0de015c2a68f2f3bc">STX_Stopsound2</a></div><div class="ttdeci">void STX_Stopsound2(void)</div><div class="ttdoc">Stop le player 2.</div></div>
+<div class="ttc" id="agroup___soundlib_html_ga6f3d3ab245806ae70fed83eba4b99910"><div class="ttname"><a href="group___soundlib.html#ga6f3d3ab245806ae70fed83eba4b99910">STX_stopdmasample</a></div><div class="ttdeci">void STX_stopdmasample()</div><div class="ttdoc">Stop un fichier .ADS d'echantillons DMA en cours.</div></div>
+<div class="ttc" id="agroup___soundlib_html_ga1ab101969328e6d44c45be3ec7635f74"><div class="ttname"><a href="group___soundlib.html#ga1ab101969328e6d44c45be3ec7635f74">STX_loadsoundeffect</a></div><div class="ttdeci">long int * STX_loadsoundeffect(char *Path)</div><div class="ttdoc">Permet de charger en mémoire un fichier d'effet audio avec l'extension .AEF.</div></div>
+<div class="ttc" id="agroup___soundlib_html_ga814a137034d7948551cdb19addfeced8"><div class="ttname"><a href="group___soundlib.html#ga814a137034d7948551cdb19addfeced8">STX_loaddmasample</a></div><div class="ttdeci">long int * STX_loaddmasample(char *Path)</div><div class="ttdoc">Permet de charger en mémoire un fichier d'echantillons .ADS pour la lecture DMA.</div></div>
+<div class="ttc" id="agroup___soundlib_html_gaefdca341a10c24b8ba47add8432adcd5"><div class="ttname"><a href="group___soundlib.html#gaefdca341a10c24b8ba47add8432adcd5">STX_playsound1</a></div><div class="ttdeci">void STX_playsound1(long int *memory, bool boucle)</div><div class="ttdoc">Permet de jouer un effet audio chargé en mémoire sur le player 1.</div></div>
+<div class="ttc" id="agroup___soundlib_html_ga5e7655acbf74ff4114d70dd930c96ee3"><div class="ttname"><a href="group___soundlib.html#ga5e7655acbf74ff4114d70dd930c96ee3">STX_playdmasample</a></div><div class="ttdeci">void STX_playdmasample(long int *memory, bool boucle)</div><div class="ttdoc">Permet de jouer un fichier .ADS d'echantillons DMA.</div></div>
+<div class="ttc" id="agroup___soundlib_html_gaf81fe1eee7129ed28d2e9adcccf23586"><div class="ttname"><a href="group___soundlib.html#gaf81fe1eee7129ed28d2e9adcccf23586">STX_setdmasampleinterrupt</a></div><div class="ttdeci">void STX_setdmasampleinterrupt()</div><div class="ttdoc">Active l'appel de la fonction STX_dmasampleendframe() en fin de lecture d'echantillons DMA.</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.16
+</small></address>
+</body>
+</html>
