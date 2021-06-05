@@ -23,7 +23,7 @@
 typedef unsigned char bool;
 #define TRUE    0xFF                                    /*!< Valeur booleene vrai */
 #define FALSE   0x00                                    /*!< Valeur booleene faux */
-#define NULL ((void*)0)
+#define NULL ((void*)0)                                 /*!< Valeur pointeur NULL */
 
 /*!
  * \ingroup Controllib
@@ -105,8 +105,8 @@ typedef enum    {   DIV4=(unsigned short)0x0001,        /*!< fréquence timer D 
  *
  */
 typedef enum    {   PICTYPNEO=(unsigned char)1,         /*!< Numero du type d'image Neocharome */
-                    PICTYPDEGAS=(unsigned char)12,      /*!< Numero du type d'image Degas */
-                    PICTYPDEGASEL=(unsigned char)13     /*!< Numero du type d'image DegasElite */
+                    PICTYPDEGAS=(unsigned char)2,       /*!< Numero du type d'image Degas */
+                    PICTYPDEGASEL=(unsigned char)3      /*!< Numero du type d'image DegasElite */
                 }STX_picturetype;
                 
 

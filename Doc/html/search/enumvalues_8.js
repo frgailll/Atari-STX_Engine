@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ver_448',['VER',['../group___charsetlib.html#ggaf293f1e0dbd5297786ae48f68b54f9c3ab02e8398372770d34ca3f67581a1bdfa',1,'type.h']]]
+  ['transparent_468',['TRANSPARENT',['../group___imagelib.html#ggaac5fc11bffa7b371e0eb076666a68632a15d7820ba482f3e36ff47d7d2f1892ef',1,'type.h']]]
 ];

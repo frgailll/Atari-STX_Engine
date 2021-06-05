@@ -25,6 +25,11 @@ Librairie de fonctions C écrite en assembleur pour la réalisation de jeux 2D s
 5)-Cliquer sur Install
 
 
+===============================================
+|     Fonctionnalités de la version 1.01      |
+===============================================
+- Correction des valeurs de STX_picturetype dans le fichier Type.h et dans la documentation.
+
 
 ===============================================
 |     Fonctionnalités de la version 1.00      |
