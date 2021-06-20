@@ -273,6 +273,7 @@ _STX_getjoystickstatus:
                 move.w      D0,(A6)                 ;retourne valeur bouton action par reference
                 move.b      cont_joy0data,D0        ;met la valeur du positionnement + tir du joystick 0 dans D0
                 andi.b      #$7F,D0                 ;mask le bit 7 du tir
+                movem.l     minit_saveregs,D7/A6    ;restitution les registres utilisés
                 rts                                 ;retour au programme appelant avec position joystick 0 dans D0
 .cont_valstatjoy1:
                 move.b      cont_joy1data,D0        ;met la valeur du positionnement + tir du joystick 1 dans D0

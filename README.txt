@@ -26,6 +26,12 @@ Librairie de fonctions C écrite en assembleur pour la réalisation de jeux 2D s
 
 
 ===============================================
+|     Fonctionnalités de la version 1.02      |
+===============================================
+- Correction de la mauvaise restitution des registres D7 et A6 dans la fonction STX_getjoystickstatus.
+
+
+===============================================
 |     Fonctionnalités de la version 1.01      |
 ===============================================
 - Correction des valeurs de STX_picturetype dans le fichier Type.h et dans la documentation.
